@@ -19,6 +19,7 @@ public class CtrlMain : MonoBehaviour
 	void Start ()
 	{
 		_ctrPlugins = _gmoPlugins.GetComponent<CtrlPlugins>();
+
 		// DCIMディレクトリのパスを取得する.
 		_strDcimPath = _ctrPlugins.GetText();
 		// DCIMディレクトリ内にあるファイルを取得.
@@ -69,14 +70,21 @@ public class CtrlMain : MonoBehaviour
 	}
 	void OnGUI()
 	{
+		if(GUI.Button(new Rect(300f, 20f, 200f, 200f), "GetData"))
+		{
+			_ctrPlugins.ShowImageView();
+		}
 		GUI.skin.label.fontSize = 40;
 		GUI.Label(new Rect(20f, 20f, 800f, 100f), _strDcimPath);
 		GUI.Label(new Rect(20f, 130f, 800f, 100f), "Dir " + Directory.Exists(_strDcimPath + "/Camera"));
 		GUI.Label(new Rect(20f, 250f, 800f, 100f), "File " + File.Exists(_strDcimPath + "/Camera/IMG_20150327_174416.jpg"));
 		float fltY = 360f;
-		for(int i = _strFileNames.Length - 1; i >= 0; i--)
+		if(_strFileNames.Length > 0)
 		{
-			GUI.Label(new Rect(20f, (fltY + (i * 120)), 800f, 100f), _strFileNames[i]);
+			for(int i = _strFileNames.Length - 1; i >= 0; i--)
+			{
+				GUI.Label(new Rect(20f, (fltY + (i * 120)), 800f, 100f), _strFileNames[i]);
+			}
 		}
 	}
 }
