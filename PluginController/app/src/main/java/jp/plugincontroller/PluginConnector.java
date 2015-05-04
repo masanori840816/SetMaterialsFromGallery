@@ -27,23 +27,22 @@ public class PluginConnector extends Activity{
     private static final int SDKVER_KITKAT = 19;
     private static final int REQUEST_GALLERY_KITKAT_ABOVE = 0;
     private static final int REQUEST_GALLERY_JELLYBEAN_BELOW = 1;
-    public static String _strSelectedPath;
 
     protected UnityPlayer mUnityPlayer; // don't change the name of this variable; referenced from native code
 
-    public static void OpenGridView() {
+    public static void OpenImageView() {
         UnityPlayer.currentActivity.runOnUiThread(new Runnable() {
             public void run() {
-                Intent newIntent = new Intent();
-                newIntent.setType("image/*");
+                Intent ntnImage = new Intent();
+                ntnImage.setType("image/*");
 
                 if (Build.VERSION.SDK_INT < SDKVER_KITKAT) {
-                    newIntent.setAction(Intent.ACTION_GET_CONTENT);
-                    UnityPlayer.currentActivity.startActivityForResult(newIntent, REQUEST_GALLERY_JELLYBEAN_BELOW);
+                    ntnImage.setAction(Intent.ACTION_GET_CONTENT);
+                    UnityPlayer.currentActivity.startActivityForResult(ntnImage, REQUEST_GALLERY_JELLYBEAN_BELOW);
                 } else {
-                    newIntent.setAction(Intent.ACTION_OPEN_DOCUMENT);
-                    newIntent.addCategory(Intent.CATEGORY_OPENABLE);
-                    UnityPlayer.currentActivity.startActivityForResult(newIntent, REQUEST_GALLERY_KITKAT_ABOVE);
+                    ntnImage.setAction(Intent.ACTION_OPEN_DOCUMENT);
+                    ntnImage.addCategory(Intent.CATEGORY_OPENABLE);
+                    UnityPlayer.currentActivity.startActivityForResult(ntnImage, REQUEST_GALLERY_KITKAT_ABOVE);
                 }
             }
         });
@@ -63,7 +62,7 @@ public class PluginConnector extends Activity{
                 if(crsCursor.moveToFirst())
                 {
                     Log.d("PluginConnector", crsCursor.getString(0));
-                    //_strSelectedPath = crsCursor.getString(0);
+                    this.sendImagePath(crsCursor.getString(0));
                 }
                 crsCursor.close();
                 break;
@@ -73,7 +72,7 @@ public class PluginConnector extends Activity{
                 break;
         }
     }
-    @TargetApi(19)
+    @TargetApi(SDKVER_KITKAT)
     private void GetSelectedItemPath(Intent data)
     {
         // 選択した画像のパスを取得する.
@@ -90,9 +89,14 @@ public class PluginConnector extends Activity{
 
         if (crsCursor.moveToFirst()) {
             Log.d("PluginConnector", crsCursor.getString(0));
-            //_strSelectedPath = cursor.getString(0);
+            this.sendImagePath(crsCursor.getString(0));
         }
         crsCursor.close();
+    }
+    private void sendImagePath(String strSendPath)
+    {
+        // 取得した画像のパスをUnity側に送信する.
+        UnityPlayer.UnitySendMessage("CtrlPlugins", "OnCallback", strSendPath);
     }
     public static String GetDcimPath()
     {
