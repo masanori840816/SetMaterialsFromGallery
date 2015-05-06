@@ -3,7 +3,7 @@ using System.Collections;
 
 public class CtrlAndroidPlugin : MonoBehaviour
 {
-	readonly string PLUGIN_CLASS_PATH = "jp.plugincontroller.PluginConnector";
+	readonly string PLUGIN_CLASS_PATH = "jp.setmaterialsfromgallery.PluginConnector";
 
 	public GameObject _gmoSetTexture;
 	CtrlSetTexture _ctrSetTexture;
@@ -50,7 +50,17 @@ public class CtrlAndroidPlugin : MonoBehaviour
 		}
 
 #endif
+	}
+	public void ShowFileNotFoundAlert()
+	{
+#if UNITY_ANDROID
+		// アラートを表示する.
+		using(AndroidJavaClass clsPlugin = new AndroidJavaClass(PLUGIN_CLASS_PATH))
+		{
+			clsPlugin.CallStatic("ShowFileNotFoundAlert");
+		}
 
+#endif
 	}
 	public void OnCallbackAndroid(string strGotData)
 	{

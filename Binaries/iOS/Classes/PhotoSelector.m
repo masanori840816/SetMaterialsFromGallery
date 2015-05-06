@@ -15,15 +15,6 @@
 @end
 @implementation PhotoSelector
 
-char* MakeStringCopy (const char* string)
-{
-    if (string == NULL)
-        return NULL;
-    
-    char* res = (char*)malloc(strlen(string) + 1);
-    strcpy(res, string);
-    return res;
-}
 - (void)Initialize
 {
     _vwcUnityView = UnityGetGLViewController();
@@ -32,13 +23,14 @@ char* MakeStringCopy (const char* string)
 {
     UIImagePickerController *imgPic = [[UIImagePickerController alloc]init];
     imgPic.delegate = self;
+    // フォトライブラリから画像を取得する.
     [imgPic setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
     [_vwcUnityView presentViewController: imgPic animated:YES completion:nil];
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
-    //カメラライブラリから選んだ写真のURLを取得。
+    // カメラロールから選んだ写真のURLを取得.
     UIImage *myUIImage = [info objectForKey:UIImagePickerControllerOriginalImage];
     NSData *imageData = UIImagePNGRepresentation(myUIImage);
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
@@ -50,7 +42,16 @@ char* MakeStringCopy (const char* string)
     _mstSelectedImage = (NSMutableString *)filePath;
     // 取得したパスをUnity側に送信する.
     UnitySendMessage("CtrlSetTexture", "OnCallbackIos", MakeStringCopy([_mstSelectedImage UTF8String]));
-    [picker dismissViewControllerAnimated:YES completion:nil];  //元の画面に戻る
+    // カメラロールを閉じる.
+    [picker dismissViewControllerAnimated:YES completion:nil];
 }
-
+char* MakeStringCopy (const char* string)
+{
+    if (string == NULL)
+        return NULL;
+    
+    char* res = (char*)malloc(strlen(string) + 1);
+    strcpy(res, string);
+    return res;
+}
 @end

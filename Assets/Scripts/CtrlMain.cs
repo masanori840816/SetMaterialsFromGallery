@@ -96,11 +96,21 @@ public class CtrlMain : MonoBehaviour
 		}
 
 #elif UNITY_IPHONE
-	if(GUI.Button(new Rect(300f, 20f, 200f, 200f), "GetData"))
-	{
-		// Open Camera roll.
-		CtrlIosPlugin.OpenPhotoLibrary();
+		if(GUI.Button(new Rect(300f, 20f, 200f, 200f), "GetData"))
+		{
+			// Open Camera roll.
+			CtrlIosPlugin.OpenPhotoLibrary();
+		}
+
+#endif
 	}
+	public void ShowFileNotFoundAlert()
+	{
+		// 取得した画像パスにアクセス出来ない場合はアラート表示.
+#if UNITY_ANDROID
+		_ctrAndroidPlugin.ShowFileNotFoundAlert();
+
+#elif UNITY_IPHONE
 
 #endif
 	}
