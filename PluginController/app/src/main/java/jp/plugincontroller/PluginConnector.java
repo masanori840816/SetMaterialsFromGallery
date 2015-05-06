@@ -96,7 +96,7 @@ public class PluginConnector extends Activity{
     private void sendImagePath(String strSendPath)
     {
         // 取得した画像のパスをUnity側に送信する.
-        UnityPlayer.UnitySendMessage("CtrlPlugins", "OnCallback", strSendPath);
+        UnityPlayer.UnitySendMessage("CtrlAndroidPlugin", "OnCallbackAndroid", strSendPath);
     }
     public static String GetDcimPath()
     {

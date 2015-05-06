@@ -1,0 +1,56 @@
+//
+//  PhotoSelector.m
+//  Unity-iPhone
+//
+//  Created by Masanori on 2015/05/05.
+//
+//
+
+#import <Foundation/Foundation.h>
+#import "PhotoSelector.h"
+
+@interface PhotoSelector()<UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@property (strong, nonatomic)UIViewController *vwcUnityView;
+@property (strong, nonatomic)NSMutableString *mstSelectedImage;
+@end
+@implementation PhotoSelector
+
+char* MakeStringCopy (const char* string)
+{
+    if (string == NULL)
+        return NULL;
+    
+    char* res = (char*)malloc(strlen(string) + 1);
+    strcpy(res, string);
+    return res;
+}
+- (void)Initialize
+{
+    _vwcUnityView = UnityGetGLViewController();
+}
+- (void)OpenPhotoLibrary
+{
+    UIImagePickerController *imgPic = [[UIImagePickerController alloc]init];
+    imgPic.delegate = self;
+    [imgPic setSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+    [_vwcUnityView presentViewController: imgPic animated:YES completion:nil];
+}
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
+{
+    //カメラライブラリから選んだ写真のURLを取得。
+    UIImage *myUIImage = [info objectForKey:UIImagePickerControllerOriginalImage];
+    NSData *imageData = UIImagePNGRepresentation(myUIImage);
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    // 適当なファイル名をつける.
+    NSString *filePath = [documentsDirectory stringByAppendingPathComponent:@"tmp.jpg"];
+    [imageData writeToFile:filePath atomically:YES];
+    
+    _mstSelectedImage = (NSMutableString *)filePath;
+    // 取得したパスをUnity側に送信する.
+    UnitySendMessage("CtrlSetTexture", "OnCallbackIos", MakeStringCopy([_mstSelectedImage UTF8String]));
+    [picker dismissViewControllerAnimated:YES completion:nil];  //元の画面に戻る
+}
+
+@end
