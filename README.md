@@ -2,8 +2,8 @@
 This is the test project for Android native plugin of Unity.
 
 ## Description
-* show picture views by pushing button.
-* if select a picture, the plugin return that file path, and set the picture as the texture.
+* show gallery app by pushing button.
+* if a picture is selected, the plugin return that file path, and set the picture as a 3D object's material.
 * when the return button is pushed, show toast.
 
 ## Licence

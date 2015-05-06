@@ -41,8 +41,6 @@ public class CtrlPlugins : MonoBehaviour
 	}
 	public void OnCallback(string strGotData)
 	{
-		Debug.Log("OnCallback");
-
 		// 画像が選択されたら、取得したパスを元に画像をロードする.
 		_ctrSetTexture.SetNewTexture(strGotData);
 	}
