@@ -1,5 +1,5 @@
-# AndroidPluginTest
-This is the test project for Android native plugin of Unity.
+# SetMaterialsFromGallery
+This is the native plugin of Unity for Android and iOS.
 
 ## Description
 * show gallery app by pushing button.

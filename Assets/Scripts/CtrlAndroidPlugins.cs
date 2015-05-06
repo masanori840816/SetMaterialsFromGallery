@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CtrlPlugins : MonoBehaviour
+public class CtrlAndroidPlugins : MonoBehaviour
 {
 	readonly string PLUGIN_CLASS_PATH = "jp.plugincontroller.PluginConnector";
 

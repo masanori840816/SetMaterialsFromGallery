@@ -4,8 +4,8 @@ using System.IO;
 
 public class CtrlMain : MonoBehaviour
 {
-	public GameObject _gmoPlugins;
-	CtrlPlugins _ctrPlugins;
+	public GameObject _gmoAndroidPlugins;
+	CtrlAndroidPlugins _ctrAndroidPlugins;
 
 	string _strDcimPath = "";
 
@@ -18,10 +18,10 @@ public class CtrlMain : MonoBehaviour
 
 	void Start ()
 	{
-		_ctrPlugins = _gmoPlugins.GetComponent<CtrlPlugins>();
+		_ctrAndroidPlugins = _gmoAndroidPlugins.GetComponent<CtrlAndroidPlugins>();
 
 		// DCIMディレクトリのパスを取得する.
-		_strDcimPath = _ctrPlugins.GetText();
+		_strDcimPath = _ctrAndroidPlugins.GetText();
 		// DCIMディレクトリ内にあるファイルを取得.
 		_strFileNames = Directory.GetDirectories(_strDcimPath);
 	}
@@ -61,7 +61,7 @@ public class CtrlMain : MonoBehaviour
 				if(Input.GetKey(KeyCode.Escape))
 				{
 					// トーストを表示.
-					_ctrPlugins.ShowToast();
+					_ctrAndroidPlugins.ShowToast();
 					_isEscKeyPushed = true;
 					_isSecondCheckStarted = false;
 				}
@@ -72,7 +72,7 @@ public class CtrlMain : MonoBehaviour
 	{
 		if(GUI.Button(new Rect(300f, 20f, 200f, 200f), "GetData"))
 		{
-			_ctrPlugins.ShowImageView();
+			_ctrAndroidPlugins.ShowImageView();
 		}
 		GUI.skin.label.fontSize = 40;
 		GUI.Label(new Rect(20f, 20f, 800f, 100f), _strDcimPath);
