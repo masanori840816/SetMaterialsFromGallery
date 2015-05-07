@@ -33,7 +33,7 @@
     // カメラロールから選んだ写真のURLを取得.
     UIImage *myUIImage = [info objectForKey:UIImagePickerControllerOriginalImage];
     NSData *imageData = UIImagePNGRepresentation(myUIImage);
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
     // 適当なファイル名をつける.
     NSString *filePath = [documentsDirectory stringByAppendingPathComponent:@"tmp.jpg"];
