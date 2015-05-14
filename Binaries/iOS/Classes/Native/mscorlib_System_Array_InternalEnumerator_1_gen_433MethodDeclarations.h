@@ -5,7 +5,7 @@
 #include "codegen/il2cpp-codegen.h"
 
 // System.Array/InternalEnumerator`1<System.IO.MonoIOError>
-struct InternalEnumerator_1_t3406;
+struct InternalEnumerator_1_t3407;
 // System.Object
 struct Object_t;
 // System.Array
@@ -14,12 +14,12 @@ struct Array_t;
 #include "mscorlib_System_IO_MonoIOError.h"
 
 // System.Void System.Array/InternalEnumerator`1<System.IO.MonoIOError>::.ctor(System.Array)
- void InternalEnumerator_1__ctor_m18916 (InternalEnumerator_1_t3406 * __this, Array_t * ___array, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void InternalEnumerator_1__ctor_m18921 (InternalEnumerator_1_t3407 * __this, Array_t * ___array, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Array/InternalEnumerator`1<System.IO.MonoIOError>::System.Collections.IEnumerator.get_Current()
- Object_t * InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m18917 (InternalEnumerator_1_t3406 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Object_t * InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m18922 (InternalEnumerator_1_t3407 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Array/InternalEnumerator`1<System.IO.MonoIOError>::Dispose()
- void InternalEnumerator_1_Dispose_m18918 (InternalEnumerator_1_t3406 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void InternalEnumerator_1_Dispose_m18923 (InternalEnumerator_1_t3407 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Array/InternalEnumerator`1<System.IO.MonoIOError>::MoveNext()
- bool InternalEnumerator_1_MoveNext_m18919 (InternalEnumerator_1_t3406 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool InternalEnumerator_1_MoveNext_m18924 (InternalEnumerator_1_t3407 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // T System.Array/InternalEnumerator`1<System.IO.MonoIOError>::get_Current()
- int32_t InternalEnumerator_1_get_Current_m18920 (InternalEnumerator_1_t3406 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ int32_t InternalEnumerator_1_get_Current_m18925 (InternalEnumerator_1_t3407 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

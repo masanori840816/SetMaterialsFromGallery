@@ -11,6 +11,6 @@ struct Object_t;
 // System.MulticastDelegate
 #include "mscorlib_System_MulticastDelegate.h"
 // System.Comparison`1<UnityEngine.Rigidbody2D>
-struct Comparison_1_t3038  : public MulticastDelegate_t172
+struct Comparison_1_t3039  : public MulticastDelegate_t172
 {
 };

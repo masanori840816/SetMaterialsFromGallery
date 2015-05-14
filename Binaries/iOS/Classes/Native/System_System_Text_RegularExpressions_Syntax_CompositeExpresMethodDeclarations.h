@@ -10,10 +10,10 @@ struct CompositeExpression_t915;
 struct ExpressionCollection_t912;
 
 // System.Void System.Text.RegularExpressions.Syntax.CompositeExpression::.ctor()
- void CompositeExpression__ctor_m3916 (CompositeExpression_t915 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void CompositeExpression__ctor_m3921 (CompositeExpression_t915 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Text.RegularExpressions.Syntax.ExpressionCollection System.Text.RegularExpressions.Syntax.CompositeExpression::get_Expressions()
- ExpressionCollection_t912 * CompositeExpression_get_Expressions_m3917 (CompositeExpression_t915 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ ExpressionCollection_t912 * CompositeExpression_get_Expressions_m3922 (CompositeExpression_t915 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Text.RegularExpressions.Syntax.CompositeExpression::GetWidth(System.Int32&,System.Int32&,System.Int32)
- void CompositeExpression_GetWidth_m3918 (CompositeExpression_t915 * __this, int32_t* ___min, int32_t* ___max, int32_t ___count, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void CompositeExpression_GetWidth_m3923 (CompositeExpression_t915 * __this, int32_t* ___min, int32_t* ___max, int32_t ___count, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Text.RegularExpressions.Syntax.CompositeExpression::IsComplex()
- bool CompositeExpression_IsComplex_m3919 (CompositeExpression_t915 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool CompositeExpression_IsComplex_m3924 (CompositeExpression_t915 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

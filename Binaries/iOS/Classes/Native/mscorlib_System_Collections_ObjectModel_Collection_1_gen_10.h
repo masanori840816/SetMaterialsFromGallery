@@ -7,7 +7,7 @@ struct Object_t;
 // System.Object
 #include "mscorlib_System_Object.h"
 // System.Collections.ObjectModel.Collection`1<UnityEngine.UIVertex>
-struct Collection_1_t2543  : public Object_t
+struct Collection_1_t2544  : public Object_t
 {
 	// System.Collections.Generic.IList`1<T> System.Collections.ObjectModel.Collection`1<UnityEngine.UIVertex>::list
 	Object_t* ___list_0;

@@ -16,12 +16,12 @@ struct Array_t;
 // System.Void System.Array/InternalEnumerator`1<System.IConvertible>::.ctor(System.Array)
 // System.Array/InternalEnumerator`1<System.Object>
 #include "mscorlib_System_Array_InternalEnumerator_1_gen_0MethodDeclarations.h"
-#define InternalEnumerator_1__ctor_m10518(__this, ___array, method) (void)InternalEnumerator_1__ctor_m10434_gshared((InternalEnumerator_1_t2148 *)__this, (Array_t *)___array, method)
+#define InternalEnumerator_1__ctor_m10523(__this, ___array, method) (void)InternalEnumerator_1__ctor_m10439_gshared((InternalEnumerator_1_t2148 *)__this, (Array_t *)___array, method)
 // System.Object System.Array/InternalEnumerator`1<System.IConvertible>::System.Collections.IEnumerator.get_Current()
-#define InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m10519(__this, method) (Object_t *)InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m10436_gshared((InternalEnumerator_1_t2148 *)__this, method)
+#define InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m10524(__this, method) (Object_t *)InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m10441_gshared((InternalEnumerator_1_t2148 *)__this, method)
 // System.Void System.Array/InternalEnumerator`1<System.IConvertible>::Dispose()
-#define InternalEnumerator_1_Dispose_m10520(__this, method) (void)InternalEnumerator_1_Dispose_m10438_gshared((InternalEnumerator_1_t2148 *)__this, method)
+#define InternalEnumerator_1_Dispose_m10525(__this, method) (void)InternalEnumerator_1_Dispose_m10443_gshared((InternalEnumerator_1_t2148 *)__this, method)
 // System.Boolean System.Array/InternalEnumerator`1<System.IConvertible>::MoveNext()
-#define InternalEnumerator_1_MoveNext_m10521(__this, method) (bool)InternalEnumerator_1_MoveNext_m10440_gshared((InternalEnumerator_1_t2148 *)__this, method)
+#define InternalEnumerator_1_MoveNext_m10526(__this, method) (bool)InternalEnumerator_1_MoveNext_m10445_gshared((InternalEnumerator_1_t2148 *)__this, method)
 // T System.Array/InternalEnumerator`1<System.IConvertible>::get_Current()
-#define InternalEnumerator_1_get_Current_m10522(__this, method) (Object_t *)InternalEnumerator_1_get_Current_m10442_gshared((InternalEnumerator_1_t2148 *)__this, method)
+#define InternalEnumerator_1_get_Current_m10527(__this, method) (Object_t *)InternalEnumerator_1_get_Current_m10447_gshared((InternalEnumerator_1_t2148 *)__this, method)

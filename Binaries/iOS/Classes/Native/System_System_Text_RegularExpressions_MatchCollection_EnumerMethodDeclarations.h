@@ -12,8 +12,8 @@ struct Object_t;
 struct MatchCollection_t873;
 
 // System.Void System.Text.RegularExpressions.MatchCollection/Enumerator::.ctor(System.Text.RegularExpressions.MatchCollection)
- void Enumerator__ctor_m3689 (Enumerator_t874 * __this, MatchCollection_t873 * ___coll, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void Enumerator__ctor_m3694 (Enumerator_t874 * __this, MatchCollection_t873 * ___coll, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Text.RegularExpressions.MatchCollection/Enumerator::System.Collections.IEnumerator.get_Current()
- Object_t * Enumerator_System_Collections_IEnumerator_get_Current_m3690 (Enumerator_t874 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Object_t * Enumerator_System_Collections_IEnumerator_get_Current_m3695 (Enumerator_t874 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Text.RegularExpressions.MatchCollection/Enumerator::System.Collections.IEnumerator.MoveNext()
- bool Enumerator_System_Collections_IEnumerator_MoveNext_m3691 (Enumerator_t874 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool Enumerator_System_Collections_IEnumerator_MoveNext_m3696 (Enumerator_t874 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

@@ -10,4 +10,4 @@ struct GuidAttribute_t407;
 struct String_t;
 
 // System.Void System.Runtime.InteropServices.GuidAttribute::.ctor(System.String)
- void GuidAttribute__ctor_m2037 (GuidAttribute_t407 * __this, String_t* ___guid, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void GuidAttribute__ctor_m2041 (GuidAttribute_t407 * __this, String_t* ___guid, MethodInfo* method) IL2CPP_METHOD_ATTR;

@@ -12,8 +12,8 @@ struct Context_t1047;
 struct ByteU5BU5D_t17;
 
 // System.Void Mono.Security.Protocol.Tls.Handshake.Client.TlsServerHelloDone::.ctor(Mono.Security.Protocol.Tls.Context,System.Byte[])
- void TlsServerHelloDone__ctor_m5222 (TlsServerHelloDone_t1103 * __this, Context_t1047 * ___context, ByteU5BU5D_t17* ___buffer, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void TlsServerHelloDone__ctor_m5227 (TlsServerHelloDone_t1103 * __this, Context_t1047 * ___context, ByteU5BU5D_t17* ___buffer, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Mono.Security.Protocol.Tls.Handshake.Client.TlsServerHelloDone::ProcessAsSsl3()
- void TlsServerHelloDone_ProcessAsSsl3_m5223 (TlsServerHelloDone_t1103 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void TlsServerHelloDone_ProcessAsSsl3_m5228 (TlsServerHelloDone_t1103 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Mono.Security.Protocol.Tls.Handshake.Client.TlsServerHelloDone::ProcessAsTls1()
- void TlsServerHelloDone_ProcessAsTls1_m5224 (TlsServerHelloDone_t1103 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void TlsServerHelloDone_ProcessAsTls1_m5229 (TlsServerHelloDone_t1103 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

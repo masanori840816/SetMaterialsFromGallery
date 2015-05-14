@@ -8,4 +8,4 @@
 struct AppDomainSetup_t1647;
 
 // System.Void System.AppDomainSetup::.ctor()
- void AppDomainSetup__ctor_m8994 (AppDomainSetup_t1647 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void AppDomainSetup__ctor_m8999 (AppDomainSetup_t1647 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

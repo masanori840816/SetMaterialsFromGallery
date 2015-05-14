@@ -7,7 +7,7 @@ struct IEventSystemHandler_t273;
 // System.ValueType
 #include "mscorlib_System_ValueType.h"
 // System.Collections.Generic.List`1/Enumerator<UnityEngine.EventSystems.IEventSystemHandler>
-struct Enumerator_t2242 
+struct Enumerator_t2243 
 {
 	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator<UnityEngine.EventSystems.IEventSystemHandler>::l
 	List_1_t79 * ___l_0;

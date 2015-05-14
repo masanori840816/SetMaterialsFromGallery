@@ -5,7 +5,7 @@ struct ICanvasElement_t124;
 // System.ValueType
 #include "mscorlib_System_ValueType.h"
 // System.Collections.Generic.KeyValuePair`2<UnityEngine.UI.ICanvasElement,System.Int32>
-struct KeyValuePair_2_t2466 
+struct KeyValuePair_2_t2467 
 {
 	// TKey System.Collections.Generic.KeyValuePair`2<UnityEngine.UI.ICanvasElement,System.Int32>::key
 	Object_t * ___key_0;

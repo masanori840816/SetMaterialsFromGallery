@@ -8,4 +8,4 @@
 struct DecimalConstantAttribute_t1173;
 
 // System.Void System.Runtime.CompilerServices.DecimalConstantAttribute::.ctor(System.Byte,System.Byte,System.UInt32,System.UInt32,System.UInt32)
- void DecimalConstantAttribute__ctor_m6218 (DecimalConstantAttribute_t1173 * __this, uint8_t ___scale, uint8_t ___sign, uint32_t ___hi, uint32_t ___mid, uint32_t ___low, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void DecimalConstantAttribute__ctor_m6223 (DecimalConstantAttribute_t1173 * __this, uint8_t ___scale, uint8_t ___sign, uint32_t ___hi, uint32_t ___mid, uint32_t ___low, MethodInfo* method) IL2CPP_METHOD_ATTR;

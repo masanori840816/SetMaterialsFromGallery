@@ -10,4 +10,4 @@ struct DictionaryNode_t764;
 struct Object_t;
 
 // System.Void System.Collections.Specialized.ListDictionary/DictionaryNode::.ctor(System.Object,System.Object,System.Collections.Specialized.ListDictionary/DictionaryNode)
- void DictionaryNode__ctor_m3236 (DictionaryNode_t764 * __this, Object_t * ___key, Object_t * ___value, DictionaryNode_t764 * ___next, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void DictionaryNode__ctor_m3241 (DictionaryNode_t764 * __this, Object_t * ___key, Object_t * ___value, DictionaryNode_t764 * ___next, MethodInfo* method) IL2CPP_METHOD_ATTR;

@@ -8,4 +8,4 @@
 struct UnverifiableCodeAttribute_t1598;
 
 // System.Void System.Security.UnverifiableCodeAttribute::.ctor()
- void UnverifiableCodeAttribute__ctor_m8678 (UnverifiableCodeAttribute_t1598 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void UnverifiableCodeAttribute__ctor_m8683 (UnverifiableCodeAttribute_t1598 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

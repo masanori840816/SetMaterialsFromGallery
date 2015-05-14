@@ -1,16 +1,16 @@
 ﻿#pragma once
 #include <stdint.h>
 // System.Collections.Generic.Stack`1<System.Object>
-struct Stack_1_t2251;
+struct Stack_1_t2252;
 // UnityEngine.Events.UnityAction`1<System.Object>
 struct UnityAction_1_t2157;
 // System.Object
 #include "mscorlib_System_Object.h"
 // UnityEngine.UI.ObjectPool`1<System.Object>
-struct ObjectPool_1_t2250  : public Object_t
+struct ObjectPool_1_t2251  : public Object_t
 {
 	// System.Collections.Generic.Stack`1<T> UnityEngine.UI.ObjectPool`1<System.Object>::m_Stack
-	Stack_1_t2251 * ___m_Stack_0;
+	Stack_1_t2252 * ___m_Stack_0;
 	// UnityEngine.Events.UnityAction`1<T> UnityEngine.UI.ObjectPool`1<System.Object>::m_ActionOnGet
 	UnityAction_1_t2157 * ___m_ActionOnGet_1;
 	// UnityEngine.Events.UnityAction`1<T> UnityEngine.UI.ObjectPool`1<System.Object>::m_ActionOnRelease

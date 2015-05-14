@@ -5,7 +5,7 @@
 #include "codegen/il2cpp-codegen.h"
 
 // System.Collections.Generic.Dictionary`2/Transform`1<UnityEngine.UI.Graphic,System.Int32,System.Collections.DictionaryEntry>
-struct Transform_1_t2591;
+struct Transform_1_t2592;
 // System.Object
 struct Object_t;
 // UnityEngine.UI.Graphic
@@ -20,10 +20,10 @@ struct AsyncCallback_t39;
 #include "mscorlib_System_Collections_DictionaryEntry.h"
 
 // System.Void System.Collections.Generic.Dictionary`2/Transform`1<UnityEngine.UI.Graphic,System.Int32,System.Collections.DictionaryEntry>::.ctor(System.Object,System.IntPtr)
- void Transform_1__ctor_m13936 (Transform_1_t2591 * __this, Object_t * ___object, IntPtr_t173 ___method, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void Transform_1__ctor_m13941 (Transform_1_t2592 * __this, Object_t * ___object, IntPtr_t173 ___method, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // TRet System.Collections.Generic.Dictionary`2/Transform`1<UnityEngine.UI.Graphic,System.Int32,System.Collections.DictionaryEntry>::Invoke(TKey,TValue)
- DictionaryEntry_t766  Transform_1_Invoke_m13937 (Transform_1_t2591 * __this, Graphic_t139 * ___key, int32_t ___value, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ DictionaryEntry_t766  Transform_1_Invoke_m13942 (Transform_1_t2592 * __this, Graphic_t139 * ___key, int32_t ___value, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.IAsyncResult System.Collections.Generic.Dictionary`2/Transform`1<UnityEngine.UI.Graphic,System.Int32,System.Collections.DictionaryEntry>::BeginInvoke(TKey,TValue,System.AsyncCallback,System.Object)
- Object_t * Transform_1_BeginInvoke_m13938 (Transform_1_t2591 * __this, Graphic_t139 * ___key, int32_t ___value, AsyncCallback_t39 * ___callback, Object_t * ___object, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Object_t * Transform_1_BeginInvoke_m13943 (Transform_1_t2592 * __this, Graphic_t139 * ___key, int32_t ___value, AsyncCallback_t39 * ___callback, Object_t * ___object, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // TRet System.Collections.Generic.Dictionary`2/Transform`1<UnityEngine.UI.Graphic,System.Int32,System.Collections.DictionaryEntry>::EndInvoke(System.IAsyncResult)
- DictionaryEntry_t766  Transform_1_EndInvoke_m13939 (Transform_1_t2591 * __this, Object_t * ___result, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ DictionaryEntry_t766  Transform_1_EndInvoke_m13944 (Transform_1_t2592 * __this, Object_t * ___result, MethodInfo* method) IL2CPP_METHOD_ATTR;

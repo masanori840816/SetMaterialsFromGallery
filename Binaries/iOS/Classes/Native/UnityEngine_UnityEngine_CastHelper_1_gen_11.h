@@ -7,7 +7,7 @@ struct GUILayer_t450;
 // System.IntPtr
 #include "mscorlib_System_IntPtr.h"
 // UnityEngine.CastHelper`1<UnityEngine.GUILayer>
-struct CastHelper_1_t3140 
+struct CastHelper_1_t3141 
 {
 	// T UnityEngine.CastHelper`1<UnityEngine.GUILayer>::t
 	GUILayer_t450 * ___t_0;

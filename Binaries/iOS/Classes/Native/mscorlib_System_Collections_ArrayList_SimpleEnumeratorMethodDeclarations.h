@@ -12,10 +12,10 @@ struct Object_t;
 struct ArrayList_t772;
 
 // System.Void System.Collections.ArrayList/SimpleEnumerator::.ctor(System.Collections.ArrayList)
- void SimpleEnumerator__ctor_m6720 (SimpleEnumerator_t1278 * __this, ArrayList_t772 * ___list, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void SimpleEnumerator__ctor_m6725 (SimpleEnumerator_t1278 * __this, ArrayList_t772 * ___list, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.ArrayList/SimpleEnumerator::.cctor()
- void SimpleEnumerator__cctor_m6721 (Object_t * __this/* static, unused */, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void SimpleEnumerator__cctor_m6726 (Object_t * __this/* static, unused */, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Collections.ArrayList/SimpleEnumerator::MoveNext()
- bool SimpleEnumerator_MoveNext_m6722 (SimpleEnumerator_t1278 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool SimpleEnumerator_MoveNext_m6727 (SimpleEnumerator_t1278 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Collections.ArrayList/SimpleEnumerator::get_Current()
- Object_t * SimpleEnumerator_get_Current_m6723 (SimpleEnumerator_t1278 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Object_t * SimpleEnumerator_get_Current_m6728 (SimpleEnumerator_t1278 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

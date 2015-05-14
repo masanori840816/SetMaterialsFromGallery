@@ -7,7 +7,7 @@ struct BaseRaycaster_t83;
 // System.ValueType
 #include "mscorlib_System_ValueType.h"
 // System.Collections.Generic.List`1/Enumerator<UnityEngine.EventSystems.BaseRaycaster>
-struct Enumerator_t2293 
+struct Enumerator_t2294 
 {
 	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator<UnityEngine.EventSystems.BaseRaycaster>::l
 	List_1_t81 * ___l_0;

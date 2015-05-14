@@ -5,7 +5,7 @@ struct Array_t;
 // System.ValueType
 #include "mscorlib_System_ValueType.h"
 // System.Array/InternalEnumerator`1<System.Text.RegularExpressions.OpCode>
-struct InternalEnumerator_1_t3282 
+struct InternalEnumerator_1_t3283 
 {
 	// System.Array System.Array/InternalEnumerator`1<System.Text.RegularExpressions.OpCode>::array
 	Array_t * ___array_0;

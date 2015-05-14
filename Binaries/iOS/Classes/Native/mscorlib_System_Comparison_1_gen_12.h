@@ -12,6 +12,6 @@ struct Object_t;
 #include "mscorlib_System_MulticastDelegate.h"
 extern TypeInfo UIVertex_t161_il2cpp_TypeInfo;
 // System.Comparison`1<UnityEngine.UIVertex>
-struct Comparison_1_t2540  : public MulticastDelegate_t172
+struct Comparison_1_t2541  : public MulticastDelegate_t172
 {
 };

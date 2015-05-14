@@ -8,6 +8,6 @@
 struct ValidationResult_t1083;
 
 // System.Boolean Mono.Security.Protocol.Tls.ValidationResult::get_Trusted()
- bool ValidationResult_get_Trusted_m4988 (ValidationResult_t1083 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool ValidationResult_get_Trusted_m4993 (ValidationResult_t1083 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 Mono.Security.Protocol.Tls.ValidationResult::get_ErrorCode()
- int32_t ValidationResult_get_ErrorCode_m4989 (ValidationResult_t1083 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ int32_t ValidationResult_get_ErrorCode_m4994 (ValidationResult_t1083 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

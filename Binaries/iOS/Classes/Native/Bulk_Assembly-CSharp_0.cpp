@@ -126,8 +126,8 @@ extern TypeInfo String_t_il2cpp_TypeInfo;
 // CtrlSetTexture
 #include "AssemblyU2DCSharp_CtrlSetTextureMethodDeclarations.h"
 extern MethodInfo MonoBehaviour__ctor_m5_MethodInfo;
-extern MethodInfo GameObject_GetComponent_TisCtrlSetTexture_t7_m26_MethodInfo;
-extern MethodInfo CtrlSetTexture_SetNewTexture_m23_MethodInfo;
+extern MethodInfo GameObject_GetComponent_TisCtrlSetTexture_t7_m29_MethodInfo;
+extern MethodInfo CtrlSetTexture_SetNewTexture_m26_MethodInfo;
 struct GameObject_t6;
 // UnityEngine.CastHelper`1<CtrlSetTexture>
 #include "UnityEngine_UnityEngine_CastHelper_1_gen.h"
@@ -144,11 +144,11 @@ struct GameObject_t6;
 #include "UnityEngine_UnityEngine_CastHelper_1_gen_0.h"
 // Declaration !!0 UnityEngine.GameObject::GetComponent<System.Object>()
 // !!0 UnityEngine.GameObject::GetComponent<System.Object>()
- Object_t * GameObject_GetComponent_TisObject_t_m27_gshared (GameObject_t6 * __this, MethodInfo* method);
-#define GameObject_GetComponent_TisObject_t_m27(__this, method) (Object_t *)GameObject_GetComponent_TisObject_t_m27_gshared((GameObject_t6 *)__this, method)
+ Object_t * GameObject_GetComponent_TisObject_t_m30_gshared (GameObject_t6 * __this, MethodInfo* method);
+#define GameObject_GetComponent_TisObject_t_m30(__this, method) (Object_t *)GameObject_GetComponent_TisObject_t_m30_gshared((GameObject_t6 *)__this, method)
 // Declaration !!0 UnityEngine.GameObject::GetComponent<CtrlSetTexture>()
 // !!0 UnityEngine.GameObject::GetComponent<CtrlSetTexture>()
-#define GameObject_GetComponent_TisCtrlSetTexture_t7_m26(__this, method) (CtrlSetTexture_t7 *)GameObject_GetComponent_TisObject_t_m27_gshared((GameObject_t6 *)__this, method)
+#define GameObject_GetComponent_TisCtrlSetTexture_t7_m29(__this, method) (CtrlSetTexture_t7 *)GameObject_GetComponent_TisObject_t_m30_gshared((GameObject_t6 *)__this, method)
 
 
 // System.Void CtrlAndroidPlugin::.ctor()
@@ -166,7 +166,7 @@ extern MethodInfo CtrlAndroidPlugin_Start_m13_MethodInfo;
 	{
 		GameObject_t6 * L_0 = (__this->____gmoSetTexture_3);
 		NullCheck(L_0);
-		CtrlSetTexture_t7 * L_1 = GameObject_GetComponent_TisCtrlSetTexture_t7_m26(L_0, /*hidden argument*/&GameObject_GetComponent_TisCtrlSetTexture_t7_m26_MethodInfo);
+		CtrlSetTexture_t7 * L_1 = GameObject_GetComponent_TisCtrlSetTexture_t7_m29(L_0, /*hidden argument*/&GameObject_GetComponent_TisCtrlSetTexture_t7_m29_MethodInfo);
 		__this->____ctrSetTexture_4 = L_1;
 		return;
 	}
@@ -195,13 +195,20 @@ extern MethodInfo CtrlAndroidPlugin_ShowImageView_m16_MethodInfo;
 		return;
 	}
 }
+// System.Void CtrlAndroidPlugin::ShowFileNotFoundAlert()
+extern MethodInfo CtrlAndroidPlugin_ShowFileNotFoundAlert_m17_MethodInfo;
+ void CtrlAndroidPlugin_ShowFileNotFoundAlert_m17 (CtrlAndroidPlugin_t8 * __this, MethodInfo* method){
+	{
+		return;
+	}
+}
 // System.Void CtrlAndroidPlugin::OnCallbackAndroid(System.String)
-extern MethodInfo CtrlAndroidPlugin_OnCallbackAndroid_m17_MethodInfo;
- void CtrlAndroidPlugin_OnCallbackAndroid_m17 (CtrlAndroidPlugin_t8 * __this, String_t* ___strGotData, MethodInfo* method){
+extern MethodInfo CtrlAndroidPlugin_OnCallbackAndroid_m18_MethodInfo;
+ void CtrlAndroidPlugin_OnCallbackAndroid_m18 (CtrlAndroidPlugin_t8 * __this, String_t* ___strGotData, MethodInfo* method){
 	{
 		CtrlSetTexture_t7 * L_0 = (__this->____ctrSetTexture_4);
 		NullCheck(L_0);
-		CtrlSetTexture_SetNewTexture_m23(L_0, ___strGotData, ((int32_t)1920), ((int32_t)1080), /*hidden argument*/&CtrlSetTexture_SetNewTexture_m23_MethodInfo);
+		CtrlSetTexture_SetNewTexture_m26(L_0, ___strGotData, ((int32_t)1920), ((int32_t)1080), /*hidden argument*/&CtrlSetTexture_SetNewTexture_m26_MethodInfo);
 		return;
 	}
 }
@@ -363,23 +370,47 @@ MethodInfo CtrlAndroidPlugin_ShowImageView_m16_MethodInfo =
 	, NULL/* dummy */
 
 };
+extern Il2CppType Void_t3_0_0_0;
+extern void* RuntimeInvoker_Void_t3 (MethodInfo* method, void* obj, void** args);
+// System.Void CtrlAndroidPlugin::ShowFileNotFoundAlert()
+MethodInfo CtrlAndroidPlugin_ShowFileNotFoundAlert_m17_MethodInfo = 
+{
+	"ShowFileNotFoundAlert"/* name */
+	, (methodPointerType)&CtrlAndroidPlugin_ShowFileNotFoundAlert_m17/* method */
+	, &CtrlAndroidPlugin_t8_il2cpp_TypeInfo/* declaring_type */
+	, &Void_t3_0_0_0/* return_type */
+	, RuntimeInvoker_Void_t3/* invoker_method */
+	, NULL/* parameters */
+	, &EmptyCustomAttributesCache/* custom_attributes_cache */
+	, 134/* flags */
+	, 0/* iflags */
+	, 255/* slot */
+	, 0/* parameters_count */
+	, false/* is_generic */
+	, false/* is_inflated */
+	, 6/* token */
+	, NULL/* rgctx_data */
+	, (methodPointerType)NULL/* native_delegate_wrapper */
+	, NULL/* dummy */
+
+};
 extern Il2CppType String_t_0_0_0;
 extern Il2CppType String_t_0_0_0;
-static ParameterInfo CtrlAndroidPlugin_t8_CtrlAndroidPlugin_OnCallbackAndroid_m17_ParameterInfos[] = 
+static ParameterInfo CtrlAndroidPlugin_t8_CtrlAndroidPlugin_OnCallbackAndroid_m18_ParameterInfos[] = 
 {
 	{"strGotData", 0, 134217729, &EmptyCustomAttributesCache, &String_t_0_0_0},
 };
 extern Il2CppType Void_t3_0_0_0;
 extern void* RuntimeInvoker_Void_t3_Object_t (MethodInfo* method, void* obj, void** args);
 // System.Void CtrlAndroidPlugin::OnCallbackAndroid(System.String)
-MethodInfo CtrlAndroidPlugin_OnCallbackAndroid_m17_MethodInfo = 
+MethodInfo CtrlAndroidPlugin_OnCallbackAndroid_m18_MethodInfo = 
 {
 	"OnCallbackAndroid"/* name */
-	, (methodPointerType)&CtrlAndroidPlugin_OnCallbackAndroid_m17/* method */
+	, (methodPointerType)&CtrlAndroidPlugin_OnCallbackAndroid_m18/* method */
 	, &CtrlAndroidPlugin_t8_il2cpp_TypeInfo/* declaring_type */
 	, &Void_t3_0_0_0/* return_type */
 	, RuntimeInvoker_Void_t3_Object_t/* invoker_method */
-	, CtrlAndroidPlugin_t8_CtrlAndroidPlugin_OnCallbackAndroid_m17_ParameterInfos/* parameters */
+	, CtrlAndroidPlugin_t8_CtrlAndroidPlugin_OnCallbackAndroid_m18_ParameterInfos/* parameters */
 	, &EmptyCustomAttributesCache/* custom_attributes_cache */
 	, 134/* flags */
 	, 0/* iflags */
@@ -387,7 +418,7 @@ MethodInfo CtrlAndroidPlugin_OnCallbackAndroid_m17_MethodInfo =
 	, 1/* parameters_count */
 	, false/* is_generic */
 	, false/* is_inflated */
-	, 6/* token */
+	, 7/* token */
 	, NULL/* rgctx_data */
 	, (methodPointerType)NULL/* native_delegate_wrapper */
 	, NULL/* dummy */
@@ -400,7 +431,8 @@ static MethodInfo* CtrlAndroidPlugin_t8_MethodInfos[] =
 	&CtrlAndroidPlugin_GetText_m14_MethodInfo,
 	&CtrlAndroidPlugin_ShowToast_m15_MethodInfo,
 	&CtrlAndroidPlugin_ShowImageView_m16_MethodInfo,
-	&CtrlAndroidPlugin_OnCallbackAndroid_m17_MethodInfo,
+	&CtrlAndroidPlugin_ShowFileNotFoundAlert_m17_MethodInfo,
+	&CtrlAndroidPlugin_OnCallbackAndroid_m18_MethodInfo,
 	NULL
 };
 extern MethodInfo Object_Equals_m6_MethodInfo;
@@ -469,7 +501,7 @@ TypeInfo CtrlAndroidPlugin_t8_il2cpp_TypeInfo =
 	, false/* has_cctor */
 	, false/* is_blittable */
 	, false/* is_pinnable */
-	, 6/* method_count */
+	, 7/* method_count */
 	, 0/* property_count */
 	, 3/* field_count */
 	, 0/* event_count */
@@ -503,14 +535,14 @@ extern TypeInfo GUI_t14_il2cpp_TypeInfo;
 // UnityEngine.GUI
 #include "UnityEngine_UnityEngine_GUIMethodDeclarations.h"
 extern MethodInfo CtrlIosPlugin_Init_m3_MethodInfo;
-extern MethodInfo Rect__ctor_m28_MethodInfo;
-extern MethodInfo GUI_Button_m29_MethodInfo;
+extern MethodInfo Rect__ctor_m31_MethodInfo;
+extern MethodInfo GUI_Button_m32_MethodInfo;
 extern MethodInfo CtrlIosPlugin_OpenPhotoLibrary_m4_MethodInfo;
 
 
 // System.Void CtrlMain::.ctor()
-extern MethodInfo CtrlMain__ctor_m18_MethodInfo;
- void CtrlMain__ctor_m18 (CtrlMain_t10 * __this, MethodInfo* method){
+extern MethodInfo CtrlMain__ctor_m19_MethodInfo;
+ void CtrlMain__ctor_m19 (CtrlMain_t10 * __this, MethodInfo* method){
 	{
 		IL2CPP_RUNTIME_CLASS_INIT((&String_t_il2cpp_TypeInfo));
 		__this->____strDcimPath_2 = (((String_t_StaticFields*)(&String_t_il2cpp_TypeInfo)->static_fields)->___Empty_2);
@@ -519,28 +551,28 @@ extern MethodInfo CtrlMain__ctor_m18_MethodInfo;
 	}
 }
 // System.Void CtrlMain::Start()
-extern MethodInfo CtrlMain_Start_m19_MethodInfo;
- void CtrlMain_Start_m19 (CtrlMain_t10 * __this, MethodInfo* method){
+extern MethodInfo CtrlMain_Start_m20_MethodInfo;
+ void CtrlMain_Start_m20 (CtrlMain_t10 * __this, MethodInfo* method){
 	{
 		CtrlIosPlugin_Init_m3(NULL /*static, unused*/, /*hidden argument*/&CtrlIosPlugin_Init_m3_MethodInfo);
 		return;
 	}
 }
 // System.Void CtrlMain::Update()
-extern MethodInfo CtrlMain_Update_m20_MethodInfo;
- void CtrlMain_Update_m20 (CtrlMain_t10 * __this, MethodInfo* method){
+extern MethodInfo CtrlMain_Update_m21_MethodInfo;
+ void CtrlMain_Update_m21 (CtrlMain_t10 * __this, MethodInfo* method){
 	{
 		return;
 	}
 }
 // System.Void CtrlMain::OnGUI()
-extern MethodInfo CtrlMain_OnGUI_m21_MethodInfo;
- void CtrlMain_OnGUI_m21 (CtrlMain_t10 * __this, MethodInfo* method){
+extern MethodInfo CtrlMain_OnGUI_m22_MethodInfo;
+ void CtrlMain_OnGUI_m22 (CtrlMain_t10 * __this, MethodInfo* method){
 	{
 		Rect_t13  L_0 = {0};
-		Rect__ctor_m28(&L_0, (300.0f), (20.0f), (200.0f), (200.0f), /*hidden argument*/&Rect__ctor_m28_MethodInfo);
+		Rect__ctor_m31(&L_0, (300.0f), (20.0f), (200.0f), (200.0f), /*hidden argument*/&Rect__ctor_m31_MethodInfo);
 		IL2CPP_RUNTIME_CLASS_INIT(InitializedTypeInfo(&GUI_t14_il2cpp_TypeInfo));
-		bool L_1 = GUI_Button_m29(NULL /*static, unused*/, L_0, (String_t*) &_stringLiteral2, /*hidden argument*/&GUI_Button_m29_MethodInfo);
+		bool L_1 = GUI_Button_m32(NULL /*static, unused*/, L_0, (String_t*) &_stringLiteral2, /*hidden argument*/&GUI_Button_m32_MethodInfo);
 		if (!L_1)
 		{
 			goto IL_002d;
@@ -551,6 +583,13 @@ extern MethodInfo CtrlMain_OnGUI_m21_MethodInfo;
 	}
 
 IL_002d:
+	{
+		return;
+	}
+}
+// System.Void CtrlMain::ShowFileNotFoundAlert()
+extern MethodInfo CtrlMain_ShowFileNotFoundAlert_m23_MethodInfo;
+ void CtrlMain_ShowFileNotFoundAlert_m23 (CtrlMain_t10 * __this, MethodInfo* method){
 	{
 		return;
 	}
@@ -618,40 +657,16 @@ static FieldInfo* CtrlMain_t10_FieldInfos[] =
 extern Il2CppType Void_t3_0_0_0;
 extern void* RuntimeInvoker_Void_t3 (MethodInfo* method, void* obj, void** args);
 // System.Void CtrlMain::.ctor()
-MethodInfo CtrlMain__ctor_m18_MethodInfo = 
+MethodInfo CtrlMain__ctor_m19_MethodInfo = 
 {
 	".ctor"/* name */
-	, (methodPointerType)&CtrlMain__ctor_m18/* method */
+	, (methodPointerType)&CtrlMain__ctor_m19/* method */
 	, &CtrlMain_t10_il2cpp_TypeInfo/* declaring_type */
 	, &Void_t3_0_0_0/* return_type */
 	, RuntimeInvoker_Void_t3/* invoker_method */
 	, NULL/* parameters */
 	, &EmptyCustomAttributesCache/* custom_attributes_cache */
 	, 6278/* flags */
-	, 0/* iflags */
-	, 255/* slot */
-	, 0/* parameters_count */
-	, false/* is_generic */
-	, false/* is_inflated */
-	, 7/* token */
-	, NULL/* rgctx_data */
-	, (methodPointerType)NULL/* native_delegate_wrapper */
-	, NULL/* dummy */
-
-};
-extern Il2CppType Void_t3_0_0_0;
-extern void* RuntimeInvoker_Void_t3 (MethodInfo* method, void* obj, void** args);
-// System.Void CtrlMain::Start()
-MethodInfo CtrlMain_Start_m19_MethodInfo = 
-{
-	"Start"/* name */
-	, (methodPointerType)&CtrlMain_Start_m19/* method */
-	, &CtrlMain_t10_il2cpp_TypeInfo/* declaring_type */
-	, &Void_t3_0_0_0/* return_type */
-	, RuntimeInvoker_Void_t3/* invoker_method */
-	, NULL/* parameters */
-	, &EmptyCustomAttributesCache/* custom_attributes_cache */
-	, 129/* flags */
 	, 0/* iflags */
 	, 255/* slot */
 	, 0/* parameters_count */
@@ -665,11 +680,11 @@ MethodInfo CtrlMain_Start_m19_MethodInfo =
 };
 extern Il2CppType Void_t3_0_0_0;
 extern void* RuntimeInvoker_Void_t3 (MethodInfo* method, void* obj, void** args);
-// System.Void CtrlMain::Update()
-MethodInfo CtrlMain_Update_m20_MethodInfo = 
+// System.Void CtrlMain::Start()
+MethodInfo CtrlMain_Start_m20_MethodInfo = 
 {
-	"Update"/* name */
-	, (methodPointerType)&CtrlMain_Update_m20/* method */
+	"Start"/* name */
+	, (methodPointerType)&CtrlMain_Start_m20/* method */
 	, &CtrlMain_t10_il2cpp_TypeInfo/* declaring_type */
 	, &Void_t3_0_0_0/* return_type */
 	, RuntimeInvoker_Void_t3/* invoker_method */
@@ -689,11 +704,11 @@ MethodInfo CtrlMain_Update_m20_MethodInfo =
 };
 extern Il2CppType Void_t3_0_0_0;
 extern void* RuntimeInvoker_Void_t3 (MethodInfo* method, void* obj, void** args);
-// System.Void CtrlMain::OnGUI()
-MethodInfo CtrlMain_OnGUI_m21_MethodInfo = 
+// System.Void CtrlMain::Update()
+MethodInfo CtrlMain_Update_m21_MethodInfo = 
 {
-	"OnGUI"/* name */
-	, (methodPointerType)&CtrlMain_OnGUI_m21/* method */
+	"Update"/* name */
+	, (methodPointerType)&CtrlMain_Update_m21/* method */
 	, &CtrlMain_t10_il2cpp_TypeInfo/* declaring_type */
 	, &Void_t3_0_0_0/* return_type */
 	, RuntimeInvoker_Void_t3/* invoker_method */
@@ -711,12 +726,61 @@ MethodInfo CtrlMain_OnGUI_m21_MethodInfo =
 	, NULL/* dummy */
 
 };
+extern Il2CppType Void_t3_0_0_0;
+extern void* RuntimeInvoker_Void_t3 (MethodInfo* method, void* obj, void** args);
+// System.Void CtrlMain::OnGUI()
+MethodInfo CtrlMain_OnGUI_m22_MethodInfo = 
+{
+	"OnGUI"/* name */
+	, (methodPointerType)&CtrlMain_OnGUI_m22/* method */
+	, &CtrlMain_t10_il2cpp_TypeInfo/* declaring_type */
+	, &Void_t3_0_0_0/* return_type */
+	, RuntimeInvoker_Void_t3/* invoker_method */
+	, NULL/* parameters */
+	, &EmptyCustomAttributesCache/* custom_attributes_cache */
+	, 129/* flags */
+	, 0/* iflags */
+	, 255/* slot */
+	, 0/* parameters_count */
+	, false/* is_generic */
+	, false/* is_inflated */
+	, 11/* token */
+	, NULL/* rgctx_data */
+	, (methodPointerType)NULL/* native_delegate_wrapper */
+	, NULL/* dummy */
+
+};
+extern Il2CppType Void_t3_0_0_0;
+extern void* RuntimeInvoker_Void_t3 (MethodInfo* method, void* obj, void** args);
+// System.Void CtrlMain::ShowFileNotFoundAlert()
+MethodInfo CtrlMain_ShowFileNotFoundAlert_m23_MethodInfo = 
+{
+	"ShowFileNotFoundAlert"/* name */
+	, (methodPointerType)&CtrlMain_ShowFileNotFoundAlert_m23/* method */
+	, &CtrlMain_t10_il2cpp_TypeInfo/* declaring_type */
+	, &Void_t3_0_0_0/* return_type */
+	, RuntimeInvoker_Void_t3/* invoker_method */
+	, NULL/* parameters */
+	, &EmptyCustomAttributesCache/* custom_attributes_cache */
+	, 134/* flags */
+	, 0/* iflags */
+	, 255/* slot */
+	, 0/* parameters_count */
+	, false/* is_generic */
+	, false/* is_inflated */
+	, 12/* token */
+	, NULL/* rgctx_data */
+	, (methodPointerType)NULL/* native_delegate_wrapper */
+	, NULL/* dummy */
+
+};
 static MethodInfo* CtrlMain_t10_MethodInfos[] =
 {
-	&CtrlMain__ctor_m18_MethodInfo,
-	&CtrlMain_Start_m19_MethodInfo,
-	&CtrlMain_Update_m20_MethodInfo,
-	&CtrlMain_OnGUI_m21_MethodInfo,
+	&CtrlMain__ctor_m19_MethodInfo,
+	&CtrlMain_Start_m20_MethodInfo,
+	&CtrlMain_Update_m21_MethodInfo,
+	&CtrlMain_OnGUI_m22_MethodInfo,
+	&CtrlMain_ShowFileNotFoundAlert_m23_MethodInfo,
 	NULL
 };
 static MethodInfo* CtrlMain_t10_VTable[] =
@@ -780,7 +844,7 @@ TypeInfo CtrlMain_t10_il2cpp_TypeInfo =
 	, false/* has_cctor */
 	, false/* is_blittable */
 	, false/* is_pinnable */
-	, 4/* method_count */
+	, 5/* method_count */
 	, 0/* property_count */
 	, 5/* field_count */
 	, 0/* event_count */
@@ -795,6 +859,8 @@ TypeInfo CtrlMain_t10_il2cpp_TypeInfo =
 #endif
 extern TypeInfo CtrlSetTexture_t7_il2cpp_TypeInfo;
 
+// UnityEngine.AsyncOperation
+#include "UnityEngine_UnityEngine_AsyncOperation.h"
 // UnityEngine.Material
 #include "UnityEngine_UnityEngine_Material.h"
 // UnityEngine.Texture2D
@@ -807,100 +873,146 @@ extern TypeInfo CtrlSetTexture_t7_il2cpp_TypeInfo;
 extern TypeInfo Texture2D_t12_il2cpp_TypeInfo;
 // System.IO.File
 #include "mscorlib_System_IO_FileMethodDeclarations.h"
+// UnityEngine.Resources
+#include "UnityEngine_UnityEngine_ResourcesMethodDeclarations.h"
 // UnityEngine.Material
 #include "UnityEngine_UnityEngine_MaterialMethodDeclarations.h"
 // UnityEngine.Texture2D
 #include "UnityEngine_UnityEngine_Texture2DMethodDeclarations.h"
-// UnityEngine.Debug
-#include "UnityEngine_UnityEngine_DebugMethodDeclarations.h"
-extern MethodInfo File_Exists_m30_MethodInfo;
-extern MethodInfo CtrlSetTexture_ReadTexture_m24_MethodInfo;
-extern MethodInfo Material_set_mainTexture_m31_MethodInfo;
-extern MethodInfo File_ReadAllBytes_m32_MethodInfo;
-extern MethodInfo Texture2D__ctor_m33_MethodInfo;
-extern MethodInfo Texture2D_LoadImage_m34_MethodInfo;
-extern MethodInfo String_Concat_m35_MethodInfo;
-extern MethodInfo Debug_Log_m36_MethodInfo;
+extern MethodInfo GameObject_GetComponent_TisCtrlMain_t10_m33_MethodInfo;
+extern MethodInfo File_Exists_m34_MethodInfo;
+extern MethodInfo Resources_UnloadUnusedAssets_m35_MethodInfo;
+extern MethodInfo CtrlSetTexture_ReadTexture_m27_MethodInfo;
+extern MethodInfo Material_set_mainTexture_m36_MethodInfo;
+extern MethodInfo File_ReadAllBytes_m37_MethodInfo;
+extern MethodInfo Texture2D__ctor_m38_MethodInfo;
+extern MethodInfo Texture2D_LoadImage_m39_MethodInfo;
+struct GameObject_t6;
+// UnityEngine.CastHelper`1<CtrlMain>
+#include "UnityEngine_UnityEngine_CastHelper_1_gen_1.h"
+// Declaration !!0 UnityEngine.GameObject::GetComponent<CtrlMain>()
+// !!0 UnityEngine.GameObject::GetComponent<CtrlMain>()
+#define GameObject_GetComponent_TisCtrlMain_t10_m33(__this, method) (CtrlMain_t10 *)GameObject_GetComponent_TisObject_t_m30_gshared((GameObject_t6 *)__this, method)
 
 
 // System.Void CtrlSetTexture::.ctor()
-extern MethodInfo CtrlSetTexture__ctor_m22_MethodInfo;
- void CtrlSetTexture__ctor_m22 (CtrlSetTexture_t7 * __this, MethodInfo* method){
+extern MethodInfo CtrlSetTexture__ctor_m24_MethodInfo;
+ void CtrlSetTexture__ctor_m24 (CtrlSetTexture_t7 * __this, MethodInfo* method){
 	{
 		MonoBehaviour__ctor_m5(__this, /*hidden argument*/&MonoBehaviour__ctor_m5_MethodInfo);
 		return;
 	}
 }
-// System.Void CtrlSetTexture::SetNewTexture(System.String,System.Int32,System.Int32)
- void CtrlSetTexture_SetNewTexture_m23 (CtrlSetTexture_t7 * __this, String_t* ___strPath, int32_t ___intWidth, int32_t ___intHeight, MethodInfo* method){
+// System.Void CtrlSetTexture::Start()
+extern MethodInfo CtrlSetTexture_Start_m25_MethodInfo;
+ void CtrlSetTexture_Start_m25 (CtrlSetTexture_t7 * __this, MethodInfo* method){
 	{
-		bool L_0 = File_Exists_m30(NULL /*static, unused*/, ___strPath, /*hidden argument*/&File_Exists_m30_MethodInfo);
+		GameObject_t6 * L_0 = (__this->____gmoMain_2);
+		NullCheck(L_0);
+		CtrlMain_t10 * L_1 = GameObject_GetComponent_TisCtrlMain_t10_m33(L_0, /*hidden argument*/&GameObject_GetComponent_TisCtrlMain_t10_m33_MethodInfo);
+		__this->____ctrMain_3 = L_1;
+		return;
+	}
+}
+// System.Void CtrlSetTexture::SetNewTexture(System.String,System.Int32,System.Int32)
+ void CtrlSetTexture_SetNewTexture_m26 (CtrlSetTexture_t7 * __this, String_t* ___strPath, int32_t ___intWidth, int32_t ___intHeight, MethodInfo* method){
+	{
+		bool L_0 = File_Exists_m34(NULL /*static, unused*/, ___strPath, /*hidden argument*/&File_Exists_m34_MethodInfo);
 		if (!L_0)
 		{
-			goto IL_001f;
+			goto IL_002a;
 		}
 	}
 	{
-		Material_t11 * L_1 = (__this->____mtrCube_2);
-		Texture2D_t12 * L_2 = CtrlSetTexture_ReadTexture_m24(__this, ___strPath, ___intWidth, ___intHeight, /*hidden argument*/&CtrlSetTexture_ReadTexture_m24_MethodInfo);
+		Resources_UnloadUnusedAssets_m35(NULL /*static, unused*/, /*hidden argument*/&Resources_UnloadUnusedAssets_m35_MethodInfo);
+		Material_t11 * L_1 = (__this->____mtrCube_4);
+		Texture2D_t12 * L_2 = CtrlSetTexture_ReadTexture_m27(__this, ___strPath, ___intWidth, ___intHeight, /*hidden argument*/&CtrlSetTexture_ReadTexture_m27_MethodInfo);
 		NullCheck(L_1);
-		Material_set_mainTexture_m31(L_1, L_2, /*hidden argument*/&Material_set_mainTexture_m31_MethodInfo);
+		Material_set_mainTexture_m36(L_1, L_2, /*hidden argument*/&Material_set_mainTexture_m36_MethodInfo);
+		goto IL_0035;
 	}
 
-IL_001f:
+IL_002a:
+	{
+		CtrlMain_t10 * L_3 = (__this->____ctrMain_3);
+		NullCheck(L_3);
+		CtrlMain_ShowFileNotFoundAlert_m23(L_3, /*hidden argument*/&CtrlMain_ShowFileNotFoundAlert_m23_MethodInfo);
+	}
+
+IL_0035:
 	{
 		return;
 	}
 }
 // UnityEngine.Texture2D CtrlSetTexture::ReadTexture(System.String,System.Int32,System.Int32)
- Texture2D_t12 * CtrlSetTexture_ReadTexture_m24 (CtrlSetTexture_t7 * __this, String_t* ___strPath, int32_t ___intWidth, int32_t ___intHeight, MethodInfo* method){
+ Texture2D_t12 * CtrlSetTexture_ReadTexture_m27 (CtrlSetTexture_t7 * __this, String_t* ___strPath, int32_t ___intWidth, int32_t ___intHeight, MethodInfo* method){
 	ByteU5BU5D_t17* V_0 = {0};
 	Texture2D_t12 * V_1 = {0};
 	{
-		ByteU5BU5D_t17* L_0 = File_ReadAllBytes_m32(NULL /*static, unused*/, ___strPath, /*hidden argument*/&File_ReadAllBytes_m32_MethodInfo);
+		ByteU5BU5D_t17* L_0 = File_ReadAllBytes_m37(NULL /*static, unused*/, ___strPath, /*hidden argument*/&File_ReadAllBytes_m37_MethodInfo);
 		V_0 = L_0;
 		Texture2D_t12 * L_1 = (Texture2D_t12 *)il2cpp_codegen_object_new (InitializedTypeInfo(&Texture2D_t12_il2cpp_TypeInfo));
-		Texture2D__ctor_m33(L_1, ___intWidth, ___intHeight, /*hidden argument*/&Texture2D__ctor_m33_MethodInfo);
+		Texture2D__ctor_m38(L_1, ___intWidth, ___intHeight, /*hidden argument*/&Texture2D__ctor_m38_MethodInfo);
 		V_1 = L_1;
 		NullCheck(V_1);
-		Texture2D_LoadImage_m34(V_1, V_0, /*hidden argument*/&Texture2D_LoadImage_m34_MethodInfo);
+		Texture2D_LoadImage_m39(V_1, V_0, /*hidden argument*/&Texture2D_LoadImage_m39_MethodInfo);
+		V_0 = (ByteU5BU5D_t17*)NULL;
 		return V_1;
 	}
 }
 // System.Void CtrlSetTexture::OnCallbackIos(System.String)
-extern MethodInfo CtrlSetTexture_OnCallbackIos_m25_MethodInfo;
- void CtrlSetTexture_OnCallbackIos_m25 (CtrlSetTexture_t7 * __this, String_t* ___strGotData, MethodInfo* method){
+extern MethodInfo CtrlSetTexture_OnCallbackIos_m28_MethodInfo;
+ void CtrlSetTexture_OnCallbackIos_m28 (CtrlSetTexture_t7 * __this, String_t* ___strGotData, MethodInfo* method){
 	{
-		IL2CPP_RUNTIME_CLASS_INIT((&String_t_il2cpp_TypeInfo));
-		String_t* L_0 = String_Concat_m35(NULL /*static, unused*/, (String_t*) &_stringLiteral3, ___strGotData, /*hidden argument*/&String_Concat_m35_MethodInfo);
-		Debug_Log_m36(NULL /*static, unused*/, L_0, /*hidden argument*/&Debug_Log_m36_MethodInfo);
-		CtrlSetTexture_SetNewTexture_m23(__this, ___strGotData, ((int32_t)2048), ((int32_t)1536), /*hidden argument*/&CtrlSetTexture_SetNewTexture_m23_MethodInfo);
+		CtrlSetTexture_SetNewTexture_m26(__this, ___strGotData, 0, 0, /*hidden argument*/&CtrlSetTexture_SetNewTexture_m26_MethodInfo);
 		return;
 	}
 }
 // Metadata Definition CtrlSetTexture
+extern Il2CppType GameObject_t6_0_0_6;
+FieldInfo CtrlSetTexture_t7_____gmoMain_2_FieldInfo = 
+{
+	"_gmoMain"/* name */
+	, &GameObject_t6_0_0_6/* type */
+	, &CtrlSetTexture_t7_il2cpp_TypeInfo/* parent */
+	, offsetof(CtrlSetTexture_t7, ____gmoMain_2)/* data */
+	, &EmptyCustomAttributesCache/* custom_attributes_cache */
+
+};
+extern Il2CppType CtrlMain_t10_0_0_1;
+FieldInfo CtrlSetTexture_t7_____ctrMain_3_FieldInfo = 
+{
+	"_ctrMain"/* name */
+	, &CtrlMain_t10_0_0_1/* type */
+	, &CtrlSetTexture_t7_il2cpp_TypeInfo/* parent */
+	, offsetof(CtrlSetTexture_t7, ____ctrMain_3)/* data */
+	, &EmptyCustomAttributesCache/* custom_attributes_cache */
+
+};
 extern Il2CppType Material_t11_0_0_6;
-FieldInfo CtrlSetTexture_t7_____mtrCube_2_FieldInfo = 
+FieldInfo CtrlSetTexture_t7_____mtrCube_4_FieldInfo = 
 {
 	"_mtrCube"/* name */
 	, &Material_t11_0_0_6/* type */
 	, &CtrlSetTexture_t7_il2cpp_TypeInfo/* parent */
-	, offsetof(CtrlSetTexture_t7, ____mtrCube_2)/* data */
+	, offsetof(CtrlSetTexture_t7, ____mtrCube_4)/* data */
 	, &EmptyCustomAttributesCache/* custom_attributes_cache */
 
 };
 static FieldInfo* CtrlSetTexture_t7_FieldInfos[] =
 {
-	&CtrlSetTexture_t7_____mtrCube_2_FieldInfo,
+	&CtrlSetTexture_t7_____gmoMain_2_FieldInfo,
+	&CtrlSetTexture_t7_____ctrMain_3_FieldInfo,
+	&CtrlSetTexture_t7_____mtrCube_4_FieldInfo,
 	NULL
 };
 extern Il2CppType Void_t3_0_0_0;
 extern void* RuntimeInvoker_Void_t3 (MethodInfo* method, void* obj, void** args);
 // System.Void CtrlSetTexture::.ctor()
-MethodInfo CtrlSetTexture__ctor_m22_MethodInfo = 
+MethodInfo CtrlSetTexture__ctor_m24_MethodInfo = 
 {
 	".ctor"/* name */
-	, (methodPointerType)&CtrlSetTexture__ctor_m22/* method */
+	, (methodPointerType)&CtrlSetTexture__ctor_m24/* method */
 	, &CtrlSetTexture_t7_il2cpp_TypeInfo/* declaring_type */
 	, &Void_t3_0_0_0/* return_type */
 	, RuntimeInvoker_Void_t3/* invoker_method */
@@ -912,100 +1024,28 @@ MethodInfo CtrlSetTexture__ctor_m22_MethodInfo =
 	, 0/* parameters_count */
 	, false/* is_generic */
 	, false/* is_inflated */
-	, 11/* token */
-	, NULL/* rgctx_data */
-	, (methodPointerType)NULL/* native_delegate_wrapper */
-	, NULL/* dummy */
-
-};
-extern Il2CppType String_t_0_0_0;
-extern Il2CppType Int32_t18_0_0_0;
-extern Il2CppType Int32_t18_0_0_0;
-extern Il2CppType Int32_t18_0_0_0;
-static ParameterInfo CtrlSetTexture_t7_CtrlSetTexture_SetNewTexture_m23_ParameterInfos[] = 
-{
-	{"strPath", 0, 134217730, &EmptyCustomAttributesCache, &String_t_0_0_0},
-	{"intWidth", 1, 134217731, &EmptyCustomAttributesCache, &Int32_t18_0_0_0},
-	{"intHeight", 2, 134217732, &EmptyCustomAttributesCache, &Int32_t18_0_0_0},
-};
-extern Il2CppType Void_t3_0_0_0;
-extern void* RuntimeInvoker_Void_t3_Object_t_Int32_t18_Int32_t18 (MethodInfo* method, void* obj, void** args);
-// System.Void CtrlSetTexture::SetNewTexture(System.String,System.Int32,System.Int32)
-MethodInfo CtrlSetTexture_SetNewTexture_m23_MethodInfo = 
-{
-	"SetNewTexture"/* name */
-	, (methodPointerType)&CtrlSetTexture_SetNewTexture_m23/* method */
-	, &CtrlSetTexture_t7_il2cpp_TypeInfo/* declaring_type */
-	, &Void_t3_0_0_0/* return_type */
-	, RuntimeInvoker_Void_t3_Object_t_Int32_t18_Int32_t18/* invoker_method */
-	, CtrlSetTexture_t7_CtrlSetTexture_SetNewTexture_m23_ParameterInfos/* parameters */
-	, &EmptyCustomAttributesCache/* custom_attributes_cache */
-	, 134/* flags */
-	, 0/* iflags */
-	, 255/* slot */
-	, 3/* parameters_count */
-	, false/* is_generic */
-	, false/* is_inflated */
-	, 12/* token */
-	, NULL/* rgctx_data */
-	, (methodPointerType)NULL/* native_delegate_wrapper */
-	, NULL/* dummy */
-
-};
-extern Il2CppType String_t_0_0_0;
-extern Il2CppType Int32_t18_0_0_0;
-extern Il2CppType Int32_t18_0_0_0;
-static ParameterInfo CtrlSetTexture_t7_CtrlSetTexture_ReadTexture_m24_ParameterInfos[] = 
-{
-	{"strPath", 0, 134217733, &EmptyCustomAttributesCache, &String_t_0_0_0},
-	{"intWidth", 1, 134217734, &EmptyCustomAttributesCache, &Int32_t18_0_0_0},
-	{"intHeight", 2, 134217735, &EmptyCustomAttributesCache, &Int32_t18_0_0_0},
-};
-extern Il2CppType Texture2D_t12_0_0_0;
-extern void* RuntimeInvoker_Object_t_Object_t_Int32_t18_Int32_t18 (MethodInfo* method, void* obj, void** args);
-// UnityEngine.Texture2D CtrlSetTexture::ReadTexture(System.String,System.Int32,System.Int32)
-MethodInfo CtrlSetTexture_ReadTexture_m24_MethodInfo = 
-{
-	"ReadTexture"/* name */
-	, (methodPointerType)&CtrlSetTexture_ReadTexture_m24/* method */
-	, &CtrlSetTexture_t7_il2cpp_TypeInfo/* declaring_type */
-	, &Texture2D_t12_0_0_0/* return_type */
-	, RuntimeInvoker_Object_t_Object_t_Int32_t18_Int32_t18/* invoker_method */
-	, CtrlSetTexture_t7_CtrlSetTexture_ReadTexture_m24_ParameterInfos/* parameters */
-	, &EmptyCustomAttributesCache/* custom_attributes_cache */
-	, 129/* flags */
-	, 0/* iflags */
-	, 255/* slot */
-	, 3/* parameters_count */
-	, false/* is_generic */
-	, false/* is_inflated */
 	, 13/* token */
 	, NULL/* rgctx_data */
 	, (methodPointerType)NULL/* native_delegate_wrapper */
 	, NULL/* dummy */
 
 };
-extern Il2CppType String_t_0_0_0;
-static ParameterInfo CtrlSetTexture_t7_CtrlSetTexture_OnCallbackIos_m25_ParameterInfos[] = 
-{
-	{"strGotData", 0, 134217736, &EmptyCustomAttributesCache, &String_t_0_0_0},
-};
 extern Il2CppType Void_t3_0_0_0;
-extern void* RuntimeInvoker_Void_t3_Object_t (MethodInfo* method, void* obj, void** args);
-// System.Void CtrlSetTexture::OnCallbackIos(System.String)
-MethodInfo CtrlSetTexture_OnCallbackIos_m25_MethodInfo = 
+extern void* RuntimeInvoker_Void_t3 (MethodInfo* method, void* obj, void** args);
+// System.Void CtrlSetTexture::Start()
+MethodInfo CtrlSetTexture_Start_m25_MethodInfo = 
 {
-	"OnCallbackIos"/* name */
-	, (methodPointerType)&CtrlSetTexture_OnCallbackIos_m25/* method */
+	"Start"/* name */
+	, (methodPointerType)&CtrlSetTexture_Start_m25/* method */
 	, &CtrlSetTexture_t7_il2cpp_TypeInfo/* declaring_type */
 	, &Void_t3_0_0_0/* return_type */
-	, RuntimeInvoker_Void_t3_Object_t/* invoker_method */
-	, CtrlSetTexture_t7_CtrlSetTexture_OnCallbackIos_m25_ParameterInfos/* parameters */
+	, RuntimeInvoker_Void_t3/* invoker_method */
+	, NULL/* parameters */
 	, &EmptyCustomAttributesCache/* custom_attributes_cache */
-	, 134/* flags */
+	, 129/* flags */
 	, 0/* iflags */
 	, 255/* slot */
-	, 1/* parameters_count */
+	, 0/* parameters_count */
 	, false/* is_generic */
 	, false/* is_inflated */
 	, 14/* token */
@@ -1014,12 +1054,109 @@ MethodInfo CtrlSetTexture_OnCallbackIos_m25_MethodInfo =
 	, NULL/* dummy */
 
 };
+extern Il2CppType String_t_0_0_0;
+extern Il2CppType Int32_t18_0_0_0;
+extern Il2CppType Int32_t18_0_0_0;
+extern Il2CppType Int32_t18_0_0_0;
+static ParameterInfo CtrlSetTexture_t7_CtrlSetTexture_SetNewTexture_m26_ParameterInfos[] = 
+{
+	{"strPath", 0, 134217730, &EmptyCustomAttributesCache, &String_t_0_0_0},
+	{"intWidth", 1, 134217731, &EmptyCustomAttributesCache, &Int32_t18_0_0_0},
+	{"intHeight", 2, 134217732, &EmptyCustomAttributesCache, &Int32_t18_0_0_0},
+};
+extern Il2CppType Void_t3_0_0_0;
+extern void* RuntimeInvoker_Void_t3_Object_t_Int32_t18_Int32_t18 (MethodInfo* method, void* obj, void** args);
+// System.Void CtrlSetTexture::SetNewTexture(System.String,System.Int32,System.Int32)
+MethodInfo CtrlSetTexture_SetNewTexture_m26_MethodInfo = 
+{
+	"SetNewTexture"/* name */
+	, (methodPointerType)&CtrlSetTexture_SetNewTexture_m26/* method */
+	, &CtrlSetTexture_t7_il2cpp_TypeInfo/* declaring_type */
+	, &Void_t3_0_0_0/* return_type */
+	, RuntimeInvoker_Void_t3_Object_t_Int32_t18_Int32_t18/* invoker_method */
+	, CtrlSetTexture_t7_CtrlSetTexture_SetNewTexture_m26_ParameterInfos/* parameters */
+	, &EmptyCustomAttributesCache/* custom_attributes_cache */
+	, 134/* flags */
+	, 0/* iflags */
+	, 255/* slot */
+	, 3/* parameters_count */
+	, false/* is_generic */
+	, false/* is_inflated */
+	, 15/* token */
+	, NULL/* rgctx_data */
+	, (methodPointerType)NULL/* native_delegate_wrapper */
+	, NULL/* dummy */
+
+};
+extern Il2CppType String_t_0_0_0;
+extern Il2CppType Int32_t18_0_0_0;
+extern Il2CppType Int32_t18_0_0_0;
+static ParameterInfo CtrlSetTexture_t7_CtrlSetTexture_ReadTexture_m27_ParameterInfos[] = 
+{
+	{"strPath", 0, 134217733, &EmptyCustomAttributesCache, &String_t_0_0_0},
+	{"intWidth", 1, 134217734, &EmptyCustomAttributesCache, &Int32_t18_0_0_0},
+	{"intHeight", 2, 134217735, &EmptyCustomAttributesCache, &Int32_t18_0_0_0},
+};
+extern Il2CppType Texture2D_t12_0_0_0;
+extern void* RuntimeInvoker_Object_t_Object_t_Int32_t18_Int32_t18 (MethodInfo* method, void* obj, void** args);
+// UnityEngine.Texture2D CtrlSetTexture::ReadTexture(System.String,System.Int32,System.Int32)
+MethodInfo CtrlSetTexture_ReadTexture_m27_MethodInfo = 
+{
+	"ReadTexture"/* name */
+	, (methodPointerType)&CtrlSetTexture_ReadTexture_m27/* method */
+	, &CtrlSetTexture_t7_il2cpp_TypeInfo/* declaring_type */
+	, &Texture2D_t12_0_0_0/* return_type */
+	, RuntimeInvoker_Object_t_Object_t_Int32_t18_Int32_t18/* invoker_method */
+	, CtrlSetTexture_t7_CtrlSetTexture_ReadTexture_m27_ParameterInfos/* parameters */
+	, &EmptyCustomAttributesCache/* custom_attributes_cache */
+	, 129/* flags */
+	, 0/* iflags */
+	, 255/* slot */
+	, 3/* parameters_count */
+	, false/* is_generic */
+	, false/* is_inflated */
+	, 16/* token */
+	, NULL/* rgctx_data */
+	, (methodPointerType)NULL/* native_delegate_wrapper */
+	, NULL/* dummy */
+
+};
+extern Il2CppType String_t_0_0_0;
+static ParameterInfo CtrlSetTexture_t7_CtrlSetTexture_OnCallbackIos_m28_ParameterInfos[] = 
+{
+	{"strGotData", 0, 134217736, &EmptyCustomAttributesCache, &String_t_0_0_0},
+};
+extern Il2CppType Void_t3_0_0_0;
+extern void* RuntimeInvoker_Void_t3_Object_t (MethodInfo* method, void* obj, void** args);
+// System.Void CtrlSetTexture::OnCallbackIos(System.String)
+MethodInfo CtrlSetTexture_OnCallbackIos_m28_MethodInfo = 
+{
+	"OnCallbackIos"/* name */
+	, (methodPointerType)&CtrlSetTexture_OnCallbackIos_m28/* method */
+	, &CtrlSetTexture_t7_il2cpp_TypeInfo/* declaring_type */
+	, &Void_t3_0_0_0/* return_type */
+	, RuntimeInvoker_Void_t3_Object_t/* invoker_method */
+	, CtrlSetTexture_t7_CtrlSetTexture_OnCallbackIos_m28_ParameterInfos/* parameters */
+	, &EmptyCustomAttributesCache/* custom_attributes_cache */
+	, 134/* flags */
+	, 0/* iflags */
+	, 255/* slot */
+	, 1/* parameters_count */
+	, false/* is_generic */
+	, false/* is_inflated */
+	, 17/* token */
+	, NULL/* rgctx_data */
+	, (methodPointerType)NULL/* native_delegate_wrapper */
+	, NULL/* dummy */
+
+};
 static MethodInfo* CtrlSetTexture_t7_MethodInfos[] =
 {
-	&CtrlSetTexture__ctor_m22_MethodInfo,
-	&CtrlSetTexture_SetNewTexture_m23_MethodInfo,
-	&CtrlSetTexture_ReadTexture_m24_MethodInfo,
-	&CtrlSetTexture_OnCallbackIos_m25_MethodInfo,
+	&CtrlSetTexture__ctor_m24_MethodInfo,
+	&CtrlSetTexture_Start_m25_MethodInfo,
+	&CtrlSetTexture_SetNewTexture_m26_MethodInfo,
+	&CtrlSetTexture_ReadTexture_m27_MethodInfo,
+	&CtrlSetTexture_OnCallbackIos_m28_MethodInfo,
 	NULL
 };
 static MethodInfo* CtrlSetTexture_t7_VTable[] =
@@ -1083,9 +1220,9 @@ TypeInfo CtrlSetTexture_t7_il2cpp_TypeInfo =
 	, false/* has_cctor */
 	, false/* is_blittable */
 	, false/* is_pinnable */
-	, 4/* method_count */
+	, 5/* method_count */
 	, 0/* property_count */
-	, 1/* field_count */
+	, 3/* field_count */
 	, 0/* event_count */
 	, 0/* nested_type_count */
 	, 4/* vtable_count */

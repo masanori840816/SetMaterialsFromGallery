@@ -10,4 +10,4 @@ struct Shader_t491;
 struct String_t;
 
 // System.Int32 UnityEngine.Shader::PropertyToID(System.String)
- int32_t Shader_PropertyToID_m2506 (Object_t * __this/* static, unused */, String_t* ___name, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ int32_t Shader_PropertyToID_m2510 (Object_t * __this/* static, unused */, String_t* ___name, MethodInfo* method) IL2CPP_METHOD_ATTR;

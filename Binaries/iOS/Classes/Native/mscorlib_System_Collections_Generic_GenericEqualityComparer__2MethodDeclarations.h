@@ -10,8 +10,8 @@ struct GenericEqualityComparer_1_t2123;
 #include "mscorlib_System_Guid.h"
 
 // System.Void System.Collections.Generic.GenericEqualityComparer`1<System.Guid>::.ctor()
- void GenericEqualityComparer_1__ctor_m10410 (GenericEqualityComparer_1_t2123 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void GenericEqualityComparer_1__ctor_m10415 (GenericEqualityComparer_1_t2123 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Collections.Generic.GenericEqualityComparer`1<System.Guid>::GetHashCode(T)
- int32_t GenericEqualityComparer_1_GetHashCode_m19706 (GenericEqualityComparer_1_t2123 * __this, Guid_t1680  ___obj, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ int32_t GenericEqualityComparer_1_GetHashCode_m19711 (GenericEqualityComparer_1_t2123 * __this, Guid_t1680  ___obj, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Collections.Generic.GenericEqualityComparer`1<System.Guid>::Equals(T,T)
- bool GenericEqualityComparer_1_Equals_m19707 (GenericEqualityComparer_1_t2123 * __this, Guid_t1680  ___x, Guid_t1680  ___y, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool GenericEqualityComparer_1_Equals_m19712 (GenericEqualityComparer_1_t2123 * __this, Guid_t1680  ___x, Guid_t1680  ___y, MethodInfo* method) IL2CPP_METHOD_ATTR;

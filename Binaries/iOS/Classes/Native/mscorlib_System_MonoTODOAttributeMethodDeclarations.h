@@ -10,6 +10,6 @@ struct MonoTODOAttribute_t1182;
 struct String_t;
 
 // System.Void System.MonoTODOAttribute::.ctor()
- void MonoTODOAttribute__ctor_m6230 (MonoTODOAttribute_t1182 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void MonoTODOAttribute__ctor_m6235 (MonoTODOAttribute_t1182 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.MonoTODOAttribute::.ctor(System.String)
- void MonoTODOAttribute__ctor_m6231 (MonoTODOAttribute_t1182 * __this, String_t* ___comment, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void MonoTODOAttribute__ctor_m6236 (MonoTODOAttribute_t1182 * __this, String_t* ___comment, MethodInfo* method) IL2CPP_METHOD_ATTR;

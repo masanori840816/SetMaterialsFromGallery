@@ -12,6 +12,6 @@ struct RandomNumberGenerator_t1000;
 struct ByteU5BU5D_t17;
 
 // System.Security.Cryptography.RandomNumberGenerator Mono.Security.Cryptography.KeyBuilder::get_Rng()
- RandomNumberGenerator_t1000 * KeyBuilder_get_Rng_m4556 (Object_t * __this/* static, unused */, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ RandomNumberGenerator_t1000 * KeyBuilder_get_Rng_m4561 (Object_t * __this/* static, unused */, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Byte[] Mono.Security.Cryptography.KeyBuilder::Key(System.Int32)
- ByteU5BU5D_t17* KeyBuilder_Key_m4557 (Object_t * __this/* static, unused */, int32_t ___size, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ ByteU5BU5D_t17* KeyBuilder_Key_m4562 (Object_t * __this/* static, unused */, int32_t ___size, MethodInfo* method) IL2CPP_METHOD_ATTR;

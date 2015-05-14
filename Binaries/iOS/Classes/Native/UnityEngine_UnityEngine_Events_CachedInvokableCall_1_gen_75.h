@@ -5,7 +5,7 @@ struct ObjectU5BU5D_t295;
 // UnityEngine.Events.InvokableCall`1<UnityEngine.Font>
 #include "UnityEngine_UnityEngine_Events_InvokableCall_1_gen_77.h"
 // UnityEngine.Events.CachedInvokableCall`1<UnityEngine.Font>
-struct CachedInvokableCall_1_t3078  : public InvokableCall_1_t3079
+struct CachedInvokableCall_1_t3079  : public InvokableCall_1_t3080
 {
 	// System.Object[] UnityEngine.Events.CachedInvokableCall`1<UnityEngine.Font>::m_Arg1
 	ObjectU5BU5D_t295* ___m_Arg1_1;

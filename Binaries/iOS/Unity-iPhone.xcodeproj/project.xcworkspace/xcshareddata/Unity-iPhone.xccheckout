@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>396535EA-D7F2-450A-9A1C-9526DFE05EDF</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Unity-iPhone</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>AE4649BFA1CDE294FF6601E8312EFB99D232971D</key>
 		<string>https://github.com/masanori840816/SetMaterialsFromGallery.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Binaries/iOS/Unity-iPhone.xcodeproj</string>
+	<string>Binaries/iOS/Unity-iPhone.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>AE4649BFA1CDE294FF6601E8312EFB99D232971D</key>

@@ -8,4 +8,4 @@
 struct ExcludeFromDocsAttribute_t602;
 
 // System.Void UnityEngine.Internal.ExcludeFromDocsAttribute::.ctor()
- void ExcludeFromDocsAttribute__ctor_m2958 (ExcludeFromDocsAttribute_t602 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void ExcludeFromDocsAttribute__ctor_m2963 (ExcludeFromDocsAttribute_t602 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

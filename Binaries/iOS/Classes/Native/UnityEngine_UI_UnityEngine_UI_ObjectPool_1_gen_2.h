@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include <stdint.h>
 // System.Collections.Generic.Stack`1<System.Collections.Generic.List`1<UnityEngine.Component>>
-struct Stack_1_t2821;
+struct Stack_1_t2822;
 // UnityEngine.Events.UnityAction`1<System.Collections.Generic.List`1<UnityEngine.Component>>
 struct UnityAction_1_t260;
 // System.Object
@@ -10,7 +10,7 @@ struct UnityAction_1_t260;
 struct ObjectPool_1_t259  : public Object_t
 {
 	// System.Collections.Generic.Stack`1<T> UnityEngine.UI.ObjectPool`1<System.Collections.Generic.List`1<UnityEngine.Component>>::m_Stack
-	Stack_1_t2821 * ___m_Stack_0;
+	Stack_1_t2822 * ___m_Stack_0;
 	// UnityEngine.Events.UnityAction`1<T> UnityEngine.UI.ObjectPool`1<System.Collections.Generic.List`1<UnityEngine.Component>>::m_ActionOnGet
 	UnityAction_1_t260 * ___m_ActionOnGet_1;
 	// UnityEngine.Events.UnityAction`1<T> UnityEngine.UI.ObjectPool`1<System.Collections.Generic.List`1<UnityEngine.Component>>::m_ActionOnRelease

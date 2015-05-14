@@ -10,6 +10,6 @@ struct MonoGenericCMethod_t1396;
 struct Type_t;
 
 // System.Void System.Reflection.MonoGenericCMethod::.ctor()
- void MonoGenericCMethod__ctor_m7758 (MonoGenericCMethod_t1396 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void MonoGenericCMethod__ctor_m7763 (MonoGenericCMethod_t1396 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Type System.Reflection.MonoGenericCMethod::get_ReflectedType()
- Type_t * MonoGenericCMethod_get_ReflectedType_m7759 (MonoGenericCMethod_t1396 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Type_t * MonoGenericCMethod_get_ReflectedType_m7764 (MonoGenericCMethod_t1396 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

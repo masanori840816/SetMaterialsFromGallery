@@ -7,7 +7,7 @@ struct Rigidbody2D_t514;
 // System.ValueType
 #include "mscorlib_System_ValueType.h"
 // System.Collections.Generic.List`1/Enumerator<UnityEngine.Rigidbody2D>
-struct Enumerator_t3039 
+struct Enumerator_t3040 
 {
 	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator<UnityEngine.Rigidbody2D>::l
 	List_1_t513 * ___l_0;

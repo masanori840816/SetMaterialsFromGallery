@@ -5,7 +5,7 @@ struct Array_t;
 // System.ValueType
 #include "mscorlib_System_ValueType.h"
 // System.Array/InternalEnumerator`1<System.Security.Cryptography.X509Certificates.X509RevocationMode>
-struct InternalEnumerator_1_t3273 
+struct InternalEnumerator_1_t3274 
 {
 	// System.Array System.Array/InternalEnumerator`1<System.Security.Cryptography.X509Certificates.X509RevocationMode>::array
 	Array_t * ___array_0;

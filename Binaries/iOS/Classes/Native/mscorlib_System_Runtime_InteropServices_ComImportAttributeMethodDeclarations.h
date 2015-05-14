@@ -8,4 +8,4 @@
 struct ComImportAttribute_t1171;
 
 // System.Void System.Runtime.InteropServices.ComImportAttribute::.ctor()
- void ComImportAttribute__ctor_m6215 (ComImportAttribute_t1171 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void ComImportAttribute__ctor_m6220 (ComImportAttribute_t1171 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

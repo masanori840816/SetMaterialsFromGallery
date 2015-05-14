@@ -7,7 +7,7 @@ struct Text_t131;
 // System.ValueType
 #include "mscorlib_System_ValueType.h"
 // System.Collections.Generic.List`1/Enumerator<UnityEngine.UI.Text>
-struct Enumerator_t2502 
+struct Enumerator_t2503 
 {
 	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator<UnityEngine.UI.Text>::l
 	List_1_t329 * ___l_0;

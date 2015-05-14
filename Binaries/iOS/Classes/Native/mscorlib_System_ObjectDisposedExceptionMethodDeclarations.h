@@ -14,12 +14,12 @@ struct SerializationInfo_t572;
 #include "mscorlib_System_Runtime_Serialization_StreamingContext.h"
 
 // System.Void System.ObjectDisposedException::.ctor(System.String)
- void ObjectDisposedException__ctor_m5300 (ObjectDisposedException_t1123 * __this, String_t* ___objectName, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void ObjectDisposedException__ctor_m5305 (ObjectDisposedException_t1123 * __this, String_t* ___objectName, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.ObjectDisposedException::.ctor(System.String,System.String)
- void ObjectDisposedException__ctor_m9627 (ObjectDisposedException_t1123 * __this, String_t* ___objectName, String_t* ___message, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void ObjectDisposedException__ctor_m9632 (ObjectDisposedException_t1123 * __this, String_t* ___objectName, String_t* ___message, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.ObjectDisposedException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
- void ObjectDisposedException__ctor_m9628 (ObjectDisposedException_t1123 * __this, SerializationInfo_t572 * ___info, StreamingContext_t573  ___context, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void ObjectDisposedException__ctor_m9633 (ObjectDisposedException_t1123 * __this, SerializationInfo_t572 * ___info, StreamingContext_t573  ___context, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.ObjectDisposedException::get_Message()
- String_t* ObjectDisposedException_get_Message_m9629 (ObjectDisposedException_t1123 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ String_t* ObjectDisposedException_get_Message_m9634 (ObjectDisposedException_t1123 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.ObjectDisposedException::GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
- void ObjectDisposedException_GetObjectData_m9630 (ObjectDisposedException_t1123 * __this, SerializationInfo_t572 * ___info, StreamingContext_t573  ___context, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void ObjectDisposedException_GetObjectData_m9635 (ObjectDisposedException_t1123 * __this, SerializationInfo_t572 * ___info, StreamingContext_t573  ___context, MethodInfo* method) IL2CPP_METHOD_ATTR;

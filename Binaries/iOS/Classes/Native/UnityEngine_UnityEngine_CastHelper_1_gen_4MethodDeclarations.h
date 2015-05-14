@@ -4,6 +4,6 @@
 #include <exception>
 #include "codegen/il2cpp-codegen.h"
 
-// UnityEngine.CastHelper`1<UnityEngine.RectTransform>
-struct CastHelper_1_t2530;
+// UnityEngine.CastHelper`1<UnityEngine.SpriteRenderer>
+struct CastHelper_1_t2421;
 

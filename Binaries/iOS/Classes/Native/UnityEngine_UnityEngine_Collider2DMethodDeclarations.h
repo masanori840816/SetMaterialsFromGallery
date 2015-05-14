@@ -10,4 +10,4 @@ struct Collider2D_t314;
 struct Rigidbody2D_t514;
 
 // UnityEngine.Rigidbody2D UnityEngine.Collider2D::get_attachedRigidbody()
- Rigidbody2D_t514 * Collider2D_get_attachedRigidbody_m2670 (Collider2D_t314 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Rigidbody2D_t514 * Collider2D_get_attachedRigidbody_m2675 (Collider2D_t314 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

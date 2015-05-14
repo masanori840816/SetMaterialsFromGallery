@@ -8,4 +8,4 @@
 struct DebuggerStepThroughAttribute_t1302;
 
 // System.Void System.Diagnostics.DebuggerStepThroughAttribute::.ctor()
- void DebuggerStepThroughAttribute__ctor_m6922 (DebuggerStepThroughAttribute_t1302 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void DebuggerStepThroughAttribute__ctor_m6927 (DebuggerStepThroughAttribute_t1302 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

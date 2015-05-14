@@ -5,7 +5,7 @@ struct Array_t;
 // System.ValueType
 #include "mscorlib_System_ValueType.h"
 // System.Array/InternalEnumerator`1<System.Runtime.Serialization.StreamingContextStates>
-struct InternalEnumerator_1_t3508 
+struct InternalEnumerator_1_t3509 
 {
 	// System.Array System.Array/InternalEnumerator`1<System.Runtime.Serialization.StreamingContextStates>::array
 	Array_t * ___array_0;

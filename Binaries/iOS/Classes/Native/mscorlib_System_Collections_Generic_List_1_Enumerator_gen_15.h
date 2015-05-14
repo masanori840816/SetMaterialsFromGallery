@@ -7,7 +7,7 @@ struct Graphic_t139;
 // System.ValueType
 #include "mscorlib_System_ValueType.h"
 // System.Collections.Generic.List`1/Enumerator<UnityEngine.UI.Graphic>
-struct Enumerator_t2575 
+struct Enumerator_t2576 
 {
 	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator<UnityEngine.UI.Graphic>::l
 	List_1_t143 * ___l_0;

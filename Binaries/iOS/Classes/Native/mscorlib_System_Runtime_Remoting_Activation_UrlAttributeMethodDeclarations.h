@@ -16,12 +16,12 @@ struct IConstructionCallMessage_t1448;
 struct Context_t1449;
 
 // System.String System.Runtime.Remoting.Activation.UrlAttribute::get_UrlValue()
- String_t* UrlAttribute_get_UrlValue_m7919 (UrlAttribute_t1446 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ String_t* UrlAttribute_get_UrlValue_m7924 (UrlAttribute_t1446 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Runtime.Remoting.Activation.UrlAttribute::Equals(System.Object)
- bool UrlAttribute_Equals_m7920 (UrlAttribute_t1446 * __this, Object_t * ___o, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool UrlAttribute_Equals_m7925 (UrlAttribute_t1446 * __this, Object_t * ___o, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Runtime.Remoting.Activation.UrlAttribute::GetHashCode()
- int32_t UrlAttribute_GetHashCode_m7921 (UrlAttribute_t1446 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ int32_t UrlAttribute_GetHashCode_m7926 (UrlAttribute_t1446 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Runtime.Remoting.Activation.UrlAttribute::GetPropertiesForNewContext(System.Runtime.Remoting.Activation.IConstructionCallMessage)
- void UrlAttribute_GetPropertiesForNewContext_m7922 (UrlAttribute_t1446 * __this, Object_t * ___ctorMsg, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void UrlAttribute_GetPropertiesForNewContext_m7927 (UrlAttribute_t1446 * __this, Object_t * ___ctorMsg, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Runtime.Remoting.Activation.UrlAttribute::IsContextOK(System.Runtime.Remoting.Contexts.Context,System.Runtime.Remoting.Activation.IConstructionCallMessage)
- bool UrlAttribute_IsContextOK_m7923 (UrlAttribute_t1446 * __this, Context_t1449 * ___ctx, Object_t * ___msg, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool UrlAttribute_IsContextOK_m7928 (UrlAttribute_t1446 * __this, Context_t1449 * ___ctx, Object_t * ___msg, MethodInfo* method) IL2CPP_METHOD_ATTR;

@@ -13,7 +13,7 @@ struct IEqualityComparer_1_t2133;
 // System.Runtime.Serialization.SerializationInfo
 struct SerializationInfo_t572;
 // System.Collections.Generic.Dictionary`2/Transform`1<System.String,System.Boolean,System.Collections.DictionaryEntry>
-struct Transform_1_t3246;
+struct Transform_1_t3247;
 // System.Object
 #include "mscorlib_System_Object.h"
 // System.Collections.Generic.Dictionary`2<System.String,System.Boolean>
@@ -52,5 +52,5 @@ struct Dictionary_2_t808_StaticFields{
 	// System.Int32 System.Collections.Generic.Dictionary`2<System.String,System.Boolean>::HASH_FLAG
 	int32_t ___HASH_FLAG_3;
 	// System.Collections.Generic.Dictionary`2/Transform`1<TKey,TValue,System.Collections.DictionaryEntry> System.Collections.Generic.Dictionary`2<System.String,System.Boolean>::<>f__am$cacheB
-	Transform_1_t3246 * ___U3CU3Ef__am$cacheB_15;
+	Transform_1_t3247 * ___U3CU3Ef__am$cacheB_15;
 };

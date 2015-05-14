@@ -8,4 +8,4 @@
 struct OutAttribute_t1167;
 
 // System.Void System.Runtime.InteropServices.OutAttribute::.ctor()
- void OutAttribute__ctor_m6210 (OutAttribute_t1167 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void OutAttribute__ctor_m6215 (OutAttribute_t1167 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

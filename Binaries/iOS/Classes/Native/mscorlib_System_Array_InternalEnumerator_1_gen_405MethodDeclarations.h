@@ -5,7 +5,7 @@
 #include "codegen/il2cpp-codegen.h"
 
 // System.Array/InternalEnumerator`1<Mono.Globalization.Unicode.SimpleCollator/ExtenderType>
-struct InternalEnumerator_1_t3376;
+struct InternalEnumerator_1_t3377;
 // System.Object
 struct Object_t;
 // System.Array
@@ -14,12 +14,12 @@ struct Array_t;
 #include "mscorlib_Mono_Globalization_Unicode_SimpleCollator_ExtenderT.h"
 
 // System.Void System.Array/InternalEnumerator`1<Mono.Globalization.Unicode.SimpleCollator/ExtenderType>::.ctor(System.Array)
- void InternalEnumerator_1__ctor_m18776 (InternalEnumerator_1_t3376 * __this, Array_t * ___array, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void InternalEnumerator_1__ctor_m18781 (InternalEnumerator_1_t3377 * __this, Array_t * ___array, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Array/InternalEnumerator`1<Mono.Globalization.Unicode.SimpleCollator/ExtenderType>::System.Collections.IEnumerator.get_Current()
- Object_t * InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m18777 (InternalEnumerator_1_t3376 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Object_t * InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m18782 (InternalEnumerator_1_t3377 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Array/InternalEnumerator`1<Mono.Globalization.Unicode.SimpleCollator/ExtenderType>::Dispose()
- void InternalEnumerator_1_Dispose_m18778 (InternalEnumerator_1_t3376 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void InternalEnumerator_1_Dispose_m18783 (InternalEnumerator_1_t3377 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Array/InternalEnumerator`1<Mono.Globalization.Unicode.SimpleCollator/ExtenderType>::MoveNext()
- bool InternalEnumerator_1_MoveNext_m18779 (InternalEnumerator_1_t3376 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool InternalEnumerator_1_MoveNext_m18784 (InternalEnumerator_1_t3377 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // T System.Array/InternalEnumerator`1<Mono.Globalization.Unicode.SimpleCollator/ExtenderType>::get_Current()
- int32_t InternalEnumerator_1_get_Current_m18780 (InternalEnumerator_1_t3376 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ int32_t InternalEnumerator_1_get_Current_m18785 (InternalEnumerator_1_t3377 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

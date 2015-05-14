@@ -16,15 +16,15 @@ struct ObjRef_t1490;
 struct Type_t;
 
 // System.Void System.Runtime.Remoting.Identity::.ctor(System.String)
- void Identity__ctor_m8116 (Identity_t1492 * __this, String_t* ___objectUri, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void Identity__ctor_m8121 (Identity_t1492 * __this, String_t* ___objectUri, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Runtime.Remoting.ObjRef System.Runtime.Remoting.Identity::CreateObjRef(System.Type)
 // System.Runtime.Remoting.Messaging.IMessageSink System.Runtime.Remoting.Identity::get_ChannelSink()
- Object_t * Identity_get_ChannelSink_m8117 (Identity_t1492 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Object_t * Identity_get_ChannelSink_m8122 (Identity_t1492 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Runtime.Remoting.Identity::set_ChannelSink(System.Runtime.Remoting.Messaging.IMessageSink)
- void Identity_set_ChannelSink_m8118 (Identity_t1492 * __this, Object_t * ___value, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void Identity_set_ChannelSink_m8123 (Identity_t1492 * __this, Object_t * ___value, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Runtime.Remoting.Identity::get_ObjectUri()
- String_t* Identity_get_ObjectUri_m8119 (Identity_t1492 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ String_t* Identity_get_ObjectUri_m8124 (Identity_t1492 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Runtime.Remoting.Identity::get_Disposed()
- bool Identity_get_Disposed_m8120 (Identity_t1492 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool Identity_get_Disposed_m8125 (Identity_t1492 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Runtime.Remoting.Identity::set_Disposed(System.Boolean)
- void Identity_set_Disposed_m8121 (Identity_t1492 * __this, bool ___value, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void Identity_set_Disposed_m8126 (Identity_t1492 * __this, bool ___value, MethodInfo* method) IL2CPP_METHOD_ATTR;

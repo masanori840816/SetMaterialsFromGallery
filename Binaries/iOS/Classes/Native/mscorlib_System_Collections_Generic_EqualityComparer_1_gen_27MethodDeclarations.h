@@ -5,7 +5,7 @@
 #include "codegen/il2cpp-codegen.h"
 
 // System.Collections.Generic.EqualityComparer`1<UnityEngine.GUIStyle>
-struct EqualityComparer_1_t2956;
+struct EqualityComparer_1_t2957;
 // System.Object
 struct Object_t;
 // UnityEngine.GUIStyle
@@ -14,14 +14,14 @@ struct GUIStyle_t459;
 // System.Void System.Collections.Generic.EqualityComparer`1<UnityEngine.GUIStyle>::.ctor()
 // System.Collections.Generic.EqualityComparer`1<System.Object>
 #include "mscorlib_System_Collections_Generic_EqualityComparer_1_genMethodDeclarations.h"
-#define EqualityComparer_1__ctor_m16167(__this, method) (void)EqualityComparer_1__ctor_m10784_gshared((EqualityComparer_1_t2208 *)__this, method)
+#define EqualityComparer_1__ctor_m16172(__this, method) (void)EqualityComparer_1__ctor_m10789_gshared((EqualityComparer_1_t2209 *)__this, method)
 // System.Void System.Collections.Generic.EqualityComparer`1<UnityEngine.GUIStyle>::.cctor()
-#define EqualityComparer_1__cctor_m16168(__this/* static, unused */, method) (void)EqualityComparer_1__cctor_m10785_gshared((Object_t *)__this/* static, unused */, method)
+#define EqualityComparer_1__cctor_m16173(__this/* static, unused */, method) (void)EqualityComparer_1__cctor_m10790_gshared((Object_t *)__this/* static, unused */, method)
 // System.Int32 System.Collections.Generic.EqualityComparer`1<UnityEngine.GUIStyle>::System.Collections.IEqualityComparer.GetHashCode(System.Object)
-#define EqualityComparer_1_System_Collections_IEqualityComparer_GetHashCode_m16169(__this, ___obj, method) (int32_t)EqualityComparer_1_System_Collections_IEqualityComparer_GetHashCode_m10786_gshared((EqualityComparer_1_t2208 *)__this, (Object_t *)___obj, method)
+#define EqualityComparer_1_System_Collections_IEqualityComparer_GetHashCode_m16174(__this, ___obj, method) (int32_t)EqualityComparer_1_System_Collections_IEqualityComparer_GetHashCode_m10791_gshared((EqualityComparer_1_t2209 *)__this, (Object_t *)___obj, method)
 // System.Boolean System.Collections.Generic.EqualityComparer`1<UnityEngine.GUIStyle>::System.Collections.IEqualityComparer.Equals(System.Object,System.Object)
-#define EqualityComparer_1_System_Collections_IEqualityComparer_Equals_m16170(__this, ___x, ___y, method) (bool)EqualityComparer_1_System_Collections_IEqualityComparer_Equals_m10787_gshared((EqualityComparer_1_t2208 *)__this, (Object_t *)___x, (Object_t *)___y, method)
+#define EqualityComparer_1_System_Collections_IEqualityComparer_Equals_m16175(__this, ___x, ___y, method) (bool)EqualityComparer_1_System_Collections_IEqualityComparer_Equals_m10792_gshared((EqualityComparer_1_t2209 *)__this, (Object_t *)___x, (Object_t *)___y, method)
 // System.Int32 System.Collections.Generic.EqualityComparer`1<UnityEngine.GUIStyle>::GetHashCode(T)
 // System.Boolean System.Collections.Generic.EqualityComparer`1<UnityEngine.GUIStyle>::Equals(T,T)
 // System.Collections.Generic.EqualityComparer`1<T> System.Collections.Generic.EqualityComparer`1<UnityEngine.GUIStyle>::get_Default()
-#define EqualityComparer_1_get_Default_m16171(__this/* static, unused */, method) (EqualityComparer_1_t2956 *)EqualityComparer_1_get_Default_m10788_gshared((Object_t *)__this/* static, unused */, method)
+#define EqualityComparer_1_get_Default_m16176(__this/* static, unused */, method) (EqualityComparer_1_t2957 *)EqualityComparer_1_get_Default_m10793_gshared((Object_t *)__this/* static, unused */, method)

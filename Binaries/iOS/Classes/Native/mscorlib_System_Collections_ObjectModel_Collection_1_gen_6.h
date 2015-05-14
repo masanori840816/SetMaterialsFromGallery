@@ -7,7 +7,7 @@ struct Object_t;
 // System.Object
 #include "mscorlib_System_Object.h"
 // System.Collections.ObjectModel.Collection`1<UnityEngine.Transform>
-struct Collection_1_t2348  : public Object_t
+struct Collection_1_t2349  : public Object_t
 {
 	// System.Collections.Generic.IList`1<T> System.Collections.ObjectModel.Collection`1<UnityEngine.Transform>::list
 	Object_t* ___list_0;

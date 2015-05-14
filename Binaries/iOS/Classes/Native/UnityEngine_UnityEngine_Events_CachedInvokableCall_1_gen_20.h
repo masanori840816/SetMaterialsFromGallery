@@ -5,7 +5,7 @@ struct ObjectU5BU5D_t295;
 // UnityEngine.Events.InvokableCall`1<UnityEngine.UI.GraphicRaycaster>
 #include "UnityEngine_UnityEngine_Events_InvokableCall_1_gen_18.h"
 // UnityEngine.Events.CachedInvokableCall`1<UnityEngine.UI.GraphicRaycaster>
-struct CachedInvokableCall_1_t2566  : public InvokableCall_1_t2567
+struct CachedInvokableCall_1_t2567  : public InvokableCall_1_t2568
 {
 	// System.Object[] UnityEngine.Events.CachedInvokableCall`1<UnityEngine.UI.GraphicRaycaster>::m_Arg1
 	ObjectU5BU5D_t295* ___m_Arg1_1;

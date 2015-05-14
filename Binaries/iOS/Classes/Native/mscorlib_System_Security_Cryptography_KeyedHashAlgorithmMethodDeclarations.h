@@ -10,14 +10,14 @@ struct KeyedHashAlgorithm_t1041;
 struct ByteU5BU5D_t17;
 
 // System.Void System.Security.Cryptography.KeyedHashAlgorithm::.ctor()
- void KeyedHashAlgorithm__ctor_m5344 (KeyedHashAlgorithm_t1041 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void KeyedHashAlgorithm__ctor_m5349 (KeyedHashAlgorithm_t1041 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Security.Cryptography.KeyedHashAlgorithm::Finalize()
- void KeyedHashAlgorithm_Finalize_m5345 (KeyedHashAlgorithm_t1041 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void KeyedHashAlgorithm_Finalize_m5350 (KeyedHashAlgorithm_t1041 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Byte[] System.Security.Cryptography.KeyedHashAlgorithm::get_Key()
- ByteU5BU5D_t17* KeyedHashAlgorithm_get_Key_m8406 (KeyedHashAlgorithm_t1041 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ ByteU5BU5D_t17* KeyedHashAlgorithm_get_Key_m8411 (KeyedHashAlgorithm_t1041 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Security.Cryptography.KeyedHashAlgorithm::set_Key(System.Byte[])
- void KeyedHashAlgorithm_set_Key_m8407 (KeyedHashAlgorithm_t1041 * __this, ByteU5BU5D_t17* ___value, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void KeyedHashAlgorithm_set_Key_m8412 (KeyedHashAlgorithm_t1041 * __this, ByteU5BU5D_t17* ___value, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Security.Cryptography.KeyedHashAlgorithm::Dispose(System.Boolean)
- void KeyedHashAlgorithm_Dispose_m5346 (KeyedHashAlgorithm_t1041 * __this, bool ___disposing, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void KeyedHashAlgorithm_Dispose_m5351 (KeyedHashAlgorithm_t1041 * __this, bool ___disposing, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Security.Cryptography.KeyedHashAlgorithm::ZeroizeKey()
- void KeyedHashAlgorithm_ZeroizeKey_m8408 (KeyedHashAlgorithm_t1041 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void KeyedHashAlgorithm_ZeroizeKey_m8413 (KeyedHashAlgorithm_t1041 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

@@ -12,12 +12,12 @@ struct BigInteger_t995;
 struct Object_t;
 
 // System.Void Mono.Math.Prime.Generator.SequentialSearchPrimeGeneratorBase::.ctor()
- void SequentialSearchPrimeGeneratorBase__ctor_m4515 (SequentialSearchPrimeGeneratorBase_t1005 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void SequentialSearchPrimeGeneratorBase__ctor_m4520 (SequentialSearchPrimeGeneratorBase_t1005 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // Mono.Math.BigInteger Mono.Math.Prime.Generator.SequentialSearchPrimeGeneratorBase::GenerateSearchBase(System.Int32,System.Object)
- BigInteger_t995 * SequentialSearchPrimeGeneratorBase_GenerateSearchBase_m4516 (SequentialSearchPrimeGeneratorBase_t1005 * __this, int32_t ___bits, Object_t * ___context, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ BigInteger_t995 * SequentialSearchPrimeGeneratorBase_GenerateSearchBase_m4521 (SequentialSearchPrimeGeneratorBase_t1005 * __this, int32_t ___bits, Object_t * ___context, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // Mono.Math.BigInteger Mono.Math.Prime.Generator.SequentialSearchPrimeGeneratorBase::GenerateNewPrime(System.Int32)
- BigInteger_t995 * SequentialSearchPrimeGeneratorBase_GenerateNewPrime_m4517 (SequentialSearchPrimeGeneratorBase_t1005 * __this, int32_t ___bits, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ BigInteger_t995 * SequentialSearchPrimeGeneratorBase_GenerateNewPrime_m4522 (SequentialSearchPrimeGeneratorBase_t1005 * __this, int32_t ___bits, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // Mono.Math.BigInteger Mono.Math.Prime.Generator.SequentialSearchPrimeGeneratorBase::GenerateNewPrime(System.Int32,System.Object)
- BigInteger_t995 * SequentialSearchPrimeGeneratorBase_GenerateNewPrime_m4518 (SequentialSearchPrimeGeneratorBase_t1005 * __this, int32_t ___bits, Object_t * ___context, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ BigInteger_t995 * SequentialSearchPrimeGeneratorBase_GenerateNewPrime_m4523 (SequentialSearchPrimeGeneratorBase_t1005 * __this, int32_t ___bits, Object_t * ___context, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean Mono.Math.Prime.Generator.SequentialSearchPrimeGeneratorBase::IsPrimeAcceptable(Mono.Math.BigInteger,System.Object)
- bool SequentialSearchPrimeGeneratorBase_IsPrimeAcceptable_m4519 (SequentialSearchPrimeGeneratorBase_t1005 * __this, BigInteger_t995 * ___bi, Object_t * ___context, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool SequentialSearchPrimeGeneratorBase_IsPrimeAcceptable_m4524 (SequentialSearchPrimeGeneratorBase_t1005 * __this, BigInteger_t995 * ___bi, Object_t * ___context, MethodInfo* method) IL2CPP_METHOD_ATTR;

@@ -7,7 +7,7 @@ struct Object_t;
 // UnityEngine.UI.CoroutineTween.ColorTween
 #include "UnityEngine_UI_UnityEngine_UI_CoroutineTween_ColorTween.h"
 // UnityEngine.UI.CoroutineTween.TweenRunner`1/<Start>c__Iterator0<UnityEngine.UI.CoroutineTween.ColorTween>
-struct U3CStartU3Ec__Iterator0_t2549  : public Object_t
+struct U3CStartU3Ec__Iterator0_t2550  : public Object_t
 {
 	// T UnityEngine.UI.CoroutineTween.TweenRunner`1/<Start>c__Iterator0<UnityEngine.UI.CoroutineTween.ColorTween>::tweenInfo
 	ColorTween_t107  ___tweenInfo_0;

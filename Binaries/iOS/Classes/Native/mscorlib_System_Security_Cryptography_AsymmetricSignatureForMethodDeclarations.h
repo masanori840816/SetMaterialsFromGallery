@@ -14,7 +14,7 @@ struct AsymmetricAlgorithm_t814;
 struct ByteU5BU5D_t17;
 
 // System.Void System.Security.Cryptography.AsymmetricSignatureFormatter::.ctor()
- void AsymmetricSignatureFormatter__ctor_m5394 (AsymmetricSignatureFormatter_t1079 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void AsymmetricSignatureFormatter__ctor_m5399 (AsymmetricSignatureFormatter_t1079 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Security.Cryptography.AsymmetricSignatureFormatter::SetHashAlgorithm(System.String)
 // System.Void System.Security.Cryptography.AsymmetricSignatureFormatter::SetKey(System.Security.Cryptography.AsymmetricAlgorithm)
 // System.Byte[] System.Security.Cryptography.AsymmetricSignatureFormatter::CreateSignature(System.Byte[])

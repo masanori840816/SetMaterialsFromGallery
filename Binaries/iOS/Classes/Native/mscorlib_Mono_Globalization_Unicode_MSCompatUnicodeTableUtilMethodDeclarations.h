@@ -8,4 +8,4 @@
 struct MSCompatUnicodeTableUtil_t1199;
 
 // System.Void Mono.Globalization.Unicode.MSCompatUnicodeTableUtil::.cctor()
- void MSCompatUnicodeTableUtil__cctor_m6269 (Object_t * __this/* static, unused */, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void MSCompatUnicodeTableUtil__cctor_m6274 (Object_t * __this/* static, unused */, MethodInfo* method) IL2CPP_METHOD_ATTR;

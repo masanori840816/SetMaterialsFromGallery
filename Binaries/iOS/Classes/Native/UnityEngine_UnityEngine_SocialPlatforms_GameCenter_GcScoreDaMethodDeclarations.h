@@ -11,7 +11,7 @@ struct GcScoreData_t436_marshaled;
 struct Score_t554;
 
 // UnityEngine.SocialPlatforms.Impl.Score UnityEngine.SocialPlatforms.GameCenter.GcScoreData::ToScore()
- Score_t554 * GcScoreData_ToScore_m2810 (GcScoreData_t436 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Score_t554 * GcScoreData_ToScore_m2815 (GcScoreData_t436 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 void GcScoreData_t436_marshal(const GcScoreData_t436& unmarshaled, GcScoreData_t436_marshaled& marshaled);
 void GcScoreData_t436_marshal_back(const GcScoreData_t436_marshaled& marshaled, GcScoreData_t436& unmarshaled);
 void GcScoreData_t436_marshal_cleanup(GcScoreData_t436_marshaled& marshaled);

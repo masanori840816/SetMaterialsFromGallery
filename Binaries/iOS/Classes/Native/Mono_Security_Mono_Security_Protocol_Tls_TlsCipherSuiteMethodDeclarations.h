@@ -20,12 +20,12 @@ struct ByteU5BU5D_t17;
 #include "Mono_Security_Mono_Security_Protocol_Tls_ContentType.h"
 
 // System.Void Mono.Security.Protocol.Tls.TlsCipherSuite::.ctor(System.Int16,System.String,Mono.Security.Protocol.Tls.CipherAlgorithmType,Mono.Security.Protocol.Tls.HashAlgorithmType,Mono.Security.Protocol.Tls.ExchangeAlgorithmType,System.Boolean,System.Boolean,System.Byte,System.Byte,System.Int16,System.Byte,System.Byte)
- void TlsCipherSuite__ctor_m5102 (TlsCipherSuite_t1050 * __this, int16_t ___code, String_t* ___name, int32_t ___cipherAlgorithmType, int32_t ___hashAlgorithmType, int32_t ___exchangeAlgorithmType, bool ___exportable, bool ___blockMode, uint8_t ___keyMaterialSize, uint8_t ___expandedKeyMaterialSize, int16_t ___effectiveKeyBytes, uint8_t ___ivSize, uint8_t ___blockSize, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void TlsCipherSuite__ctor_m5107 (TlsCipherSuite_t1050 * __this, int16_t ___code, String_t* ___name, int32_t ___cipherAlgorithmType, int32_t ___hashAlgorithmType, int32_t ___exchangeAlgorithmType, bool ___exportable, bool ___blockMode, uint8_t ___keyMaterialSize, uint8_t ___expandedKeyMaterialSize, int16_t ___effectiveKeyBytes, uint8_t ___ivSize, uint8_t ___blockSize, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Byte[] Mono.Security.Protocol.Tls.TlsCipherSuite::ComputeServerRecordMAC(Mono.Security.Protocol.Tls.ContentType,System.Byte[])
- ByteU5BU5D_t17* TlsCipherSuite_ComputeServerRecordMAC_m5103 (TlsCipherSuite_t1050 * __this, uint8_t ___contentType, ByteU5BU5D_t17* ___fragment, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ ByteU5BU5D_t17* TlsCipherSuite_ComputeServerRecordMAC_m5108 (TlsCipherSuite_t1050 * __this, uint8_t ___contentType, ByteU5BU5D_t17* ___fragment, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Byte[] Mono.Security.Protocol.Tls.TlsCipherSuite::ComputeClientRecordMAC(Mono.Security.Protocol.Tls.ContentType,System.Byte[])
- ByteU5BU5D_t17* TlsCipherSuite_ComputeClientRecordMAC_m5104 (TlsCipherSuite_t1050 * __this, uint8_t ___contentType, ByteU5BU5D_t17* ___fragment, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ ByteU5BU5D_t17* TlsCipherSuite_ComputeClientRecordMAC_m5109 (TlsCipherSuite_t1050 * __this, uint8_t ___contentType, ByteU5BU5D_t17* ___fragment, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Mono.Security.Protocol.Tls.TlsCipherSuite::ComputeMasterSecret(System.Byte[])
- void TlsCipherSuite_ComputeMasterSecret_m5105 (TlsCipherSuite_t1050 * __this, ByteU5BU5D_t17* ___preMasterSecret, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void TlsCipherSuite_ComputeMasterSecret_m5110 (TlsCipherSuite_t1050 * __this, ByteU5BU5D_t17* ___preMasterSecret, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void Mono.Security.Protocol.Tls.TlsCipherSuite::ComputeKeys()
- void TlsCipherSuite_ComputeKeys_m5106 (TlsCipherSuite_t1050 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void TlsCipherSuite_ComputeKeys_m5111 (TlsCipherSuite_t1050 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

@@ -1,7 +1,7 @@
 ﻿#pragma once
 #include <stdint.h>
 // System.Collections.Generic.IEnumerable`1<System.Object>
-struct IEnumerable_1_t2203;
+struct IEnumerable_1_t2204;
 // System.Collections.Generic.IEnumerator`1<System.Object>
 struct IEnumerator_1_t322;
 // System.Object
@@ -11,7 +11,7 @@ struct Func_2_t379;
 // System.Object
 #include "mscorlib_System_Object.h"
 // System.Linq.Enumerable/<CreateWhereIterator>c__Iterator1D`1<System.Object>
-struct U3CCreateWhereIteratorU3Ec__Iterator1D_1_t2744  : public Object_t
+struct U3CCreateWhereIteratorU3Ec__Iterator1D_1_t2745  : public Object_t
 {
 	// System.Collections.Generic.IEnumerable`1<TSource> System.Linq.Enumerable/<CreateWhereIterator>c__Iterator1D`1<System.Object>::source
 	Object_t* ___source_0;

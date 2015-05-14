@@ -20,10 +20,10 @@ struct AsyncCallback_t39;
 #include "mscorlib_Mono_Math_Prime_ConfidenceFactor.h"
 
 // System.Void Mono.Math.Prime.PrimalityTest::.ctor(System.Object,System.IntPtr)
- void PrimalityTest__ctor_m9762 (PrimalityTest_t1209 * __this, Object_t * ___object, IntPtr_t173 ___method, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void PrimalityTest__ctor_m9767 (PrimalityTest_t1209 * __this, Object_t * ___object, IntPtr_t173 ___method, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean Mono.Math.Prime.PrimalityTest::Invoke(Mono.Math.BigInteger,Mono.Math.Prime.ConfidenceFactor)
- bool PrimalityTest_Invoke_m9763 (PrimalityTest_t1209 * __this, BigInteger_t1210 * ___bi, int32_t ___confidence, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool PrimalityTest_Invoke_m9768 (PrimalityTest_t1209 * __this, BigInteger_t1210 * ___bi, int32_t ___confidence, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.IAsyncResult Mono.Math.Prime.PrimalityTest::BeginInvoke(Mono.Math.BigInteger,Mono.Math.Prime.ConfidenceFactor,System.AsyncCallback,System.Object)
- Object_t * PrimalityTest_BeginInvoke_m9764 (PrimalityTest_t1209 * __this, BigInteger_t1210 * ___bi, int32_t ___confidence, AsyncCallback_t39 * ___callback, Object_t * ___object, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Object_t * PrimalityTest_BeginInvoke_m9769 (PrimalityTest_t1209 * __this, BigInteger_t1210 * ___bi, int32_t ___confidence, AsyncCallback_t39 * ___callback, Object_t * ___object, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean Mono.Math.Prime.PrimalityTest::EndInvoke(System.IAsyncResult)
- bool PrimalityTest_EndInvoke_m9765 (PrimalityTest_t1209 * __this, Object_t * ___result, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool PrimalityTest_EndInvoke_m9770 (PrimalityTest_t1209 * __this, Object_t * ___result, MethodInfo* method) IL2CPP_METHOD_ATTR;

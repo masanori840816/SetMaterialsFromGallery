@@ -16,12 +16,12 @@ struct Literal_t920;
 struct ICompiler_t913;
 
 // System.Void System.Text.RegularExpressions.Syntax.CaptureAssertion::.ctor(System.Text.RegularExpressions.Syntax.Literal)
- void CaptureAssertion__ctor_m3956 (CaptureAssertion_t921 * __this, Literal_t920 * ___l, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void CaptureAssertion__ctor_m3961 (CaptureAssertion_t921 * __this, Literal_t920 * ___l, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Text.RegularExpressions.Syntax.CaptureAssertion::set_CapturingGroup(System.Text.RegularExpressions.Syntax.CapturingGroup)
- void CaptureAssertion_set_CapturingGroup_m3957 (CaptureAssertion_t921 * __this, CapturingGroup_t916 * ___value, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void CaptureAssertion_set_CapturingGroup_m3962 (CaptureAssertion_t921 * __this, CapturingGroup_t916 * ___value, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Text.RegularExpressions.Syntax.CaptureAssertion::Compile(System.Text.RegularExpressions.ICompiler,System.Boolean)
- void CaptureAssertion_Compile_m3958 (CaptureAssertion_t921 * __this, Object_t * ___cmp, bool ___reverse, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void CaptureAssertion_Compile_m3963 (CaptureAssertion_t921 * __this, Object_t * ___cmp, bool ___reverse, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Text.RegularExpressions.Syntax.CaptureAssertion::IsComplex()
- bool CaptureAssertion_IsComplex_m3959 (CaptureAssertion_t921 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool CaptureAssertion_IsComplex_m3964 (CaptureAssertion_t921 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Text.RegularExpressions.Syntax.ExpressionAssertion System.Text.RegularExpressions.Syntax.CaptureAssertion::get_Alternate()
- ExpressionAssertion_t911 * CaptureAssertion_get_Alternate_m3960 (CaptureAssertion_t921 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ ExpressionAssertion_t911 * CaptureAssertion_get_Alternate_m3965 (CaptureAssertion_t921 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

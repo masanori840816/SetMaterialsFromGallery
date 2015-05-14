@@ -14,8 +14,8 @@ struct SerializationInfo_t572;
 #include "mscorlib_System_Runtime_Serialization_StreamingContext.h"
 
 // System.Void System.MulticastNotSupportedException::.ctor()
- void MulticastNotSupportedException__ctor_m9520 (MulticastNotSupportedException_t1695 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void MulticastNotSupportedException__ctor_m9525 (MulticastNotSupportedException_t1695 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.MulticastNotSupportedException::.ctor(System.String)
- void MulticastNotSupportedException__ctor_m9521 (MulticastNotSupportedException_t1695 * __this, String_t* ___message, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void MulticastNotSupportedException__ctor_m9526 (MulticastNotSupportedException_t1695 * __this, String_t* ___message, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.MulticastNotSupportedException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
- void MulticastNotSupportedException__ctor_m9522 (MulticastNotSupportedException_t1695 * __this, SerializationInfo_t572 * ___info, StreamingContext_t573  ___context, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void MulticastNotSupportedException__ctor_m9527 (MulticastNotSupportedException_t1695 * __this, SerializationInfo_t572 * ___info, StreamingContext_t573  ___context, MethodInfo* method) IL2CPP_METHOD_ATTR;

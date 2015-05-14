@@ -5,7 +5,7 @@
 #include "codegen/il2cpp-codegen.h"
 
 // System.Collections.Generic.Dictionary`2/Transform`1<UnityEngine.UI.ICanvasElement,System.Int32,System.Collections.Generic.KeyValuePair`2<UnityEngine.UI.ICanvasElement,System.Int32>>
-struct Transform_1_t2472;
+struct Transform_1_t2473;
 // System.Object
 struct Object_t;
 // UnityEngine.UI.ICanvasElement
@@ -20,10 +20,10 @@ struct AsyncCallback_t39;
 #include "mscorlib_System_Collections_Generic_KeyValuePair_2_gen_1.h"
 
 // System.Void System.Collections.Generic.Dictionary`2/Transform`1<UnityEngine.UI.ICanvasElement,System.Int32,System.Collections.Generic.KeyValuePair`2<UnityEngine.UI.ICanvasElement,System.Int32>>::.ctor(System.Object,System.IntPtr)
- void Transform_1__ctor_m12895 (Transform_1_t2472 * __this, Object_t * ___object, IntPtr_t173 ___method, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void Transform_1__ctor_m12900 (Transform_1_t2473 * __this, Object_t * ___object, IntPtr_t173 ___method, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // TRet System.Collections.Generic.Dictionary`2/Transform`1<UnityEngine.UI.ICanvasElement,System.Int32,System.Collections.Generic.KeyValuePair`2<UnityEngine.UI.ICanvasElement,System.Int32>>::Invoke(TKey,TValue)
- KeyValuePair_2_t2466  Transform_1_Invoke_m12896 (Transform_1_t2472 * __this, Object_t * ___key, int32_t ___value, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ KeyValuePair_2_t2467  Transform_1_Invoke_m12901 (Transform_1_t2473 * __this, Object_t * ___key, int32_t ___value, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.IAsyncResult System.Collections.Generic.Dictionary`2/Transform`1<UnityEngine.UI.ICanvasElement,System.Int32,System.Collections.Generic.KeyValuePair`2<UnityEngine.UI.ICanvasElement,System.Int32>>::BeginInvoke(TKey,TValue,System.AsyncCallback,System.Object)
- Object_t * Transform_1_BeginInvoke_m12897 (Transform_1_t2472 * __this, Object_t * ___key, int32_t ___value, AsyncCallback_t39 * ___callback, Object_t * ___object, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Object_t * Transform_1_BeginInvoke_m12902 (Transform_1_t2473 * __this, Object_t * ___key, int32_t ___value, AsyncCallback_t39 * ___callback, Object_t * ___object, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // TRet System.Collections.Generic.Dictionary`2/Transform`1<UnityEngine.UI.ICanvasElement,System.Int32,System.Collections.Generic.KeyValuePair`2<UnityEngine.UI.ICanvasElement,System.Int32>>::EndInvoke(System.IAsyncResult)
- KeyValuePair_2_t2466  Transform_1_EndInvoke_m12898 (Transform_1_t2472 * __this, Object_t * ___result, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ KeyValuePair_2_t2467  Transform_1_EndInvoke_m12903 (Transform_1_t2473 * __this, Object_t * ___result, MethodInfo* method) IL2CPP_METHOD_ATTR;

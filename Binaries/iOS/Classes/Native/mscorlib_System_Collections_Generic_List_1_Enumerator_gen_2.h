@@ -7,7 +7,7 @@ struct BaseInputModule_t22;
 // System.ValueType
 #include "mscorlib_System_ValueType.h"
 // System.Collections.Generic.List`1/Enumerator<UnityEngine.EventSystems.BaseInputModule>
-struct Enumerator_t2200 
+struct Enumerator_t2201 
 {
 	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator<UnityEngine.EventSystems.BaseInputModule>::l
 	List_1_t21 * ___l_0;

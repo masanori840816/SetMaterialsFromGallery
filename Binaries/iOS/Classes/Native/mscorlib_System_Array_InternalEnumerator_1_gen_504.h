@@ -5,7 +5,7 @@ struct Array_t;
 // System.ValueType
 #include "mscorlib_System_ValueType.h"
 // System.Array/InternalEnumerator`1<System.Runtime.Remoting.Contexts.SynchronizationAttribute>
-struct InternalEnumerator_1_t3479 
+struct InternalEnumerator_1_t3480 
 {
 	// System.Array System.Array/InternalEnumerator`1<System.Runtime.Remoting.Contexts.SynchronizationAttribute>::array
 	Array_t * ___array_0;

@@ -12,10 +12,10 @@ struct String_t;
 #include "mscorlib_System_IntPtr.h"
 
 // System.IntPtr System.Threading.NativeEventCalls::CreateEvent_internal(System.Boolean,System.Boolean,System.String,System.Boolean&)
- IntPtr_t173 NativeEventCalls_CreateEvent_internal_m8930 (Object_t * __this/* static, unused */, bool ___manual, bool ___initial, String_t* ___name, bool* ___created, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ IntPtr_t173 NativeEventCalls_CreateEvent_internal_m8935 (Object_t * __this/* static, unused */, bool ___manual, bool ___initial, String_t* ___name, bool* ___created, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Threading.NativeEventCalls::SetEvent_internal(System.IntPtr)
- bool NativeEventCalls_SetEvent_internal_m8931 (Object_t * __this/* static, unused */, IntPtr_t173 ___handle, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool NativeEventCalls_SetEvent_internal_m8936 (Object_t * __this/* static, unused */, IntPtr_t173 ___handle, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Threading.NativeEventCalls::ResetEvent_internal(System.IntPtr)
- bool NativeEventCalls_ResetEvent_internal_m8932 (Object_t * __this/* static, unused */, IntPtr_t173 ___handle, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool NativeEventCalls_ResetEvent_internal_m8937 (Object_t * __this/* static, unused */, IntPtr_t173 ___handle, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Threading.NativeEventCalls::CloseEvent_internal(System.IntPtr)
- void NativeEventCalls_CloseEvent_internal_m8933 (Object_t * __this/* static, unused */, IntPtr_t173 ___handle, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void NativeEventCalls_CloseEvent_internal_m8938 (Object_t * __this/* static, unused */, IntPtr_t173 ___handle, MethodInfo* method) IL2CPP_METHOD_ATTR;

@@ -11,6 +11,6 @@ struct Object_t;
 // System.MulticastDelegate
 #include "mscorlib_System_MulticastDelegate.h"
 // System.Predicate`1<UnityEngine.EventSystems.PointerInputModule/ButtonState>
-struct Predicate_1_t2392  : public MulticastDelegate_t172
+struct Predicate_1_t2393  : public MulticastDelegate_t172
 {
 };

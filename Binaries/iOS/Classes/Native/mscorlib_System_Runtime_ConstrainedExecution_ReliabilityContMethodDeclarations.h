@@ -12,4 +12,4 @@ struct ReliabilityContractAttribute_t1421;
 #include "mscorlib_System_Runtime_ConstrainedExecution_Cer.h"
 
 // System.Void System.Runtime.ConstrainedExecution.ReliabilityContractAttribute::.ctor(System.Runtime.ConstrainedExecution.Consistency,System.Runtime.ConstrainedExecution.Cer)
- void ReliabilityContractAttribute__ctor_m7880 (ReliabilityContractAttribute_t1421 * __this, int32_t ___consistencyGuarantee, int32_t ___cer, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void ReliabilityContractAttribute__ctor_m7885 (ReliabilityContractAttribute_t1421 * __this, int32_t ___consistencyGuarantee, int32_t ___cer, MethodInfo* method) IL2CPP_METHOD_ATTR;

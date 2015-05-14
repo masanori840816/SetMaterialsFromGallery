@@ -5,7 +5,7 @@ struct Array_t;
 // System.ValueType
 #include "mscorlib_System_ValueType.h"
 // System.Array/InternalEnumerator`1<System.Net.Sockets.AddressFamily>
-struct InternalEnumerator_1_t3240 
+struct InternalEnumerator_1_t3241 
 {
 	// System.Array System.Array/InternalEnumerator`1<System.Net.Sockets.AddressFamily>::array
 	Array_t * ___array_0;

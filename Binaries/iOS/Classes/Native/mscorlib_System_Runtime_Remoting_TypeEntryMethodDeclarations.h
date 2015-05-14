@@ -10,6 +10,6 @@ struct TypeEntry_t1497;
 struct String_t;
 
 // System.String System.Runtime.Remoting.TypeEntry::get_AssemblyName()
- String_t* TypeEntry_get_AssemblyName_m8177 (TypeEntry_t1497 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ String_t* TypeEntry_get_AssemblyName_m8182 (TypeEntry_t1497 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.Runtime.Remoting.TypeEntry::get_TypeName()
- String_t* TypeEntry_get_TypeName_m8178 (TypeEntry_t1497 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ String_t* TypeEntry_get_TypeName_m8183 (TypeEntry_t1497 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

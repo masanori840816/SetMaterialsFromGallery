@@ -4,6 +4,6 @@
 #include <exception>
 #include "codegen/il2cpp-codegen.h"
 
-// UnityEngine.CastHelper`1<UnityEngine.EventSystems.EventSystem>
-struct CastHelper_1_t2363;
+// UnityEngine.CastHelper`1<UnityEngine.Camera>
+struct CastHelper_1_t2355;
 

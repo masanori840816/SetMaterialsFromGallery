@@ -17,6 +17,8 @@ public class CtrlSetTexture : MonoBehaviour
 	{
 		if (File.Exists(strPath))
 		{
+			// リソースをアンロードする(Androidでは速度的に実行しないほうが良い？)
+			Resources.UnloadUnusedAssets();
 			// 取得したパスから画像を読み込んでマテリアルとして設定する.
 			_mtrCube.mainTexture = ReadTexture(strPath, intWidth, intHeight);
 		}
@@ -32,12 +34,12 @@ public class CtrlSetTexture : MonoBehaviour
 
     Texture2D txtNewImage = new Texture2D(intWidth, intHeight);
 		txtNewImage.LoadImage(bytReadBinary);
-
+		bytReadBinary = null;
     return txtNewImage;
 	}
 	public void OnCallbackIos(string strGotData)
 	{
 		// called from iOS plugin.
-		this.SetNewTexture(strGotData, 2048, 1536);
+		this.SetNewTexture(strGotData, 0, 0);
 	}
 }

@@ -5,13 +5,13 @@
 #include "codegen/il2cpp-codegen.h"
 
 // System.Collections.Generic.EqualityComparer`1/DefaultComparer<System.DateTimeOffset>
-struct DefaultComparer_t3545;
+struct DefaultComparer_t3546;
 // System.DateTimeOffset
 #include "mscorlib_System_DateTimeOffset.h"
 
 // System.Void System.Collections.Generic.EqualityComparer`1/DefaultComparer<System.DateTimeOffset>::.ctor()
- void DefaultComparer__ctor_m19682 (DefaultComparer_t3545 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void DefaultComparer__ctor_m19687 (DefaultComparer_t3546 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Collections.Generic.EqualityComparer`1/DefaultComparer<System.DateTimeOffset>::GetHashCode(T)
- int32_t DefaultComparer_GetHashCode_m19683 (DefaultComparer_t3545 * __this, DateTimeOffset_t1657  ___obj, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ int32_t DefaultComparer_GetHashCode_m19688 (DefaultComparer_t3546 * __this, DateTimeOffset_t1657  ___obj, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Collections.Generic.EqualityComparer`1/DefaultComparer<System.DateTimeOffset>::Equals(T,T)
- bool DefaultComparer_Equals_m19684 (DefaultComparer_t3545 * __this, DateTimeOffset_t1657  ___x, DateTimeOffset_t1657  ___y, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool DefaultComparer_Equals_m19689 (DefaultComparer_t3546 * __this, DateTimeOffset_t1657  ___x, DateTimeOffset_t1657  ___y, MethodInfo* method) IL2CPP_METHOD_ATTR;

@@ -10,4 +10,4 @@ struct SmallXmlParserException_t1255;
 struct String_t;
 
 // System.Void Mono.Xml.SmallXmlParserException::.ctor(System.String,System.Int32,System.Int32)
- void SmallXmlParserException__ctor_m6716 (SmallXmlParserException_t1255 * __this, String_t* ___msg, int32_t ___line, int32_t ___column, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void SmallXmlParserException__ctor_m6721 (SmallXmlParserException_t1255 * __this, String_t* ___msg, int32_t ___line, int32_t ___column, MethodInfo* method) IL2CPP_METHOD_ATTR;

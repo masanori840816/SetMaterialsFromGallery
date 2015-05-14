@@ -7,7 +7,7 @@ struct List_1_t537;
 // UnityEngine.UILineInfo
 #include "UnityEngine_UnityEngine_UILineInfo.h"
 // System.Collections.Generic.List`1/Enumerator<UnityEngine.UILineInfo>
-struct Enumerator_t3098 
+struct Enumerator_t3099 
 {
 	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator<UnityEngine.UILineInfo>::l
 	List_1_t537 * ___l_0;

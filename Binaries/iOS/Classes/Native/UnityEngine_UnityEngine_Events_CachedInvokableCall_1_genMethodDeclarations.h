@@ -15,6 +15,6 @@ struct MethodInfo_t582;
 struct ObjectU5BU5D_t295;
 
 // System.Void UnityEngine.Events.CachedInvokableCall`1<System.Single>::.ctor(UnityEngine.Object,System.Reflection.MethodInfo,T)
- void CachedInvokableCall_1__ctor_m3124 (CachedInvokableCall_1_t697 * __this, Object_t185 * ___target, MethodInfo_t582 * ___theFunction, float ___argument, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void CachedInvokableCall_1__ctor_m3129 (CachedInvokableCall_1_t697 * __this, Object_t185 * ___target, MethodInfo_t582 * ___theFunction, float ___argument, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.Events.CachedInvokableCall`1<System.Single>::Invoke(System.Object[])
- void CachedInvokableCall_1_Invoke_m17579 (CachedInvokableCall_1_t697 * __this, ObjectU5BU5D_t295* ___args, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void CachedInvokableCall_1_Invoke_m17584 (CachedInvokableCall_1_t697 * __this, ObjectU5BU5D_t295* ___args, MethodInfo* method) IL2CPP_METHOD_ATTR;

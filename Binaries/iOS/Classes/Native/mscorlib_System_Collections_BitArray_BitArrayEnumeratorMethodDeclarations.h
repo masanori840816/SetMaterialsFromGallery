@@ -12,10 +12,10 @@ struct Object_t;
 struct BitArray_t893;
 
 // System.Void System.Collections.BitArray/BitArrayEnumerator::.ctor(System.Collections.BitArray)
- void BitArrayEnumerator__ctor_m6806 (BitArrayEnumerator_t1283 * __this, BitArray_t893 * ___ba, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void BitArrayEnumerator__ctor_m6811 (BitArrayEnumerator_t1283 * __this, BitArray_t893 * ___ba, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Collections.BitArray/BitArrayEnumerator::get_Current()
- Object_t * BitArrayEnumerator_get_Current_m6807 (BitArrayEnumerator_t1283 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Object_t * BitArrayEnumerator_get_Current_m6812 (BitArrayEnumerator_t1283 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Collections.BitArray/BitArrayEnumerator::MoveNext()
- bool BitArrayEnumerator_MoveNext_m6808 (BitArrayEnumerator_t1283 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool BitArrayEnumerator_MoveNext_m6813 (BitArrayEnumerator_t1283 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Collections.BitArray/BitArrayEnumerator::checkVersion()
- void BitArrayEnumerator_checkVersion_m6809 (BitArrayEnumerator_t1283 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void BitArrayEnumerator_checkVersion_m6814 (BitArrayEnumerator_t1283 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

@@ -5,7 +5,7 @@
 #include "codegen/il2cpp-codegen.h"
 
 // System.Collections.Generic.Comparer`1<UnityEngine.Rigidbody2D>
-struct Comparer_1_t3045;
+struct Comparer_1_t3046;
 // System.Object
 struct Object_t;
 // UnityEngine.Rigidbody2D
@@ -14,11 +14,11 @@ struct Rigidbody2D_t514;
 // System.Void System.Collections.Generic.Comparer`1<UnityEngine.Rigidbody2D>::.ctor()
 // System.Collections.Generic.Comparer`1<System.Object>
 #include "mscorlib_System_Collections_Generic_Comparer_1_genMethodDeclarations.h"
-#define Comparer_1__ctor_m16663(__this, method) (void)Comparer_1__ctor_m10826_gshared((Comparer_1_t2216 *)__this, method)
+#define Comparer_1__ctor_m16668(__this, method) (void)Comparer_1__ctor_m10831_gshared((Comparer_1_t2217 *)__this, method)
 // System.Void System.Collections.Generic.Comparer`1<UnityEngine.Rigidbody2D>::.cctor()
-#define Comparer_1__cctor_m16664(__this/* static, unused */, method) (void)Comparer_1__cctor_m10827_gshared((Object_t *)__this/* static, unused */, method)
+#define Comparer_1__cctor_m16669(__this/* static, unused */, method) (void)Comparer_1__cctor_m10832_gshared((Object_t *)__this/* static, unused */, method)
 // System.Int32 System.Collections.Generic.Comparer`1<UnityEngine.Rigidbody2D>::System.Collections.IComparer.Compare(System.Object,System.Object)
-#define Comparer_1_System_Collections_IComparer_Compare_m16665(__this, ___x, ___y, method) (int32_t)Comparer_1_System_Collections_IComparer_Compare_m10828_gshared((Comparer_1_t2216 *)__this, (Object_t *)___x, (Object_t *)___y, method)
+#define Comparer_1_System_Collections_IComparer_Compare_m16670(__this, ___x, ___y, method) (int32_t)Comparer_1_System_Collections_IComparer_Compare_m10833_gshared((Comparer_1_t2217 *)__this, (Object_t *)___x, (Object_t *)___y, method)
 // System.Int32 System.Collections.Generic.Comparer`1<UnityEngine.Rigidbody2D>::Compare(T,T)
 // System.Collections.Generic.Comparer`1<T> System.Collections.Generic.Comparer`1<UnityEngine.Rigidbody2D>::get_Default()
-#define Comparer_1_get_Default_m16666(__this/* static, unused */, method) (Comparer_1_t3045 *)Comparer_1_get_Default_m10829_gshared((Object_t *)__this/* static, unused */, method)
+#define Comparer_1_get_Default_m16671(__this/* static, unused */, method) (Comparer_1_t3046 *)Comparer_1_get_Default_m10834_gshared((Object_t *)__this/* static, unused */, method)

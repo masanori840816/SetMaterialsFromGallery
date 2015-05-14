@@ -5,7 +5,7 @@
 #include "codegen/il2cpp-codegen.h"
 
 // System.Array/InternalEnumerator`1<System.TimeSpan>
-struct InternalEnumerator_1_t3497;
+struct InternalEnumerator_1_t3498;
 // System.Object
 struct Object_t;
 // System.Array
@@ -14,12 +14,12 @@ struct Array_t;
 #include "mscorlib_System_TimeSpan.h"
 
 // System.Void System.Array/InternalEnumerator`1<System.TimeSpan>::.ctor(System.Array)
- void InternalEnumerator_1__ctor_m19369 (InternalEnumerator_1_t3497 * __this, Array_t * ___array, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void InternalEnumerator_1__ctor_m19374 (InternalEnumerator_1_t3498 * __this, Array_t * ___array, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Array/InternalEnumerator`1<System.TimeSpan>::System.Collections.IEnumerator.get_Current()
- Object_t * InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m19370 (InternalEnumerator_1_t3497 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Object_t * InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m19375 (InternalEnumerator_1_t3498 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Array/InternalEnumerator`1<System.TimeSpan>::Dispose()
- void InternalEnumerator_1_Dispose_m19371 (InternalEnumerator_1_t3497 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void InternalEnumerator_1_Dispose_m19376 (InternalEnumerator_1_t3498 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Array/InternalEnumerator`1<System.TimeSpan>::MoveNext()
- bool InternalEnumerator_1_MoveNext_m19372 (InternalEnumerator_1_t3497 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool InternalEnumerator_1_MoveNext_m19377 (InternalEnumerator_1_t3498 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // T System.Array/InternalEnumerator`1<System.TimeSpan>::get_Current()
- TimeSpan_t846  InternalEnumerator_1_get_Current_m19373 (InternalEnumerator_1_t3497 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ TimeSpan_t846  InternalEnumerator_1_get_Current_m19378 (InternalEnumerator_1_t3498 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

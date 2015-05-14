@@ -12,4 +12,4 @@ struct String_t;
 struct Object_t;
 
 // System.String Replacements.SecurityElement::ToString(System.Object)
- String_t* SecurityElement_ToString_m4440 (Object_t * __this/* static, unused */, Object_t * _____this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ String_t* SecurityElement_ToString_m4445 (Object_t * __this/* static, unused */, Object_t * _____this, MethodInfo* method) IL2CPP_METHOD_ATTR;

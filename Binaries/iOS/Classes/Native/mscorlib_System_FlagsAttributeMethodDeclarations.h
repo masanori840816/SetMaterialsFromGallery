@@ -8,4 +8,4 @@
 struct FlagsAttribute_t271;
 
 // System.Void System.FlagsAttribute::.ctor()
- void FlagsAttribute__ctor_m1237 (FlagsAttribute_t271 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void FlagsAttribute__ctor_m1240 (FlagsAttribute_t271 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

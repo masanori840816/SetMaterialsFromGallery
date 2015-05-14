@@ -8,4 +8,4 @@
 struct SliderState_t569;
 
 // System.Void UnityEngine.SliderState::.ctor()
- void SliderState__ctor_m2877 (SliderState_t569 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void SliderState__ctor_m2882 (SliderState_t569 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

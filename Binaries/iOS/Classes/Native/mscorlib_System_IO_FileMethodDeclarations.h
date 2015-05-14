@@ -18,14 +18,14 @@ struct ByteU5BU5D_t17;
 #include "mscorlib_System_IO_FileMode.h"
 
 // System.Void System.IO.File::Delete(System.String)
- void File_Delete_m7161 (Object_t * __this/* static, unused */, String_t* ___path, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void File_Delete_m7166 (Object_t * __this/* static, unused */, String_t* ___path, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.IO.File::Exists(System.String)
- bool File_Exists_m30 (Object_t * __this/* static, unused */, String_t* ___path, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool File_Exists_m34 (Object_t * __this/* static, unused */, String_t* ___path, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.IO.FileStream System.IO.File::Open(System.String,System.IO.FileMode)
- FileStream_t1131 * File_Open_m7162 (Object_t * __this/* static, unused */, String_t* ___path, int32_t ___mode, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ FileStream_t1131 * File_Open_m7167 (Object_t * __this/* static, unused */, String_t* ___path, int32_t ___mode, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.IO.FileStream System.IO.File::OpenRead(System.String)
- FileStream_t1131 * File_OpenRead_m5331 (Object_t * __this/* static, unused */, String_t* ___path, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ FileStream_t1131 * File_OpenRead_m5336 (Object_t * __this/* static, unused */, String_t* ___path, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.IO.StreamReader System.IO.File::OpenText(System.String)
- StreamReader_t1327 * File_OpenText_m7163 (Object_t * __this/* static, unused */, String_t* ___path, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ StreamReader_t1327 * File_OpenText_m7168 (Object_t * __this/* static, unused */, String_t* ___path, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Byte[] System.IO.File::ReadAllBytes(System.String)
- ByteU5BU5D_t17* File_ReadAllBytes_m32 (Object_t * __this/* static, unused */, String_t* ___path, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ ByteU5BU5D_t17* File_ReadAllBytes_m37 (Object_t * __this/* static, unused */, String_t* ___path, MethodInfo* method) IL2CPP_METHOD_ATTR;

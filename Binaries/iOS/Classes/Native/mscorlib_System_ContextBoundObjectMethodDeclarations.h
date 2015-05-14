@@ -8,4 +8,4 @@
 struct ContextBoundObject_t1654;
 
 // System.Void System.ContextBoundObject::.ctor()
- void ContextBoundObject__ctor_m9040 (ContextBoundObject_t1654 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void ContextBoundObject__ctor_m9045 (ContextBoundObject_t1654 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

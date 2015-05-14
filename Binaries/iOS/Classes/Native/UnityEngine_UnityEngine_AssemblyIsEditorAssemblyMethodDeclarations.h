@@ -8,4 +8,4 @@
 struct AssemblyIsEditorAssembly_t550;
 
 // System.Void UnityEngine.AssemblyIsEditorAssembly::.ctor()
- void AssemblyIsEditorAssembly__ctor_m2805 (AssemblyIsEditorAssembly_t550 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void AssemblyIsEditorAssembly__ctor_m2810 (AssemblyIsEditorAssembly_t550 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

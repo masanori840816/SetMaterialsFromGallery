@@ -7,7 +7,7 @@ struct Component_t248;
 // System.ValueType
 #include "mscorlib_System_ValueType.h"
 // System.Collections.Generic.List`1/Enumerator<UnityEngine.Component>
-struct Enumerator_t2265 
+struct Enumerator_t2266 
 {
 	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator<UnityEngine.Component>::l
 	List_1_t247 * ___l_0;

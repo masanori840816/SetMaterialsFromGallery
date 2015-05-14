@@ -12,6 +12,6 @@ struct Object_t;
 #include "mscorlib_System_MulticastDelegate.h"
 extern TypeInfo RaycastResult_t29_il2cpp_TypeInfo;
 // System.Predicate`1<UnityEngine.EventSystems.RaycastResult>
-struct Predicate_1_t2277  : public MulticastDelegate_t172
+struct Predicate_1_t2278  : public MulticastDelegate_t172
 {
 };

@@ -8,4 +8,4 @@
 struct ConstructionLevelActivator_t1443;
 
 // System.Void System.Runtime.Remoting.Activation.ConstructionLevelActivator::.ctor()
- void ConstructionLevelActivator__ctor_m7917 (ConstructionLevelActivator_t1443 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void ConstructionLevelActivator__ctor_m7922 (ConstructionLevelActivator_t1443 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

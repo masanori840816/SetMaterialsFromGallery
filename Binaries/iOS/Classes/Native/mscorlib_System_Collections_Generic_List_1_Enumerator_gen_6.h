@@ -7,7 +7,7 @@ struct List_1_t28;
 // UnityEngine.EventSystems.RaycastResult
 #include "UnityEngine_UI_UnityEngine_EventSystems_RaycastResult.h"
 // System.Collections.Generic.List`1/Enumerator<UnityEngine.EventSystems.RaycastResult>
-struct Enumerator_t2278 
+struct Enumerator_t2279 
 {
 	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator<UnityEngine.EventSystems.RaycastResult>::l
 	List_1_t28 * ___l_0;

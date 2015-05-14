@@ -14,6 +14,6 @@ struct String_t;
 #include "mscorlib_System_Runtime_Serialization_StreamingContext.h"
 
 // System.Void System.ApplicationIdentity::System.Runtime.Serialization.ISerializable.GetObjectData(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
- void ApplicationIdentity_System_Runtime_Serialization_ISerializable_GetObjectData_m8998 (ApplicationIdentity_t1641 * __this, SerializationInfo_t572 * ___info, StreamingContext_t573  ___context, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void ApplicationIdentity_System_Runtime_Serialization_ISerializable_GetObjectData_m9003 (ApplicationIdentity_t1641 * __this, SerializationInfo_t572 * ___info, StreamingContext_t573  ___context, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.String System.ApplicationIdentity::ToString()
- String_t* ApplicationIdentity_ToString_m8999 (ApplicationIdentity_t1641 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ String_t* ApplicationIdentity_ToString_m9004 (ApplicationIdentity_t1641 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

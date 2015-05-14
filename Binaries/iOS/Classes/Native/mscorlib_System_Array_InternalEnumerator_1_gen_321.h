@@ -5,7 +5,7 @@ struct Array_t;
 // System.ValueType
 #include "mscorlib_System_ValueType.h"
 // System.Array/InternalEnumerator`1<System.Security.Cryptography.AsnDecodeStatus>
-struct InternalEnumerator_1_t3276 
+struct InternalEnumerator_1_t3277 
 {
 	// System.Array System.Array/InternalEnumerator`1<System.Security.Cryptography.AsnDecodeStatus>::array
 	Array_t * ___array_0;

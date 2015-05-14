@@ -7,7 +7,7 @@ struct List_1_t329;
 // System.ValueType
 #include "mscorlib_System_ValueType.h"
 // System.Collections.Generic.KeyValuePair`2<UnityEngine.Font,System.Collections.Generic.List`1<UnityEngine.UI.Text>>
-struct KeyValuePair_2_t2480 
+struct KeyValuePair_2_t2481 
 {
 	// TKey System.Collections.Generic.KeyValuePair`2<UnityEngine.Font,System.Collections.Generic.List`1<UnityEngine.UI.Text>>::key
 	Font_t127 * ___key_0;

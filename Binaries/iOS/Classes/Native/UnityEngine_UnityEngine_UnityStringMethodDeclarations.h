@@ -12,4 +12,4 @@ struct String_t;
 struct ObjectU5BU5D_t295;
 
 // System.String UnityEngine.UnityString::Format(System.String,System.Object[])
- String_t* UnityString_Format_m2534 (Object_t * __this/* static, unused */, String_t* ___fmt, ObjectU5BU5D_t295* ___args, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ String_t* UnityString_Format_m2538 (Object_t * __this/* static, unused */, String_t* ___fmt, ObjectU5BU5D_t295* ___args, MethodInfo* method) IL2CPP_METHOD_ATTR;

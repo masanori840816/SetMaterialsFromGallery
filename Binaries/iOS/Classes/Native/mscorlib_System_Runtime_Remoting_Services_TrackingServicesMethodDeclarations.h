@@ -12,6 +12,6 @@ struct Object_t;
 struct ObjRef_t1490;
 
 // System.Void System.Runtime.Remoting.Services.TrackingServices::.cctor()
- void TrackingServices__cctor_m8108 (Object_t * __this/* static, unused */, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void TrackingServices__cctor_m8113 (Object_t * __this/* static, unused */, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Runtime.Remoting.Services.TrackingServices::NotifyUnmarshaledObject(System.Object,System.Runtime.Remoting.ObjRef)
- void TrackingServices_NotifyUnmarshaledObject_m8109 (Object_t * __this/* static, unused */, Object_t * ___obj, ObjRef_t1490 * ___or, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void TrackingServices_NotifyUnmarshaledObject_m8114 (Object_t * __this/* static, unused */, Object_t * ___obj, ObjRef_t1490 * ___or, MethodInfo* method) IL2CPP_METHOD_ATTR;

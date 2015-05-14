@@ -14,6 +14,6 @@ struct Object_t;
 #include "mscorlib_System_MulticastDelegate.h"
 extern TypeInfo Vector2_t84_il2cpp_TypeInfo;
 // UnityEngine.Events.UnityAction`1<UnityEngine.Vector2>
-struct UnityAction_1_t2657  : public MulticastDelegate_t172
+struct UnityAction_1_t2658  : public MulticastDelegate_t172
 {
 };

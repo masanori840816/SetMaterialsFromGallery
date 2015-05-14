@@ -8,8 +8,8 @@
 struct Time_t510;
 
 // System.Single UnityEngine.Time::get_deltaTime()
- float Time_get_deltaTime_m2641 (Object_t * __this/* static, unused */, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ float Time_get_deltaTime_m2646 (Object_t * __this/* static, unused */, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Time::get_unscaledTime()
- float Time_get_unscaledTime_m1416 (Object_t * __this/* static, unused */, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ float Time_get_unscaledTime_m1419 (Object_t * __this/* static, unused */, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.Time::get_unscaledDeltaTime()
- float Time_get_unscaledDeltaTime_m1488 (Object_t * __this/* static, unused */, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ float Time_get_unscaledDeltaTime_m1491 (Object_t * __this/* static, unused */, MethodInfo* method) IL2CPP_METHOD_ATTR;

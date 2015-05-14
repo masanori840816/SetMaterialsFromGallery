@@ -12,6 +12,6 @@ struct BigInteger_t995;
 #include "Mono_Security_Mono_Math_Prime_ConfidenceFactor.h"
 
 // System.Int32 Mono.Math.Prime.PrimalityTests::GetSPPRounds(Mono.Math.BigInteger,Mono.Math.Prime.ConfidenceFactor)
- int32_t PrimalityTests_GetSPPRounds_m4509 (Object_t * __this/* static, unused */, BigInteger_t995 * ___bi, int32_t ___confidence, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ int32_t PrimalityTests_GetSPPRounds_m4514 (Object_t * __this/* static, unused */, BigInteger_t995 * ___bi, int32_t ___confidence, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean Mono.Math.Prime.PrimalityTests::RabinMillerTest(Mono.Math.BigInteger,Mono.Math.Prime.ConfidenceFactor)
- bool PrimalityTests_RabinMillerTest_m4510 (Object_t * __this/* static, unused */, BigInteger_t995 * ___n, int32_t ___confidence, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool PrimalityTests_RabinMillerTest_m4515 (Object_t * __this/* static, unused */, BigInteger_t995 * ___n, int32_t ___confidence, MethodInfo* method) IL2CPP_METHOD_ATTR;

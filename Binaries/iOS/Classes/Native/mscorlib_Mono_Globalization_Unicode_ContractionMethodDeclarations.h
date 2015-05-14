@@ -14,4 +14,4 @@ struct String_t;
 struct ByteU5BU5D_t17;
 
 // System.Void Mono.Globalization.Unicode.Contraction::.ctor(System.Char[],System.String,System.Byte[])
- void Contraction__ctor_m6241 (Contraction_t1191 * __this, CharU5BU5D_t178* ___source, String_t* ___replacement, ByteU5BU5D_t17* ___sortkey, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void Contraction__ctor_m6246 (Contraction_t1191 * __this, CharU5BU5D_t178* ___source, String_t* ___replacement, ByteU5BU5D_t17* ___sortkey, MethodInfo* method) IL2CPP_METHOD_ATTR;

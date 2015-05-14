@@ -5,7 +5,7 @@ struct Array_t;
 // System.ValueType
 #include "mscorlib_System_ValueType.h"
 // System.Array/InternalEnumerator`1<Mono.Security.Protocol.Tls.CipherAlgorithmType>
-struct InternalEnumerator_1_t3304 
+struct InternalEnumerator_1_t3305 
 {
 	// System.Array System.Array/InternalEnumerator`1<Mono.Security.Protocol.Tls.CipherAlgorithmType>::array
 	Array_t * ___array_0;

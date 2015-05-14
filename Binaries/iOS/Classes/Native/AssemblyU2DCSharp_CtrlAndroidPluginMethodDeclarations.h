@@ -19,5 +19,7 @@ struct String_t;
  void CtrlAndroidPlugin_ShowToast_m15 (CtrlAndroidPlugin_t8 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void CtrlAndroidPlugin::ShowImageView()
  void CtrlAndroidPlugin_ShowImageView_m16 (CtrlAndroidPlugin_t8 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+// System.Void CtrlAndroidPlugin::ShowFileNotFoundAlert()
+ void CtrlAndroidPlugin_ShowFileNotFoundAlert_m17 (CtrlAndroidPlugin_t8 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void CtrlAndroidPlugin::OnCallbackAndroid(System.String)
- void CtrlAndroidPlugin_OnCallbackAndroid_m17 (CtrlAndroidPlugin_t8 * __this, String_t* ___strGotData, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void CtrlAndroidPlugin_OnCallbackAndroid_m18 (CtrlAndroidPlugin_t8 * __this, String_t* ___strGotData, MethodInfo* method) IL2CPP_METHOD_ATTR;

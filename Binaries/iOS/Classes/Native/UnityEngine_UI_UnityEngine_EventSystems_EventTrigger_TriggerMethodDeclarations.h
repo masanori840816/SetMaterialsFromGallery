@@ -8,4 +8,4 @@
 struct TriggerEvent_t30;
 
 // System.Void UnityEngine.EventSystems.EventTrigger/TriggerEvent::.ctor()
- void TriggerEvent__ctor_m65 (TriggerEvent_t30 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void TriggerEvent__ctor_m68 (TriggerEvent_t30 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

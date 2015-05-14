@@ -10,4 +10,4 @@ struct DebuggerTypeProxyAttribute_t1303;
 struct Type_t;
 
 // System.Void System.Diagnostics.DebuggerTypeProxyAttribute::.ctor(System.Type)
- void DebuggerTypeProxyAttribute__ctor_m6923 (DebuggerTypeProxyAttribute_t1303 * __this, Type_t * ___type, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void DebuggerTypeProxyAttribute__ctor_m6928 (DebuggerTypeProxyAttribute_t1303 * __this, Type_t * ___type, MethodInfo* method) IL2CPP_METHOD_ATTR;

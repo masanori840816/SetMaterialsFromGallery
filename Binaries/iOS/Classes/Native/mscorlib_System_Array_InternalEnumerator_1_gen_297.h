@@ -5,7 +5,7 @@ struct Array_t;
 // System.ValueType
 #include "mscorlib_System_ValueType.h"
 // System.Array/InternalEnumerator`1<System.Net.Security.AuthenticationLevel>
-struct InternalEnumerator_1_t3238 
+struct InternalEnumerator_1_t3239 
 {
 	// System.Array System.Array/InternalEnumerator`1<System.Net.Security.AuthenticationLevel>::array
 	Array_t * ___array_0;

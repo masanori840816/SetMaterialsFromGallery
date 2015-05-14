@@ -16,14 +16,14 @@ struct Transform_t125;
 #include "UnityEngine_UnityEngine_Vector2.h"
 
 // UnityEngine.Vector2 UnityEngine.RaycastHit2D::get_point()
- Vector2_t84  RaycastHit2D_get_point_m1441 (RaycastHit2D_t313 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Vector2_t84  RaycastHit2D_get_point_m1444 (RaycastHit2D_t313 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector2 UnityEngine.RaycastHit2D::get_normal()
- Vector2_t84  RaycastHit2D_get_normal_m1442 (RaycastHit2D_t313 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Vector2_t84  RaycastHit2D_get_normal_m1445 (RaycastHit2D_t313 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.RaycastHit2D::get_fraction()
- float RaycastHit2D_get_fraction_m1590 (RaycastHit2D_t313 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ float RaycastHit2D_get_fraction_m1593 (RaycastHit2D_t313 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Collider2D UnityEngine.RaycastHit2D::get_collider()
- Collider2D_t314 * RaycastHit2D_get_collider_m1443 (RaycastHit2D_t313 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Collider2D_t314 * RaycastHit2D_get_collider_m1446 (RaycastHit2D_t313 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Rigidbody2D UnityEngine.RaycastHit2D::get_rigidbody()
- Rigidbody2D_t514 * RaycastHit2D_get_rigidbody_m2669 (RaycastHit2D_t313 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Rigidbody2D_t514 * RaycastHit2D_get_rigidbody_m2674 (RaycastHit2D_t313 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Transform UnityEngine.RaycastHit2D::get_transform()
- Transform_t125 * RaycastHit2D_get_transform_m1447 (RaycastHit2D_t313 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Transform_t125 * RaycastHit2D_get_transform_m1450 (RaycastHit2D_t313 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

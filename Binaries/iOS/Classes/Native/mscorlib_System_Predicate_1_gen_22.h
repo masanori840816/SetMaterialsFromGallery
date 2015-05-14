@@ -12,6 +12,6 @@ struct Object_t;
 #include "mscorlib_System_MulticastDelegate.h"
 extern TypeInfo UICharInfo_t358_il2cpp_TypeInfo;
 // System.Predicate`1<UnityEngine.UICharInfo>
-struct Predicate_1_t3085  : public MulticastDelegate_t172
+struct Predicate_1_t3086  : public MulticastDelegate_t172
 {
 };

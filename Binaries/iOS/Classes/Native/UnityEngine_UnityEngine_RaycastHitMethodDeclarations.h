@@ -12,10 +12,10 @@ struct Collider_t316;
 #include "UnityEngine_UnityEngine_Vector3.h"
 
 // UnityEngine.Vector3 UnityEngine.RaycastHit::get_point()
- Vector3_t87  RaycastHit_get_point_m1459 (RaycastHit_t103 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Vector3_t87  RaycastHit_get_point_m1462 (RaycastHit_t103 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Vector3 UnityEngine.RaycastHit::get_normal()
- Vector3_t87  RaycastHit_get_normal_m1460 (RaycastHit_t103 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Vector3_t87  RaycastHit_get_normal_m1463 (RaycastHit_t103 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Single UnityEngine.RaycastHit::get_distance()
- float RaycastHit_get_distance_m1462 (RaycastHit_t103 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ float RaycastHit_get_distance_m1465 (RaycastHit_t103 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.Collider UnityEngine.RaycastHit::get_collider()
- Collider_t316 * RaycastHit_get_collider_m1461 (RaycastHit_t103 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Collider_t316 * RaycastHit_get_collider_m1464 (RaycastHit_t103 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

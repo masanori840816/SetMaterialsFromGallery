@@ -13,6 +13,6 @@ struct Object_t;
 // System.MulticastDelegate
 #include "mscorlib_System_MulticastDelegate.h"
 // UnityEngine.Events.UnityAction`1<UnityEngine.EventSystems.Physics2DRaycaster>
-struct UnityAction_1_t2418  : public MulticastDelegate_t172
+struct UnityAction_1_t2419  : public MulticastDelegate_t172
 {
 };

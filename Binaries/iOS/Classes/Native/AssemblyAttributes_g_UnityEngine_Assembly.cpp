@@ -6,7 +6,7 @@ extern TypeInfo InternalsVisibleToAttribute_t726_il2cpp_TypeInfo;
 #include "mscorlib_System_Runtime_CompilerServices_InternalsVisibleToA.h"
 // System.Runtime.CompilerServices.InternalsVisibleToAttribute
 #include "mscorlib_System_Runtime_CompilerServices_InternalsVisibleToAMethodDeclarations.h"
-extern MethodInfo InternalsVisibleToAttribute__ctor_m3191_MethodInfo;
+extern MethodInfo InternalsVisibleToAttribute__ctor_m3196_MethodInfo;
 extern TypeInfo RuntimeCompatibilityAttribute_t4_il2cpp_TypeInfo;
 // System.Runtime.CompilerServices.RuntimeCompatibilityAttribute
 #include "mscorlib_System_Runtime_CompilerServices_RuntimeCompatibilit.h"
@@ -19,56 +19,56 @@ extern TypeInfo ExtensionAttribute_t727_il2cpp_TypeInfo;
 #include "System_Core_System_Runtime_CompilerServices_ExtensionAttribu.h"
 // System.Runtime.CompilerServices.ExtensionAttribute
 #include "System_Core_System_Runtime_CompilerServices_ExtensionAttribuMethodDeclarations.h"
-extern MethodInfo ExtensionAttribute__ctor_m3192_MethodInfo;
+extern MethodInfo ExtensionAttribute__ctor_m3197_MethodInfo;
 void g_UnityEngine_Assembly_CustomAttributesCacheGenerator(CustomAttributesCache* cache)
 {
 	cache->attributes = (Il2CppObject**)il2cpp_gc_alloc_fixed(sizeof(Object_t *) * cache->count, 0);
 	{
 		InternalsVisibleToAttribute_t726 * tmp;
 		tmp = (InternalsVisibleToAttribute_t726 *)il2cpp_codegen_object_new (&InternalsVisibleToAttribute_t726_il2cpp_TypeInfo);
-		InternalsVisibleToAttribute__ctor_m3191(tmp, il2cpp_codegen_string_new_wrapper("Unity.Automation"), &InternalsVisibleToAttribute__ctor_m3191_MethodInfo);
+		InternalsVisibleToAttribute__ctor_m3196(tmp, il2cpp_codegen_string_new_wrapper("Unity.Automation"), &InternalsVisibleToAttribute__ctor_m3196_MethodInfo);
 		cache->attributes[0] = (Il2CppObject*)tmp;
 	}
 	{
 		InternalsVisibleToAttribute_t726 * tmp;
 		tmp = (InternalsVisibleToAttribute_t726 *)il2cpp_codegen_object_new (&InternalsVisibleToAttribute_t726_il2cpp_TypeInfo);
-		InternalsVisibleToAttribute__ctor_m3191(tmp, il2cpp_codegen_string_new_wrapper("UnityEngine.Advertisements"), &InternalsVisibleToAttribute__ctor_m3191_MethodInfo);
+		InternalsVisibleToAttribute__ctor_m3196(tmp, il2cpp_codegen_string_new_wrapper("UnityEngine.Advertisements"), &InternalsVisibleToAttribute__ctor_m3196_MethodInfo);
 		cache->attributes[1] = (Il2CppObject*)tmp;
 	}
 	{
 		InternalsVisibleToAttribute_t726 * tmp;
 		tmp = (InternalsVisibleToAttribute_t726 *)il2cpp_codegen_object_new (&InternalsVisibleToAttribute_t726_il2cpp_TypeInfo);
-		InternalsVisibleToAttribute__ctor_m3191(tmp, il2cpp_codegen_string_new_wrapper("UnityEngine.Cloud"), &InternalsVisibleToAttribute__ctor_m3191_MethodInfo);
+		InternalsVisibleToAttribute__ctor_m3196(tmp, il2cpp_codegen_string_new_wrapper("UnityEngine.Cloud"), &InternalsVisibleToAttribute__ctor_m3196_MethodInfo);
 		cache->attributes[2] = (Il2CppObject*)tmp;
 	}
 	{
 		InternalsVisibleToAttribute_t726 * tmp;
 		tmp = (InternalsVisibleToAttribute_t726 *)il2cpp_codegen_object_new (&InternalsVisibleToAttribute_t726_il2cpp_TypeInfo);
-		InternalsVisibleToAttribute__ctor_m3191(tmp, il2cpp_codegen_string_new_wrapper("UnityEngine.Networking"), &InternalsVisibleToAttribute__ctor_m3191_MethodInfo);
+		InternalsVisibleToAttribute__ctor_m3196(tmp, il2cpp_codegen_string_new_wrapper("UnityEngine.Networking"), &InternalsVisibleToAttribute__ctor_m3196_MethodInfo);
 		cache->attributes[3] = (Il2CppObject*)tmp;
 	}
 	{
 		InternalsVisibleToAttribute_t726 * tmp;
 		tmp = (InternalsVisibleToAttribute_t726 *)il2cpp_codegen_object_new (&InternalsVisibleToAttribute_t726_il2cpp_TypeInfo);
-		InternalsVisibleToAttribute__ctor_m3191(tmp, il2cpp_codegen_string_new_wrapper("UnityEngine.TerrainPhysics"), &InternalsVisibleToAttribute__ctor_m3191_MethodInfo);
+		InternalsVisibleToAttribute__ctor_m3196(tmp, il2cpp_codegen_string_new_wrapper("UnityEngine.TerrainPhysics"), &InternalsVisibleToAttribute__ctor_m3196_MethodInfo);
 		cache->attributes[4] = (Il2CppObject*)tmp;
 	}
 	{
 		InternalsVisibleToAttribute_t726 * tmp;
 		tmp = (InternalsVisibleToAttribute_t726 *)il2cpp_codegen_object_new (&InternalsVisibleToAttribute_t726_il2cpp_TypeInfo);
-		InternalsVisibleToAttribute__ctor_m3191(tmp, il2cpp_codegen_string_new_wrapper("UnityEngine.Terrain"), &InternalsVisibleToAttribute__ctor_m3191_MethodInfo);
+		InternalsVisibleToAttribute__ctor_m3196(tmp, il2cpp_codegen_string_new_wrapper("UnityEngine.Terrain"), &InternalsVisibleToAttribute__ctor_m3196_MethodInfo);
 		cache->attributes[5] = (Il2CppObject*)tmp;
 	}
 	{
 		InternalsVisibleToAttribute_t726 * tmp;
 		tmp = (InternalsVisibleToAttribute_t726 *)il2cpp_codegen_object_new (&InternalsVisibleToAttribute_t726_il2cpp_TypeInfo);
-		InternalsVisibleToAttribute__ctor_m3191(tmp, il2cpp_codegen_string_new_wrapper("Unity.IntegrationTests"), &InternalsVisibleToAttribute__ctor_m3191_MethodInfo);
+		InternalsVisibleToAttribute__ctor_m3196(tmp, il2cpp_codegen_string_new_wrapper("Unity.IntegrationTests"), &InternalsVisibleToAttribute__ctor_m3196_MethodInfo);
 		cache->attributes[6] = (Il2CppObject*)tmp;
 	}
 	{
 		InternalsVisibleToAttribute_t726 * tmp;
 		tmp = (InternalsVisibleToAttribute_t726 *)il2cpp_codegen_object_new (&InternalsVisibleToAttribute_t726_il2cpp_TypeInfo);
-		InternalsVisibleToAttribute__ctor_m3191(tmp, il2cpp_codegen_string_new_wrapper("UnityEngine.Physics"), &InternalsVisibleToAttribute__ctor_m3191_MethodInfo);
+		InternalsVisibleToAttribute__ctor_m3196(tmp, il2cpp_codegen_string_new_wrapper("UnityEngine.Physics"), &InternalsVisibleToAttribute__ctor_m3196_MethodInfo);
 		cache->attributes[7] = (Il2CppObject*)tmp;
 	}
 	{
@@ -81,31 +81,31 @@ void g_UnityEngine_Assembly_CustomAttributesCacheGenerator(CustomAttributesCache
 	{
 		ExtensionAttribute_t727 * tmp;
 		tmp = (ExtensionAttribute_t727 *)il2cpp_codegen_object_new (&ExtensionAttribute_t727_il2cpp_TypeInfo);
-		ExtensionAttribute__ctor_m3192(tmp, &ExtensionAttribute__ctor_m3192_MethodInfo);
+		ExtensionAttribute__ctor_m3197(tmp, &ExtensionAttribute__ctor_m3197_MethodInfo);
 		cache->attributes[9] = (Il2CppObject*)tmp;
 	}
 	{
 		InternalsVisibleToAttribute_t726 * tmp;
 		tmp = (InternalsVisibleToAttribute_t726 *)il2cpp_codegen_object_new (&InternalsVisibleToAttribute_t726_il2cpp_TypeInfo);
-		InternalsVisibleToAttribute__ctor_m3191(tmp, il2cpp_codegen_string_new_wrapper("Unity.RuntimeTests.Framework.Tests"), &InternalsVisibleToAttribute__ctor_m3191_MethodInfo);
+		InternalsVisibleToAttribute__ctor_m3196(tmp, il2cpp_codegen_string_new_wrapper("Unity.RuntimeTests.Framework.Tests"), &InternalsVisibleToAttribute__ctor_m3196_MethodInfo);
 		cache->attributes[10] = (Il2CppObject*)tmp;
 	}
 	{
 		InternalsVisibleToAttribute_t726 * tmp;
 		tmp = (InternalsVisibleToAttribute_t726 *)il2cpp_codegen_object_new (&InternalsVisibleToAttribute_t726_il2cpp_TypeInfo);
-		InternalsVisibleToAttribute__ctor_m3191(tmp, il2cpp_codegen_string_new_wrapper("Unity.RuntimeTests.Framework"), &InternalsVisibleToAttribute__ctor_m3191_MethodInfo);
+		InternalsVisibleToAttribute__ctor_m3196(tmp, il2cpp_codegen_string_new_wrapper("Unity.RuntimeTests.Framework"), &InternalsVisibleToAttribute__ctor_m3196_MethodInfo);
 		cache->attributes[11] = (Il2CppObject*)tmp;
 	}
 	{
 		InternalsVisibleToAttribute_t726 * tmp;
 		tmp = (InternalsVisibleToAttribute_t726 *)il2cpp_codegen_object_new (&InternalsVisibleToAttribute_t726_il2cpp_TypeInfo);
-		InternalsVisibleToAttribute__ctor_m3191(tmp, il2cpp_codegen_string_new_wrapper("Unity.RuntimeTests"), &InternalsVisibleToAttribute__ctor_m3191_MethodInfo);
+		InternalsVisibleToAttribute__ctor_m3196(tmp, il2cpp_codegen_string_new_wrapper("Unity.RuntimeTests"), &InternalsVisibleToAttribute__ctor_m3196_MethodInfo);
 		cache->attributes[12] = (Il2CppObject*)tmp;
 	}
 	{
 		InternalsVisibleToAttribute_t726 * tmp;
 		tmp = (InternalsVisibleToAttribute_t726 *)il2cpp_codegen_object_new (&InternalsVisibleToAttribute_t726_il2cpp_TypeInfo);
-		InternalsVisibleToAttribute__ctor_m3191(tmp, il2cpp_codegen_string_new_wrapper("Unity.IntegrationTests.Framework"), &InternalsVisibleToAttribute__ctor_m3191_MethodInfo);
+		InternalsVisibleToAttribute__ctor_m3196(tmp, il2cpp_codegen_string_new_wrapper("Unity.IntegrationTests.Framework"), &InternalsVisibleToAttribute__ctor_m3196_MethodInfo);
 		cache->attributes[13] = (Il2CppObject*)tmp;
 	}
 }

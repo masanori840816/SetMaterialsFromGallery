@@ -18,10 +18,10 @@ struct AsyncCallback_t39;
 #include "System_System_Text_RegularExpressions_Interval.h"
 
 // System.Void System.Text.RegularExpressions.IntervalCollection/CostDelegate::.ctor(System.Object,System.IntPtr)
- void CostDelegate__ctor_m3855 (CostDelegate_t904 * __this, Object_t * ___object, IntPtr_t173 ___method, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void CostDelegate__ctor_m3860 (CostDelegate_t904 * __this, Object_t * ___object, IntPtr_t173 ___method, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Text.RegularExpressions.IntervalCollection/CostDelegate::Invoke(System.Text.RegularExpressions.Interval)
- double CostDelegate_Invoke_m3856 (CostDelegate_t904 * __this, Interval_t901  ___i, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ double CostDelegate_Invoke_m3861 (CostDelegate_t904 * __this, Interval_t901  ___i, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.IAsyncResult System.Text.RegularExpressions.IntervalCollection/CostDelegate::BeginInvoke(System.Text.RegularExpressions.Interval,System.AsyncCallback,System.Object)
- Object_t * CostDelegate_BeginInvoke_m3857 (CostDelegate_t904 * __this, Interval_t901  ___i, AsyncCallback_t39 * ___callback, Object_t * ___object, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Object_t * CostDelegate_BeginInvoke_m3862 (CostDelegate_t904 * __this, Interval_t901  ___i, AsyncCallback_t39 * ___callback, Object_t * ___object, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Double System.Text.RegularExpressions.IntervalCollection/CostDelegate::EndInvoke(System.IAsyncResult)
- double CostDelegate_EndInvoke_m3858 (CostDelegate_t904 * __this, Object_t * ___result, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ double CostDelegate_EndInvoke_m3863 (CostDelegate_t904 * __this, Object_t * ___result, MethodInfo* method) IL2CPP_METHOD_ATTR;

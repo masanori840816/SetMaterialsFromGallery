@@ -10,4 +10,4 @@ struct AssemblyInformationalVersionAttribute_t746;
 struct String_t;
 
 // System.Void System.Reflection.AssemblyInformationalVersionAttribute::.ctor(System.String)
- void AssemblyInformationalVersionAttribute__ctor_m3210 (AssemblyInformationalVersionAttribute_t746 * __this, String_t* ___informationalVersion, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void AssemblyInformationalVersionAttribute__ctor_m3215 (AssemblyInformationalVersionAttribute_t746 * __this, String_t* ___informationalVersion, MethodInfo* method) IL2CPP_METHOD_ATTR;

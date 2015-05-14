@@ -5,7 +5,7 @@
 #include "codegen/il2cpp-codegen.h"
 
 // System.Array/InternalEnumerator`1<UnityEngine.UI.Scrollbar>
-struct InternalEnumerator_1_t2645;
+struct InternalEnumerator_1_t2646;
 // System.Object
 struct Object_t;
 // UnityEngine.UI.Scrollbar
@@ -16,12 +16,12 @@ struct Array_t;
 // System.Void System.Array/InternalEnumerator`1<UnityEngine.UI.Scrollbar>::.ctor(System.Array)
 // System.Array/InternalEnumerator`1<System.Object>
 #include "mscorlib_System_Array_InternalEnumerator_1_gen_0MethodDeclarations.h"
-#define InternalEnumerator_1__ctor_m14170(__this, ___array, method) (void)InternalEnumerator_1__ctor_m10434_gshared((InternalEnumerator_1_t2148 *)__this, (Array_t *)___array, method)
+#define InternalEnumerator_1__ctor_m14175(__this, ___array, method) (void)InternalEnumerator_1__ctor_m10439_gshared((InternalEnumerator_1_t2148 *)__this, (Array_t *)___array, method)
 // System.Object System.Array/InternalEnumerator`1<UnityEngine.UI.Scrollbar>::System.Collections.IEnumerator.get_Current()
-#define InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m14171(__this, method) (Object_t *)InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m10436_gshared((InternalEnumerator_1_t2148 *)__this, method)
+#define InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m14176(__this, method) (Object_t *)InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m10441_gshared((InternalEnumerator_1_t2148 *)__this, method)
 // System.Void System.Array/InternalEnumerator`1<UnityEngine.UI.Scrollbar>::Dispose()
-#define InternalEnumerator_1_Dispose_m14172(__this, method) (void)InternalEnumerator_1_Dispose_m10438_gshared((InternalEnumerator_1_t2148 *)__this, method)
+#define InternalEnumerator_1_Dispose_m14177(__this, method) (void)InternalEnumerator_1_Dispose_m10443_gshared((InternalEnumerator_1_t2148 *)__this, method)
 // System.Boolean System.Array/InternalEnumerator`1<UnityEngine.UI.Scrollbar>::MoveNext()
-#define InternalEnumerator_1_MoveNext_m14173(__this, method) (bool)InternalEnumerator_1_MoveNext_m10440_gshared((InternalEnumerator_1_t2148 *)__this, method)
+#define InternalEnumerator_1_MoveNext_m14178(__this, method) (bool)InternalEnumerator_1_MoveNext_m10445_gshared((InternalEnumerator_1_t2148 *)__this, method)
 // T System.Array/InternalEnumerator`1<UnityEngine.UI.Scrollbar>::get_Current()
-#define InternalEnumerator_1_get_Current_m14174(__this, method) (Scrollbar_t193 *)InternalEnumerator_1_get_Current_m10442_gshared((InternalEnumerator_1_t2148 *)__this, method)
+#define InternalEnumerator_1_get_Current_m14179(__this, method) (Scrollbar_t193 *)InternalEnumerator_1_get_Current_m10447_gshared((InternalEnumerator_1_t2148 *)__this, method)

@@ -5,7 +5,7 @@
 #include "codegen/il2cpp-codegen.h"
 
 // System.Array/InternalEnumerator`1<UnityEngine.ISerializationCallbackReceiver>
-struct InternalEnumerator_1_t2613;
+struct InternalEnumerator_1_t2614;
 // System.Object
 struct Object_t;
 // UnityEngine.ISerializationCallbackReceiver
@@ -16,12 +16,12 @@ struct Array_t;
 // System.Void System.Array/InternalEnumerator`1<UnityEngine.ISerializationCallbackReceiver>::.ctor(System.Array)
 // System.Array/InternalEnumerator`1<System.Object>
 #include "mscorlib_System_Array_InternalEnumerator_1_gen_0MethodDeclarations.h"
-#define InternalEnumerator_1__ctor_m14027(__this, ___array, method) (void)InternalEnumerator_1__ctor_m10434_gshared((InternalEnumerator_1_t2148 *)__this, (Array_t *)___array, method)
+#define InternalEnumerator_1__ctor_m14032(__this, ___array, method) (void)InternalEnumerator_1__ctor_m10439_gshared((InternalEnumerator_1_t2148 *)__this, (Array_t *)___array, method)
 // System.Object System.Array/InternalEnumerator`1<UnityEngine.ISerializationCallbackReceiver>::System.Collections.IEnumerator.get_Current()
-#define InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m14028(__this, method) (Object_t *)InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m10436_gshared((InternalEnumerator_1_t2148 *)__this, method)
+#define InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m14033(__this, method) (Object_t *)InternalEnumerator_1_System_Collections_IEnumerator_get_Current_m10441_gshared((InternalEnumerator_1_t2148 *)__this, method)
 // System.Void System.Array/InternalEnumerator`1<UnityEngine.ISerializationCallbackReceiver>::Dispose()
-#define InternalEnumerator_1_Dispose_m14029(__this, method) (void)InternalEnumerator_1_Dispose_m10438_gshared((InternalEnumerator_1_t2148 *)__this, method)
+#define InternalEnumerator_1_Dispose_m14034(__this, method) (void)InternalEnumerator_1_Dispose_m10443_gshared((InternalEnumerator_1_t2148 *)__this, method)
 // System.Boolean System.Array/InternalEnumerator`1<UnityEngine.ISerializationCallbackReceiver>::MoveNext()
-#define InternalEnumerator_1_MoveNext_m14030(__this, method) (bool)InternalEnumerator_1_MoveNext_m10440_gshared((InternalEnumerator_1_t2148 *)__this, method)
+#define InternalEnumerator_1_MoveNext_m14035(__this, method) (bool)InternalEnumerator_1_MoveNext_m10445_gshared((InternalEnumerator_1_t2148 *)__this, method)
 // T System.Array/InternalEnumerator`1<UnityEngine.ISerializationCallbackReceiver>::get_Current()
-#define InternalEnumerator_1_get_Current_m14031(__this, method) (Object_t *)InternalEnumerator_1_get_Current_m10442_gshared((InternalEnumerator_1_t2148 *)__this, method)
+#define InternalEnumerator_1_get_Current_m14036(__this, method) (Object_t *)InternalEnumerator_1_get_Current_m10447_gshared((InternalEnumerator_1_t2148 *)__this, method)

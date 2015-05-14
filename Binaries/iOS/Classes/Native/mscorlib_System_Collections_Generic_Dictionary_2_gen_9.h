@@ -7,15 +7,15 @@ struct LinkU5BU5D_t2003;
 // System.Object[]
 struct ObjectU5BU5D_t295;
 // System.Collections.Generic.IEqualityComparer`1<System.Object>
-struct IEqualityComparer_1_t2438;
+struct IEqualityComparer_1_t2439;
 // System.Runtime.Serialization.SerializationInfo
 struct SerializationInfo_t572;
 // System.Collections.Generic.Dictionary`2/Transform`1<System.Object,System.Object,System.Collections.DictionaryEntry>
-struct Transform_1_t2485;
+struct Transform_1_t2486;
 // System.Object
 #include "mscorlib_System_Object.h"
 // System.Collections.Generic.Dictionary`2<System.Object,System.Object>
-struct Dictionary_2_t2482  : public Object_t
+struct Dictionary_2_t2483  : public Object_t
 {
 	// System.Int32[] System.Collections.Generic.Dictionary`2<System.Object,System.Object>::table
 	Int32U5BU5D_t877* ___table_4;
@@ -40,7 +40,7 @@ struct Dictionary_2_t2482  : public Object_t
 	// System.Int32 System.Collections.Generic.Dictionary`2<System.Object,System.Object>::generation
 	int32_t ___generation_14;
 };
-struct Dictionary_2_t2482_StaticFields{
+struct Dictionary_2_t2483_StaticFields{
 	// System.Int32 System.Collections.Generic.Dictionary`2<System.Object,System.Object>::INITIAL_SIZE
 	int32_t ___INITIAL_SIZE_0;
 	// System.Single System.Collections.Generic.Dictionary`2<System.Object,System.Object>::DEFAULT_LOAD_FACTOR
@@ -50,5 +50,5 @@ struct Dictionary_2_t2482_StaticFields{
 	// System.Int32 System.Collections.Generic.Dictionary`2<System.Object,System.Object>::HASH_FLAG
 	int32_t ___HASH_FLAG_3;
 	// System.Collections.Generic.Dictionary`2/Transform`1<TKey,TValue,System.Collections.DictionaryEntry> System.Collections.Generic.Dictionary`2<System.Object,System.Object>::<>f__am$cacheB
-	Transform_1_t2485 * ___U3CU3Ef__am$cacheB_15;
+	Transform_1_t2486 * ___U3CU3Ef__am$cacheB_15;
 };

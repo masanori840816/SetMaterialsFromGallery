@@ -14,8 +14,8 @@ struct SerializationInfo_t572;
 #include "mscorlib_System_Runtime_Serialization_StreamingContext.h"
 
 // System.Void System.OverflowException::.ctor()
- void OverflowException__ctor_m9637 (OverflowException_t1700 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void OverflowException__ctor_m9642 (OverflowException_t1700 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.OverflowException::.ctor(System.String)
- void OverflowException__ctor_m9638 (OverflowException_t1700 * __this, String_t* ___message, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void OverflowException__ctor_m9643 (OverflowException_t1700 * __this, String_t* ___message, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.OverflowException::.ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)
- void OverflowException__ctor_m9639 (OverflowException_t1700 * __this, SerializationInfo_t572 * ___info, StreamingContext_t573  ___context, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void OverflowException__ctor_m9644 (OverflowException_t1700 * __this, SerializationInfo_t572 * ___info, StreamingContext_t573  ___context, MethodInfo* method) IL2CPP_METHOD_ATTR;

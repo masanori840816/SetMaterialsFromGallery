@@ -7,7 +7,7 @@ struct CanvasGroup_t335;
 // System.ValueType
 #include "mscorlib_System_ValueType.h"
 // System.Collections.Generic.List`1/Enumerator<UnityEngine.CanvasGroup>
-struct Enumerator_t2685 
+struct Enumerator_t2686 
 {
 	// System.Collections.Generic.List`1<T> System.Collections.Generic.List`1/Enumerator<UnityEngine.CanvasGroup>::l
 	List_1_t205 * ___l_0;

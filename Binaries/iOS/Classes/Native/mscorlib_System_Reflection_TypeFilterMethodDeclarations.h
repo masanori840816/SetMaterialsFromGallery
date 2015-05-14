@@ -18,10 +18,10 @@ struct AsyncCallback_t39;
 #include "mscorlib_System_IntPtr.h"
 
 // System.Void System.Reflection.TypeFilter::.ctor(System.Object,System.IntPtr)
- void TypeFilter__ctor_m9770 (TypeFilter_t1390 * __this, Object_t * ___object, IntPtr_t173 ___method, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void TypeFilter__ctor_m9775 (TypeFilter_t1390 * __this, Object_t * ___object, IntPtr_t173 ___method, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Reflection.TypeFilter::Invoke(System.Type,System.Object)
- bool TypeFilter_Invoke_m9771 (TypeFilter_t1390 * __this, Type_t * ___m, Object_t * ___filterCriteria, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool TypeFilter_Invoke_m9776 (TypeFilter_t1390 * __this, Type_t * ___m, Object_t * ___filterCriteria, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.IAsyncResult System.Reflection.TypeFilter::BeginInvoke(System.Type,System.Object,System.AsyncCallback,System.Object)
- Object_t * TypeFilter_BeginInvoke_m9772 (TypeFilter_t1390 * __this, Type_t * ___m, Object_t * ___filterCriteria, AsyncCallback_t39 * ___callback, Object_t * ___object, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Object_t * TypeFilter_BeginInvoke_m9777 (TypeFilter_t1390 * __this, Type_t * ___m, Object_t * ___filterCriteria, AsyncCallback_t39 * ___callback, Object_t * ___object, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Reflection.TypeFilter::EndInvoke(System.IAsyncResult)
- bool TypeFilter_EndInvoke_m9773 (TypeFilter_t1390 * __this, Object_t * ___result, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool TypeFilter_EndInvoke_m9778 (TypeFilter_t1390 * __this, Object_t * ___result, MethodInfo* method) IL2CPP_METHOD_ATTR;

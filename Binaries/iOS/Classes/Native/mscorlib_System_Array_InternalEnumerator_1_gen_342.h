@@ -5,7 +5,7 @@ struct Array_t;
 // System.ValueType
 #include "mscorlib_System_ValueType.h"
 // System.Array/InternalEnumerator`1<Mono.Security.X509.X509ChainStatusFlags>
-struct InternalEnumerator_1_t3299 
+struct InternalEnumerator_1_t3300 
 {
 	// System.Array System.Array/InternalEnumerator`1<Mono.Security.X509.X509ChainStatusFlags>::array
 	Array_t * ___array_0;

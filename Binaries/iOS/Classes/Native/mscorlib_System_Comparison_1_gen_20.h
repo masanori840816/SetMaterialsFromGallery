@@ -11,6 +11,6 @@ struct Object_t;
 // System.MulticastDelegate
 #include "mscorlib_System_MulticastDelegate.h"
 // System.Comparison`1<UnityEngine.GUILayoutEntry>
-struct Comparison_1_t2929  : public MulticastDelegate_t172
+struct Comparison_1_t2930  : public MulticastDelegate_t172
 {
 };

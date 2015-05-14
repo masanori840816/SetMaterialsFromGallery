@@ -10,8 +10,8 @@ struct MRUList_t883;
 struct Object_t;
 
 // System.Void System.Text.RegularExpressions.MRUList::.ctor()
- void MRUList__ctor_m3734 (MRUList_t883 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void MRUList__ctor_m3739 (MRUList_t883 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void System.Text.RegularExpressions.MRUList::Use(System.Object)
- void MRUList_Use_m3735 (MRUList_t883 * __this, Object_t * ___o, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void MRUList_Use_m3740 (MRUList_t883 * __this, Object_t * ___o, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Object System.Text.RegularExpressions.MRUList::Evict()
- Object_t * MRUList_Evict_m3736 (MRUList_t883 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Object_t * MRUList_Evict_m3741 (MRUList_t883 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

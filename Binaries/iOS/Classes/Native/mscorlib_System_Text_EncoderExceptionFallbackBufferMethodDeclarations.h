@@ -8,12 +8,12 @@
 struct EncoderExceptionFallbackBuffer_t1610;
 
 // System.Void System.Text.EncoderExceptionFallbackBuffer::.ctor()
- void EncoderExceptionFallbackBuffer__ctor_m8731 (EncoderExceptionFallbackBuffer_t1610 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void EncoderExceptionFallbackBuffer__ctor_m8736 (EncoderExceptionFallbackBuffer_t1610 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Int32 System.Text.EncoderExceptionFallbackBuffer::get_Remaining()
- int32_t EncoderExceptionFallbackBuffer_get_Remaining_m8732 (EncoderExceptionFallbackBuffer_t1610 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ int32_t EncoderExceptionFallbackBuffer_get_Remaining_m8737 (EncoderExceptionFallbackBuffer_t1610 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Text.EncoderExceptionFallbackBuffer::Fallback(System.Char,System.Int32)
- bool EncoderExceptionFallbackBuffer_Fallback_m8733 (EncoderExceptionFallbackBuffer_t1610 * __this, uint16_t ___charUnknown, int32_t ___index, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool EncoderExceptionFallbackBuffer_Fallback_m8738 (EncoderExceptionFallbackBuffer_t1610 * __this, uint16_t ___charUnknown, int32_t ___index, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Boolean System.Text.EncoderExceptionFallbackBuffer::Fallback(System.Char,System.Char,System.Int32)
- bool EncoderExceptionFallbackBuffer_Fallback_m8734 (EncoderExceptionFallbackBuffer_t1610 * __this, uint16_t ___charUnknownHigh, uint16_t ___charUnknownLow, int32_t ___index, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ bool EncoderExceptionFallbackBuffer_Fallback_m8739 (EncoderExceptionFallbackBuffer_t1610 * __this, uint16_t ___charUnknownHigh, uint16_t ___charUnknownLow, int32_t ___index, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Char System.Text.EncoderExceptionFallbackBuffer::GetNextChar()
- uint16_t EncoderExceptionFallbackBuffer_GetNextChar_m8735 (EncoderExceptionFallbackBuffer_t1610 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ uint16_t EncoderExceptionFallbackBuffer_GetNextChar_m8740 (EncoderExceptionFallbackBuffer_t1610 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

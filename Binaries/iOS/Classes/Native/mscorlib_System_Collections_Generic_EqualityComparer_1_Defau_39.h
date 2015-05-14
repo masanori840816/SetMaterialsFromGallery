@@ -3,6 +3,6 @@
 // System.Collections.Generic.EqualityComparer`1<System.DateTime>
 #include "mscorlib_System_Collections_Generic_EqualityComparer_1_gen_38.h"
 // System.Collections.Generic.EqualityComparer`1/DefaultComparer<System.DateTime>
-struct DefaultComparer_t3539  : public EqualityComparer_1_t3538
+struct DefaultComparer_t3540  : public EqualityComparer_1_t3539
 {
 };

@@ -8,4 +8,4 @@
 struct ApplicationTrust_t1589;
 
 // System.Void System.Security.Policy.ApplicationTrust::.ctor()
- void ApplicationTrust__ctor_m8619 (ApplicationTrust_t1589 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void ApplicationTrust__ctor_m8624 (ApplicationTrust_t1589 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;

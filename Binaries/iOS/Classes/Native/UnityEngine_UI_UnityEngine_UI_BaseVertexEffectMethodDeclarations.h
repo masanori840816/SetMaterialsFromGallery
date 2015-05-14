@@ -12,11 +12,11 @@ struct Graphic_t139;
 struct List_1_t141;
 
 // System.Void UnityEngine.UI.BaseVertexEffect::.ctor()
- void BaseVertexEffect__ctor_m1198 (BaseVertexEffect_t263 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void BaseVertexEffect__ctor_m1201 (BaseVertexEffect_t263 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // UnityEngine.UI.Graphic UnityEngine.UI.BaseVertexEffect::get_graphic()
- Graphic_t139 * BaseVertexEffect_get_graphic_m1199 (BaseVertexEffect_t263 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ Graphic_t139 * BaseVertexEffect_get_graphic_m1202 (BaseVertexEffect_t263 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.UI.BaseVertexEffect::OnEnable()
- void BaseVertexEffect_OnEnable_m1200 (BaseVertexEffect_t263 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void BaseVertexEffect_OnEnable_m1203 (BaseVertexEffect_t263 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.UI.BaseVertexEffect::OnDisable()
- void BaseVertexEffect_OnDisable_m1201 (BaseVertexEffect_t263 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
+ void BaseVertexEffect_OnDisable_m1204 (BaseVertexEffect_t263 * __this, MethodInfo* method) IL2CPP_METHOD_ATTR;
 // System.Void UnityEngine.UI.BaseVertexEffect::ModifyVertices(System.Collections.Generic.List`1<UnityEngine.UIVertex>)
