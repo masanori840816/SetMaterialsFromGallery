@@ -13,14 +13,14 @@ public class CtrlSetTexture : MonoBehaviour
 	{
 		_ctrMain = _gmoMain.GetComponent<CtrlMain>();
 	}
-	public void SetNewTexture(string strPath, int intWidth, int intHeight)
+	public void SetNewTexture(string strPath)
 	{
 		if (File.Exists(strPath))
 		{
-			// リソースをアンロードする(Androidでは速度的に実行しないほうが良い？)
+			// リソースをアンロードする.
 			Resources.UnloadUnusedAssets();
 			// 取得したパスから画像を読み込んでマテリアルとして設定する.
-			_mtrCube.mainTexture = ReadTexture(strPath, intWidth, intHeight);
+			_mtrCube.mainTexture = ReadTexture(strPath);
 		}
 		else
 		{
@@ -28,11 +28,11 @@ public class CtrlSetTexture : MonoBehaviour
 			_ctrMain.ShowFileNotFoundAlert();
 		}
 	}
-	Texture2D ReadTexture(string strPath, int intWidth, int intHeight)
+	Texture2D ReadTexture(string strPath)
 	{
     byte[] bytReadBinary = File.ReadAllBytes(strPath);
 
-    Texture2D txtNewImage = new Texture2D(intWidth, intHeight);
+    Texture2D txtNewImage = new Texture2D(0, 0);
 		txtNewImage.LoadImage(bytReadBinary);
 		bytReadBinary = null;
     return txtNewImage;
@@ -40,6 +40,6 @@ public class CtrlSetTexture : MonoBehaviour
 	public void OnCallbackIos(string strGotData)
 	{
 		// called from iOS plugin.
-		this.SetNewTexture(strGotData, 0, 0);
+		this.SetNewTexture(strGotData);
 	}
 }

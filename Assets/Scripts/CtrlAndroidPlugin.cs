@@ -5,12 +5,15 @@ public class CtrlAndroidPlugin : MonoBehaviour
 {
 	readonly string PLUGIN_CLASS_PATH = "jp.setmaterialsfromgallery.PluginConnector";
 
-	public GameObject _gmoSetTexture;
-	CtrlSetTexture _ctrSetTexture;
-
 	void Start()
 	{
-		_ctrSetTexture = _gmoSetTexture.GetComponent<CtrlSetTexture>();
+#if UNITY_ANDROID
+		using(AndroidJavaClass clsPlugin = new AndroidJavaClass(PLUGIN_CLASS_PATH))
+		{
+			clsPlugin.CallStatic("initialize");
+		}
+#endif
+
 	}
 
 	public string GetText()
@@ -46,7 +49,7 @@ public class CtrlAndroidPlugin : MonoBehaviour
 		// 画像Viewを表示する.
 		using(AndroidJavaClass clsPlugin = new AndroidJavaClass(PLUGIN_CLASS_PATH))
 		{
-			clsPlugin.CallStatic("OpenImageView");
+			clsPlugin.CallStatic("openImageView");
 		}
 
 #endif
@@ -57,14 +60,9 @@ public class CtrlAndroidPlugin : MonoBehaviour
 		// アラートを表示する.
 		using(AndroidJavaClass clsPlugin = new AndroidJavaClass(PLUGIN_CLASS_PATH))
 		{
-			clsPlugin.CallStatic("ShowFileNotFoundAlert");
+			clsPlugin.CallStatic("showFileNotFoundAlert");
 		}
 
 #endif
-	}
-	public void OnCallbackAndroid(string strGotData)
-	{
-		// 画像が選択されたら、取得したパスを元に画像をロードする.
-		_ctrSetTexture.SetNewTexture(strGotData, 1920, 1080);
 	}
 }

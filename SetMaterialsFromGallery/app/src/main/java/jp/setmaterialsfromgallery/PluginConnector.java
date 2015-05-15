@@ -3,13 +3,23 @@ package jp.setmaterialsfromgallery;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
 import android.graphics.PixelFormat;
+import android.media.MediaScannerConnection;
+import android.net.Uri;
+import android.os.Handler;
+import android.os.HandlerThread;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.Window;
 import android.view.WindowManager;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
@@ -25,16 +35,30 @@ import android.widget.Toast;
 
 import com.unity3d.player.UnityPlayer;
 
-public class PluginConnector extends Activity
-{
+public class PluginConnector extends Activity {
   private static final int SDKVER_KITKAT = 19;
   private static final int REQUEST_GALLERY_KITKAT_ABOVE = 0;
   private static final int REQUEST_GALLERY_JELLYBEAN_BELOW = 1;
+  // ロードできる画像の制限.とりあえず5MBとする.
+  private static final int LIMIT_FILE_SIZE_BYTE = 5242880;
+  // 画像の最大サイズ(長辺)
+  private static final int MAX_IMAGE_SIZE = 1920;
 
   protected UnityPlayer mUnityPlayer; // don't change the name of this variable; referenced from native code
 
-  public static void OpenImageView()
+  public static void initialize()
   {
+    UnityPlayer.currentActivity.runOnUiThread(new Runnable() {
+      public void run() {
+        // アプリケーションのフォルダ内にFilesのディレクトリがなければ作成.
+        File filAppFileDir = new File(UnityPlayer.currentActivity.getFilesDir().toString());
+        if (!filAppFileDir.exists()) {
+          filAppFileDir.mkdir();
+        }
+      }
+    });
+  }
+  public static void openImageView() {
     UnityPlayer.currentActivity.runOnUiThread(new Runnable() {
       public void run() {
         Intent ntnImage = new Intent();
@@ -51,83 +75,210 @@ public class PluginConnector extends Activity
       }
     });
   }
-  public static void ShowFileNotFoundAlert()
-  {
-      UnityPlayer.currentActivity.runOnUiThread(new Runnable()
-      {
+
+  public static void showFileNotFoundAlert() {
+    UnityPlayer.currentActivity.runOnUiThread(new Runnable() {
+      @Override
+      public void run() {
+        AlertDialog.Builder aldAlertDialog = new AlertDialog.Builder(UnityPlayer.currentActivity);
+        // アラートダイアログのタイトルを設定します
+        aldAlertDialog.setTitle("画像が見つかりません");
+        // アラートダイアログのメッセージを設定します
+        aldAlertDialog.setMessage("画像の表示に失敗しました");
+        aldAlertDialog.setPositiveButton("無念", new DialogInterface.OnClickListener() {
           @Override
-          public void run() {
-              AlertDialog.Builder aldAlertDialog = new AlertDialog.Builder(UnityPlayer.currentActivity);
-              // アラートダイアログのタイトルを設定します
-              aldAlertDialog.setTitle("画像が見つかりません");
-              // アラートダイアログのメッセージを設定します
-              aldAlertDialog.setMessage("画像の表示に失敗しました");
-              aldAlertDialog.setPositiveButton("無念", new DialogInterface.OnClickListener() {
-                  @Override
-                  public void onClick(DialogInterface dialog, int which) {
-                      Log.d("PluginConnector", "ShowFileNotFoundAlert");
-                  }
-              });
-              aldAlertDialog.show();
+          public void onClick(DialogInterface dialog, int which) {
+            Log.d("PluginConnector", "ShowFileNotFoundAlert");
           }
-      });
+        });
+        aldAlertDialog.show();
+      }
+    });
   }
+
   @Override
-  protected void onActivityResult(int requestCode, int resultCode, Intent data)
-  {
-    if(resultCode != RESULT_OK)
-    {
+  protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+    if (resultCode != RESULT_OK) {
+      if(data == null)
+      {
+        // Intentで呼び出したアプリからうまくデータが取れない場合はアラート表示.
+        showFailedLoadingImg();
+      }
       return;
     }
-    switch (requestCode)
-    {
-    case REQUEST_GALLERY_JELLYBEAN_BELOW:
-      // 選択した画像のパスを取得する.
-      String[] strColumns = {MediaStore.Images.Media.DATA };
-      Cursor crsCursor = getContentResolver().query(data.getData(), strColumns, null, null, null);
-      if(crsCursor.moveToFirst())
-      {
-        Log.d("PluginConnector", crsCursor.getString(0));
-        this.sendImagePath(crsCursor.getString(0));
-      }
-      crsCursor.close();
-      break;
+    Cursor crsOrientation = getContentResolver().query(data.getData(),
+            new String[]{MediaStore.Images.ImageColumns.ORIENTATION}, null, null, null);
+    if (crsOrientation.getCount() != 1) {
+      showFailedLoadingImg();
+      return;
+    }
+    crsOrientation.moveToFirst();
+    int intOrientationDegree = crsOrientation.getInt(0);
+    crsOrientation.close();
 
-    case REQUEST_GALLERY_KITKAT_ABOVE:
-      this.GetSelectedItemPath(data);
-      break;
+    switch (requestCode) {
+      case REQUEST_GALLERY_JELLYBEAN_BELOW:
+        // 選択した画像のパスを取得する.
+        Cursor crsPath = getContentResolver().query(data.getData(), new String[]{MediaStore.Images.Media.DATA}, null, null, null);
+        if (crsPath.moveToFirst()) {
+          this.editImage(crsPath.getString(0), intOrientationDegree);
+        }
+        crsPath.close();
+        break;
+
+      case REQUEST_GALLERY_KITKAT_ABOVE:
+        this.getSelectedItemPath(data, intOrientationDegree);
+        break;
     }
   }
+
+  private void showFailedLoadingImg(){
+    // TODO: 画像の読み込みに失敗した旨のアラート表示
+  }
   @TargetApi(SDKVER_KITKAT)
-  private void GetSelectedItemPath(Intent data)
+  private void getSelectedItemPath(Intent data, int intOrientationDegree)
   {
     // 選択した画像のパスを取得する.
     String strDocId = DocumentsContract.getDocumentId(data.getData());
     String[] strSplittedDocId = strDocId.split(":");
     String strId = strSplittedDocId[strSplittedDocId.length - 1];
 
-    Cursor crsCursor = getContentResolver().query(
-        MediaStore.Images.Media.EXTERNAL_CONTENT_URI
-        , new String[]{MediaStore.MediaColumns.DATA}
-        , "_id=?"
-        , new String[]{strId}
-        , null);
+    Cursor crsPath = getContentResolver().query(
+            MediaStore.Images.Media.EXTERNAL_CONTENT_URI
+            , new String[]{MediaStore.MediaColumns.DATA}
+            , "_id=?"
+            , new String[]{strId}
+            , null);
 
-    if (crsCursor.moveToFirst()) {
-      Log.d("PluginConnector", crsCursor.getString(0));
-      this.sendImagePath(crsCursor.getString(0));
+    if (crsPath.moveToFirst()) {
+      this.editImage(crsPath.getString(0), intOrientationDegree);
     }
-    crsCursor.close();
+    crsPath.close();
   }
-  private void sendImagePath(String strSendPath)
+  private void editImage(final String strSendPath, final int intOrientationDegree)
   {
-    // 取得した画像のパスをUnity側に送信する.
-    UnityPlayer.UnitySendMessage("CtrlAndroidPlugin", "OnCallbackAndroid", strSendPath);
+    File filNewImg = new File(strSendPath);
+
+    if(! filNewImg.exists())
+    {
+      showFailedLoadingImg();
+    }
+    else if(filNewImg.length() > LIMIT_FILE_SIZE_BYTE)
+    {
+      // TODO: 読み込めるファイルサイズは5MBまでです
+    }
+    else
+    {
+      // 別スレッドで実行.
+      HandlerThread thread = new HandlerThread("SelectImage");
+      thread.start();
+      Handler saveImageHandler = new Handler(thread.getLooper());
+      saveImageHandler.post(
+        new Runnable() {
+          @Override
+          public void run() {
+            BitmapFactory.Options btfOptions = new BitmapFactory.Options();
+            // 画像自体は読み込まず、データだけ取得する.
+            btfOptions.inJustDecodeBounds = true ;
+            BitmapFactory.decodeFile(strSendPath, btfOptions);
+
+            int intScaleWidth = btfOptions.outWidth / MAX_IMAGE_SIZE;
+            int intScaleHeight = btfOptions.outHeight / MAX_IMAGE_SIZE;
+            int intScale;
+            boolean isImgOblong = false;
+            // 画像が横長かを確認する.
+            if(intScaleWidth >= intScaleHeight)
+            {
+              intScale = intScaleWidth;
+              isImgOblong = true;
+            }
+            else
+            {
+              intScale = intScaleHeight;
+              isImgOblong = false;
+            }
+
+            btfOptions.inJustDecodeBounds = false ;
+            // 縮小率の指定.
+            btfOptions.inSampleSize = intScale;
+
+            // 画像データをBitmapとして読み込む.
+            Bitmap bmpLoadedImg = BitmapFactory.decodeFile(strSendPath, btfOptions);
+
+            Matrix mtxRotate = new Matrix();
+            // 元の画像データの回転を元に戻す.
+            mtxRotate.postRotate(-intOrientationDegree);
+
+            float fltScale = 1;
+            float fltRotatedImgWidth;
+            float fltRotatedImgHeight;
+            if(btfOptions.outWidth > MAX_IMAGE_SIZE
+                    || btfOptions.outHeight > MAX_IMAGE_SIZE)
+            {
+              if(isImgOblong)
+              {
+                fltRotatedImgWidth = (float)MAX_IMAGE_SIZE;
+                fltRotatedImgHeight = (float)btfOptions.outHeight * ((float)MAX_IMAGE_SIZE / (float)btfOptions.outWidth);
+              }
+              else
+              {
+                fltRotatedImgWidth = (float)btfOptions.outWidth * ((float)MAX_IMAGE_SIZE / (float)btfOptions.outHeight);
+                fltRotatedImgHeight = (float)MAX_IMAGE_SIZE;
+              }
+            }
+            else
+            {
+              // サイズをオーバーしていなければ変更なし.
+              fltRotatedImgWidth = (float)btfOptions.outWidth;
+              fltRotatedImgHeight = (float)btfOptions.outHeight;
+            }
+            Bitmap bmpRotatedImg = Bitmap.createBitmap(bmpLoadedImg, 0, 0, (int)fltRotatedImgWidth, (int)fltRotatedImgHeight, mtxRotate, true);
+
+            String strSaveDir = Environment.getExternalStorageDirectory().toString();//UnityPlayer.currentActivity.getFilesDir().toString();
+            String strSaveFileName = "tmp.jpg";
+
+            try {
+              File file = new File(strSaveDir, strSaveFileName);
+              FileOutputStream outStream = new FileOutputStream(file);
+              bmpRotatedImg.compress(Bitmap.CompressFormat.JPEG, 100, outStream);
+              outStream.close();
+
+            } catch (FileNotFoundException e) {
+              e.printStackTrace();
+            } catch (IOException e) {
+                      e.printStackTrace();
+            }
+            // 使い終わったbitmapはカラにしておく.
+            bmpLoadedImg = null;
+            bmpRotatedImg = null;
+
+            String[] paths = {strSaveDir + "/" + strSaveFileName};
+            String[] mimeTypes = {"image/jpeg"};
+            MediaScannerConnection.scanFile(
+                    getApplicationContext(),
+                    paths,
+                    mimeTypes,
+                    mScanSavedFileCompleted);
+          }
+        }
+      );
+    }
   }
+  private MediaScannerConnection.OnScanCompletedListener mScanSavedFileCompleted = new MediaScannerConnection.OnScanCompletedListener(){
+    @Override
+    public void onScanCompleted(String path,
+                                Uri uri){
+
+      Log.d("plgConnect", "Scan");
+
+      // 取得した画像のパスをUnity側に送信する.
+      UnityPlayer.UnitySendMessage("CtrlSetTexture", "SetNewTexture", path);
+    }
+  };
   public static String GetDcimPath()
   {
     File filDcimDir =
-        Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM);
+            Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM);
     // DCIMディレクトリのパスを返す.
     return (filDcimDir.getPath());
   }
@@ -144,7 +295,6 @@ public class PluginConnector extends Activity
     });
   }
   // --- Copied from UnityPlayerActivity.java ---
-
   // Setup activity layout
   @Override protected void onCreate (Bundle savedInstanceState)
   {
@@ -158,7 +308,7 @@ public class PluginConnector extends Activity
     {
       setTheme(android.R.style.Theme_NoTitleBar_Fullscreen);
       getWindow ().setFlags (WindowManager.LayoutParams.FLAG_FULLSCREEN,
-          WindowManager.LayoutParams.FLAG_FULLSCREEN);
+              WindowManager.LayoutParams.FLAG_FULLSCREEN);
     }
 
     setContentView(mUnityPlayer);

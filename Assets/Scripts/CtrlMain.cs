@@ -4,11 +4,9 @@ using System.IO;
 
 public class CtrlMain : MonoBehaviour
 {
-#if UNITY_ANDROID
+	// iOSビルド時に外れるため、両OSでアタッチしておく.
 	public GameObject _gmoAndroidPlugin;
 	CtrlAndroidPlugin _ctrAndroidPlugin;
-
-#endif
 
 	string _strDcimPath = "";
 
