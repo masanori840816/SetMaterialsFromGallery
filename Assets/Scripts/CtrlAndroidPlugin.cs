@@ -5,17 +5,6 @@ public class CtrlAndroidPlugin : MonoBehaviour
 {
 	readonly string PLUGIN_CLASS_PATH = "jp.setmaterialsfromgallery.PluginConnector";
 
-	void Start()
-	{
-#if UNITY_ANDROID
-		using(AndroidJavaClass clsPlugin = new AndroidJavaClass(PLUGIN_CLASS_PATH))
-		{
-			clsPlugin.CallStatic("initialize");
-		}
-#endif
-
-	}
-
 	public string GetText()
 	{
 		string strGotText = "";
@@ -24,7 +13,7 @@ public class CtrlAndroidPlugin : MonoBehaviour
 		// DCIMディレクトリのパスを取得.
 		using(AndroidJavaClass clsPlugin = new AndroidJavaClass(PLUGIN_CLASS_PATH))
 		{
-			strGotText = clsPlugin.CallStatic<string>("GetDcimPath");
+			strGotText = clsPlugin.CallStatic<string>("getDcimPath");
 		}
 
 #endif
@@ -37,7 +26,7 @@ public class CtrlAndroidPlugin : MonoBehaviour
 		// トーストを表示する.
 		using(AndroidJavaClass clsPlugin = new AndroidJavaClass(PLUGIN_CLASS_PATH))
 		{
-			clsPlugin.CallStatic("ShowToast");
+			clsPlugin.CallStatic("showToast");
 		}
 
 #endif

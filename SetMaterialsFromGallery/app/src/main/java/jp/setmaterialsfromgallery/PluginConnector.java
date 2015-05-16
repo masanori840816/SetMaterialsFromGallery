@@ -46,24 +46,6 @@ public class PluginConnector extends Activity {
 
   protected UnityPlayer mUnityPlayer; // don't change the name of this variable; referenced from native code
 
-  public static void initialize()
-  {
-    UnityPlayer.currentActivity.runOnUiThread(new Runnable() {
-      public void run() {
-        // アプリケーションのフォルダ内にFilesのディレクトリがなければ作成.
-        File filAppFileDir = new File(UnityPlayer.currentActivity.getFilesDir().toString());
-        if (!filAppFileDir.exists()) {
-          filAppFileDir.mkdir();
-
-          MediaScannerConnection.scanFile(
-                  UnityPlayer.currentActivity.getApplicationContext(),
-                  new String[]{UnityPlayer.currentActivity.getFilesDir().toString()},
-                  new String[]{"image/jpeg"},
-                  null);
-        }
-      }
-    });
-  }
   public static void openImageView() {
     UnityPlayer.currentActivity.runOnUiThread(new Runnable() {
       public void run() {
@@ -184,6 +166,7 @@ public class PluginConnector extends Activity {
     else if(filNewImg.length() > LIMIT_FILE_SIZE_BYTE)
     {
       showAlertFileTooLarge();
+      filNewImg = null;
     }
     else
     {
@@ -203,17 +186,18 @@ public class PluginConnector extends Activity {
             int intScaleWidth = btfOptions.outWidth / MAX_IMAGE_SIZE;
             int intScaleHeight = btfOptions.outHeight / MAX_IMAGE_SIZE;
             int intScale;
-            boolean isImgOblong = false;
             // 画像が横長かを確認する.
             if(intScaleWidth >= intScaleHeight)
             {
               intScale = intScaleWidth;
-              isImgOblong = true;
             }
             else
             {
               intScale = intScaleHeight;
-              isImgOblong = false;
+            }
+            if(intScale < 1)
+            {
+              intScale = 1;
             }
 
             btfOptions.inJustDecodeBounds = false ;
@@ -226,31 +210,7 @@ public class PluginConnector extends Activity {
             Matrix mtxRotate = new Matrix();
             // 元の画像データの回転を元に戻す.
             mtxRotate.postRotate(intOrientationDegree);
-
-            float fltScale = 1;
-            float fltRotatedImgWidth;
-            float fltRotatedImgHeight;
-            if(btfOptions.outWidth > MAX_IMAGE_SIZE
-                    || btfOptions.outHeight > MAX_IMAGE_SIZE)
-            {
-              if(isImgOblong)
-              {
-                fltRotatedImgWidth = (float)MAX_IMAGE_SIZE;
-                fltRotatedImgHeight = (float)btfOptions.outHeight * ((float)MAX_IMAGE_SIZE / (float)btfOptions.outWidth);
-              }
-              else
-              {
-                fltRotatedImgWidth = (float)btfOptions.outWidth * ((float)MAX_IMAGE_SIZE / (float)btfOptions.outHeight);
-                fltRotatedImgHeight = (float)MAX_IMAGE_SIZE;
-              }
-            }
-            else
-            {
-              // サイズをオーバーしていなければ変更なし.
-              fltRotatedImgWidth = (float)btfOptions.outWidth;
-              fltRotatedImgHeight = (float)btfOptions.outHeight;
-            }
-            Bitmap bmpRotatedImg = Bitmap.createBitmap(bmpLoadedImg, 0, 0, (int)fltRotatedImgWidth, (int)fltRotatedImgHeight, mtxRotate, true);
+            Bitmap bmpRotatedImg = Bitmap.createBitmap(bmpLoadedImg, 0, 0, btfOptions.outWidth, btfOptions.outHeight, mtxRotate, true);
 
             String strSaveDir = UnityPlayer.currentActivity.getFilesDir().toString();
             String strSaveFileName = "tmp.jpg";
@@ -278,14 +238,14 @@ public class PluginConnector extends Activity {
       );
     }
   }
-  public static String GetDcimPath()
+  public static String getDcimPath()
   {
     File filDcimDir =
             Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DCIM);
     // DCIMディレクトリのパスを返す.
     return (filDcimDir.getPath());
   }
-  public static void ShowToast()
+  public static void showToast()
   {
     // 戻るボタン押下時にトーストを表示.
     UnityPlayer.currentActivity.runOnUiThread(new Runnable()
@@ -316,6 +276,16 @@ public class PluginConnector extends Activity {
 
     setContentView(mUnityPlayer);
     mUnityPlayer.requestFocus();
+
+    UnityPlayer.currentActivity.runOnUiThread(new Runnable() {
+      public void run() {
+        // アプリケーションのフォルダ内にFilesのディレクトリがなければ作成.
+        File filAppFileDir = new File(UnityPlayer.currentActivity.getFilesDir().toString());
+        if (!filAppFileDir.exists()) {
+          filAppFileDir.mkdir();
+        }
+      }
+    });
   }
   // Quit Unity
   @Override protected void onDestroy ()
