@@ -54,6 +54,12 @@ public class PluginConnector extends Activity {
         File filAppFileDir = new File(UnityPlayer.currentActivity.getFilesDir().toString());
         if (!filAppFileDir.exists()) {
           filAppFileDir.mkdir();
+
+          MediaScannerConnection.scanFile(
+                  UnityPlayer.currentActivity.getApplicationContext(),
+                  new String[]{UnityPlayer.currentActivity.getFilesDir().toString()},
+                  new String[]{"image/jpeg"},
+                  null);
         }
       }
     });
@@ -76,7 +82,7 @@ public class PluginConnector extends Activity {
     });
   }
 
-  public static void showFileNotFoundAlert() {
+  public static void showAlertFileNotFound() {
     UnityPlayer.currentActivity.runOnUiThread(new Runnable() {
       @Override
       public void run() {
@@ -95,21 +101,37 @@ public class PluginConnector extends Activity {
       }
     });
   }
-
+  private void showAlertFailedLoadFile()
+  {
+    showNoReactionAlert("ファイルの読み込みに失敗しました", "ファイルの読み込みに失敗しました");
+  }
+  private void showAlertFileTooLarge()
+  {
+    showNoReactionAlert("ファイルのサイズが大きすぎます", "使用できるファイルの最大サイズは5MBです");
+  }
+  private void showNoReactionAlert(final String strTitle, final String strMessage)
+  {
+    // ボタン押下後何もアクションがないアラートを表示.
+    UnityPlayer.currentActivity.runOnUiThread(new Runnable() {
+      @Override
+      public void run() {
+        AlertDialog.Builder aldAlertDialog = new AlertDialog.Builder(UnityPlayer.currentActivity);
+        aldAlertDialog.setTitle(strTitle);
+        aldAlertDialog.setMessage(strMessage);
+        aldAlertDialog.setPositiveButton("無念", null);
+        aldAlertDialog.show();
+      }
+    });
+  }
   @Override
   protected void onActivityResult(int requestCode, int resultCode, Intent data) {
     if (resultCode != RESULT_OK) {
-      if(data == null)
-      {
-        // Intentで呼び出したアプリからうまくデータが取れない場合はアラート表示.
-        showFailedLoadingImg();
-      }
       return;
     }
     Cursor crsOrientation = getContentResolver().query(data.getData(),
             new String[]{MediaStore.Images.ImageColumns.ORIENTATION}, null, null, null);
     if (crsOrientation.getCount() != 1) {
-      showFailedLoadingImg();
+      showAlertFailedLoadFile();
       return;
     }
     crsOrientation.moveToFirst();
@@ -130,10 +152,6 @@ public class PluginConnector extends Activity {
         this.getSelectedItemPath(data, intOrientationDegree);
         break;
     }
-  }
-
-  private void showFailedLoadingImg(){
-    // TODO: 画像の読み込みに失敗した旨のアラート表示
   }
   @TargetApi(SDKVER_KITKAT)
   private void getSelectedItemPath(Intent data, int intOrientationDegree)
@@ -161,11 +179,11 @@ public class PluginConnector extends Activity {
 
     if(! filNewImg.exists())
     {
-      showFailedLoadingImg();
+      showAlertFailedLoadFile();
     }
     else if(filNewImg.length() > LIMIT_FILE_SIZE_BYTE)
     {
-      // TODO: 読み込めるファイルサイズは5MBまでです
+      showAlertFileTooLarge();
     }
     else
     {
@@ -207,7 +225,7 @@ public class PluginConnector extends Activity {
 
             Matrix mtxRotate = new Matrix();
             // 元の画像データの回転を元に戻す.
-            mtxRotate.postRotate(-intOrientationDegree);
+            mtxRotate.postRotate(intOrientationDegree);
 
             float fltScale = 1;
             float fltRotatedImgWidth;
@@ -234,7 +252,7 @@ public class PluginConnector extends Activity {
             }
             Bitmap bmpRotatedImg = Bitmap.createBitmap(bmpLoadedImg, 0, 0, (int)fltRotatedImgWidth, (int)fltRotatedImgHeight, mtxRotate, true);
 
-            String strSaveDir = Environment.getExternalStorageDirectory().toString();//UnityPlayer.currentActivity.getFilesDir().toString();
+            String strSaveDir = UnityPlayer.currentActivity.getFilesDir().toString();
             String strSaveFileName = "tmp.jpg";
 
             try {
@@ -252,29 +270,14 @@ public class PluginConnector extends Activity {
             bmpLoadedImg = null;
             bmpRotatedImg = null;
 
-            String[] paths = {strSaveDir + "/" + strSaveFileName};
-            String[] mimeTypes = {"image/jpeg"};
-            MediaScannerConnection.scanFile(
-                    getApplicationContext(),
-                    paths,
-                    mimeTypes,
-                    mScanSavedFileCompleted);
+            // このアプリ内だけで使用するため、画像を保存してもMediaScannerConnectionは使用しない.
+            // 取得した画像のパスをUnity側に送信する.
+            UnityPlayer.UnitySendMessage("CtrlSetTexture", "SetNewTexture", strSaveDir + "/" + strSaveFileName);
           }
         }
       );
     }
   }
-  private MediaScannerConnection.OnScanCompletedListener mScanSavedFileCompleted = new MediaScannerConnection.OnScanCompletedListener(){
-    @Override
-    public void onScanCompleted(String path,
-                                Uri uri){
-
-      Log.d("plgConnect", "Scan");
-
-      // 取得した画像のパスをUnity側に送信する.
-      UnityPlayer.UnitySendMessage("CtrlSetTexture", "SetNewTexture", path);
-    }
-  };
   public static String GetDcimPath()
   {
     File filDcimDir =
