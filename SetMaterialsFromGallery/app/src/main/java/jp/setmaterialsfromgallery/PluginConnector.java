@@ -131,6 +131,7 @@ public class PluginConnector extends Activity {
         break;
 
       case REQUEST_GALLERY_KITKAT_ABOVE:
+        // 選択した画像のパスを取得する.
         this.getSelectedItemPath(data, intOrientationDegree);
         break;
     }
@@ -199,7 +200,6 @@ public class PluginConnector extends Activity {
             {
               intScale = 1;
             }
-
             btfOptions.inJustDecodeBounds = false ;
             // 縮小率の指定.
             btfOptions.inSampleSize = intScale;
@@ -224,13 +224,13 @@ public class PluginConnector extends Activity {
             } catch (FileNotFoundException e) {
               e.printStackTrace();
             } catch (IOException e) {
-                      e.printStackTrace();
+              e.printStackTrace();
             }
             // 使い終わったbitmapはカラにしておく.
             bmpLoadedImg = null;
             bmpRotatedImg = null;
 
-            // このアプリ内だけで使用するため、画像を保存してもMediaScannerConnectionは使用しない.
+            // このアプリ内だけで使用するため、画像を保存してもMediaScannerConnectionは使用しない(他のアプリでも使用する場合は保存するディレクトリを変更すること).
             // 取得した画像のパスをUnity側に送信する.
             UnityPlayer.UnitySendMessage("CtrlSetTexture", "SetNewTexture", strSaveDir + "/" + strSaveFileName);
           }
